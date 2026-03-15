@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Marco Rossi — Informatico & Web Developer · Frascati</title>
+  <meta name="description" content="Sviluppo siti web, automazioni AI e consulenza IT per piccole imprese nei Castelli Romani e Roma." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --green: #1D9E75;
+      --green-light: #E1F5EE;
+      --green-mid: #5DCAA5;
+      --green-border: #9FE1CB;
+      --green-dark: #0F6E56;
+      --text: #1a1a18;
+      --text-secondary: #5a5a56;
+      --text-tertiary: #8a8a85;
+      --bg: #fafaf8;
+      --bg-secondary: #f2f2ee;
+      --border: rgba(0,0,0,0.10);
+      --border-hover: rgba(0,0,0,0.20);
+      --radius-md: 8px;
+      --radius-lg: 12px;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --text: #f0f0ec;
+        --text-secondary: #a0a09a;
+        --text-tertiary: #606059;
+        --bg: #141412;
+        --bg-secondary: #1e1e1b;
+        --border: rgba(255,255,255,0.10);
+        --border-hover: rgba(255,255,255,0.22);
+        --green-light: #04342C;
+        --green-border: #085041;
+        --green: #1D9E75;
+      }
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+      line-height: 1.6;
+    }
+
+    /* NOISE TEXTURE OVERLAY */
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.03'/%3E%3C/svg%3E");
+      pointer-events: none;
+      z-index: 0;
+      opacity: 0.4;
+    }
+
+    .container {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 3rem 1.5rem 5rem;
+      position: relative;
+      z-index: 1;
+    }
+
+    /* HERO */
+    .hero {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 2rem;
+      align-items: start;
+      padding-bottom: 3rem;
+      border-bottom: 0.5px solid var(--border);
+      margin-bottom: 3rem;
+    }
+
+    .badge-location {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      font-size: 11px;
+      color: var(--text-secondary);
+      background: var(--bg-secondary);
+      border: 0.5px solid var(--border);
+      border-radius: 20px;
+      padding: 4px 13px;
+      margin-bottom: 1.25rem;
+      font-family: 'Space Mono', monospace;
+      letter-spacing: 0.5px;
+    }
+
+    .dot-pulse {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: var(--green);
+      display: inline-block;
+      animation: pulse 2.5s ease infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.5; transform: scale(0.8); }
+    }
+
+    .name {
+      font-family: 'Space Mono', monospace;
+      font-size: clamp(1.8rem, 5vw, 2.6rem);
+      font-weight: 700;
+      line-height: 1.1;
+      letter-spacing: -1.5px;
+      margin-bottom: 0.75rem;
+    }
+
+    .name .accent { color: var(--green); }
+
+    .tagline {
+      font-size: 15px;
+      color: var(--text-secondary);
+      line-height: 1.65;
+      max-width: 400px;
+      margin-bottom: 1.75rem;
+      font-weight: 300;
+    }
+
+    .cta-row {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      background: var(--green);
+      color: #fff;
+      border: none;
+      border-radius: var(--radius-md);
+      padding: 10px 20px;
+      font-size: 13px;
+      font-weight: 500;
+      cursor: pointer;
+      font-family: 'DM Sans', sans-serif;
+      text-decoration: none;
+      transition: opacity 0.15s, transform 0.15s;
+    }
+    .btn-primary:hover { opacity: 0.88; transform: translateY(-1px); }
+
+    .btn-secondary {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      background: transparent;
+      color: var(--text);
+      border: 0.5px solid var(--border-hover);
+      border-radius: var(--radius-md);
+      padding: 10px 20px;
+      font-size: 13px;
+      font-weight: 500;
+      cursor: pointer;
+      font-family: 'DM Sans', sans-serif;
+      text-decoration: none;
+      transition: border-color 0.15s, transform 0.15s;
+    }
+    .btn-secondary:hover { border-color: var(--green); color: var(--green); transform: translateY(-1px); }
+
+    .avatar {
+      width: 96px;
+      height: 96px;
+      border-radius: 50%;
+      background: var(--green-dark);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Space Mono', monospace;
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: #fff;
+      flex-shrink: 0;
+      border: 2.5px solid var(--green-mid);
+      position: relative;
+    }
+
+    .avatar::after {
+      content: '';
+      position: absolute;
+      inset: -6px;
+      border-radius: 50%;
+      border: 0.5px solid var(--green-border);
+    }
+
+    /* SECTION */
+    .section { margin-bottom: 3rem; }
+
+    .section-label {
+      font-family: 'Space Mono', monospace;
+      font-size: 10px;
+      letter-spacing: 2.5px;
+      text-transform: uppercase;
+      color: var(--text-tertiary);
+      margin-bottom: 1.25rem;
+    }
+
+    /* SERVICES */
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 12px;
+    }
+
+    .service-card {
+      background: var(--bg);
+      border: 0.5px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 1.25rem;
+      transition: border-color 0.2s, transform 0.2s;
+      cursor: default;
+    }
+
+    .service-card:hover {
+      border-color: var(--green-mid);
+      transform: translateY(-2px);
+    }
+
+    .service-icon {
+      width: 36px;
+      height: 36px;
+      border-radius: var(--radius-md);
+      background: var(--green-light);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 0.875rem;
+    }
+
+    .service-icon svg { width: 18px; height: 18px; stroke: var(--green); fill: none; stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; }
+
+    .service-title {
+      font-size: 14px;
+      font-weight: 500;
+      margin-bottom: 5px;
+    }
+
+    .service-price {
+      font-family: 'Space Mono', monospace;
+      font-size: 11px;
+      color: var(--green);
+      margin-bottom: 6px;
+    }
+
+    .service-desc {
+      font-size: 12px;
+      color: var(--text-secondary);
+      line-height: 1.55;
+    }
+
+    /* STACK */
+    .pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .pill {
+      font-size: 12px;
+      font-family: 'Space Mono', monospace;
+      padding: 5px 13px;
+      border-radius: 20px;
+      background: var(--bg-secondary);
+      border: 0.5px solid var(--border);
+      color: var(--text-secondary);
+      transition: border-color 0.15s;
+    }
+
+    .pill:hover { border-color: var(--green-border); }
+
+    .pill.accent {
+      background: var(--green-light);
+      border-color: var(--green-border);
+      color: var(--green-dark);
+    }
+
+    /* WHY LOCAL */
+    .why-card {
+      background: var(--bg-secondary);
+      border: 0.5px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 1.5rem;
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 1rem;
+      align-items: start;
+    }
+
+    .why-number {
+      font-family: 'Space Mono', monospace;
+      font-size: 2rem;
+      font-weight: 700;
+      color: var(--green);
+      line-height: 1;
+    }
+
+    .why-text { font-size: 14px; color: var(--text-secondary); line-height: 1.6; }
+    .why-text strong { color: var(--text); font-weight: 500; }
+
+    /* CONTACT */
+    .contact-strip {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      padding-top: 2.5rem;
+      border-top: 0.5px solid var(--border);
+    }
+
+    .contact-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 13px;
+      color: var(--text-secondary);
+      text-decoration: none;
+      padding: 8px 14px;
+      border-radius: var(--radius-md);
+      border: 0.5px solid var(--border);
+      background: var(--bg);
+      transition: color 0.15s, border-color 0.15s;
+    }
+
+    .contact-item:hover { color: var(--green); border-color: var(--green-border); }
+    .contact-item svg { width: 15px; height: 15px; stroke: currentColor; fill: none; stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; flex-shrink: 0; }
+
+    /* FOOTER */
+    .footer {
+      margin-top: 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .footer-note {
+      font-size: 11px;
+      color: var(--text-tertiary);
+      font-family: 'Space Mono', monospace;
+    }
+
+    .footer-note a { color: var(--green); text-decoration: none; }
+
+    /* ANIMATIONS */
+    .fade-in {
+      opacity: 0;
+      transform: translateY(16px);
+      animation: fadeIn 0.5s ease forwards;
+    }
+
+    @keyframes fadeIn {
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .fade-in:nth-child(1) { animation-delay: 0.05s; }
+    .fade-in:nth-child(2) { animation-delay: 0.15s; }
+    .fade-in:nth-child(3) { animation-delay: 0.25s; }
+    .fade-in:nth-child(4) { animation-delay: 0.35s; }
+    .fade-in:nth-child(5) { animation-delay: 0.45s; }
+
+    @media (max-width: 480px) {
+      .hero { grid-template-columns: 1fr; }
+      .avatar { display: none; }
+      .services-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+
+  <!-- HERO -->
+  <div class="hero fade-in">
+    <div>
+      <div class="badge-location">
+        <span class="dot-pulse"></span>
+        Frascati · Castelli Romani · Roma
+      </div>
+      <h1 class="name">Marco<br><span class="accent">Rossi</span></h1>
+      <p class="tagline">Informatico con esperienza enterprise. Sviluppo siti web, automazioni AI e soluzioni IT su misura per piccole imprese del territorio.</p>
+      <div class="cta-row">
+        <a class="btn-primary" href="mailto:marco.rossi@email.com">
+          <svg viewBox="0 0 24 24" style="width:15px;height:15px;stroke:#fff;fill:none;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round"><rect x="2" y="4" width="20" height="16" rx="2"/><polyline points="2,4 12,13 22,4"/></svg>
+          Scrivimi
+        </a>
+        <a class="btn-secondary" href="https://wa.me/39XXXXXXXXXX">
+          <svg viewBox="0 0 24 24" style="width:15px;height:15px;stroke:currentColor;fill:none;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+          WhatsApp
+        </a>
+      </div>
+    </div>
+    <div class="avatar">MR</div>
+  </div>
+
+  <!-- SERVICES -->
+  <div class="section fade-in">
+    <p class="section-label">// cosa posso fare per te</p>
+    <div class="services-grid">
+      <div class="service-card">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><polyline points="3,9 21,9"/><line x1="9" y1="21" x2="9" y2="9"/></svg>
+        </div>
+        <p class="service-title">Siti web</p>
+        <p class="service-price">da 600€ · manutenzione 50-100€/mese</p>
+        <p class="service-desc">Siti vetrina, landing page e restyling. Veloci, moderni e ottimizzati per Google. Aggiornamenti inclusi.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M4.22 4.22l2.12 2.12M17.66 17.66l2.12 2.12M2 12h3M19 12h3M4.22 19.78l2.12-2.12M17.66 6.34l2.12-2.12"/></svg>
+        </div>
+        <p class="service-title">Soluzioni AI</p>
+        <p class="service-price">da 400€</p>
+        <p class="service-desc">Chatbot, automazioni e flussi intelligenti. Risparmia tempo su attività ripetitive e rispondi ai clienti h24.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+        </div>
+        <p class="service-title">Consulenza IT</p>
+        <p class="service-price">40-60€/ora</p>
+        <p class="service-desc">Supporto tecnico, sicurezza informatica e ottimizzazione sistemi. Problemi risolti senza perdere una giornata.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- WHY LOCAL -->
+  <div class="section fade-in">
+    <p class="section-label">// perché scegliere un professionista locale</p>
+    <div class="why-card">
+      <div class="why-number">3</div>
+      <div class="why-text">
+        <strong>Conosco il territorio.</strong> Lavoro con le imprese dei Castelli Romani e Roma Sud. Niente agenzia anonima — parli direttamente con chi fa il lavoro, in italiano, di persona se serve. Rispondo entro poche ore, non entro giorni.
+      </div>
+    </div>
+  </div>
+
+  <!-- STACK -->
+  <div class="section fade-in">
+    <p class="section-label">// tecnologie & strumenti</p>
+    <div class="pills">
+      <span class="pill accent">HTML / CSS</span>
+      <span class="pill accent">JavaScript</span>
+      <span class="pill accent">WordPress</span>
+      <span class="pill accent">AI / LLM</span>
+      <span class="pill accent">Automazioni</span>
+      <span class="pill">SEO</span>
+      <span class="pill">Google Analytics</span>
+      <span class="pill">Linux</span>
+      <span class="pill">Reti aziendali</span>
+      <span class="pill">Sicurezza IT</span>
+    </div>
+  </div>
+
+  <!-- CONTACTS -->
+  <div class="section fade-in">
+    <p class="section-label">// contatti</p>
+    <div class="contact-strip">
+      <a class="contact-item" href="mailto:marco.rossi@email.com">
+        <svg viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><polyline points="2,4 12,13 22,4"/></svg>
+        marco.rossi@email.com
+      </a>
+      <a class="contact-item" href="https://wa.me/39XXXXXXXXXX">
+        <svg viewBox="0 0 24 24"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+        +39 XXX XXX XXXX
+      </a>
+      <a class="contact-item" href="https://linkedin.com/in/marcorossi">
+        <svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+        LinkedIn
+      </a>
+    </div>
+
+    <div class="footer">
+      <p class="footer-note">// disponibile per collaborazioni occasionali · Frascati &amp; dintorni</p>
+      <p class="footer-note"><a href="mailto:marco.rossi@email.com">marco.rossi@email.com</a></p>
+    </div>
+  </div>
+
+</div>
+</body>
+</html>
