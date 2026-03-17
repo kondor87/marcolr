@@ -578,8 +578,8 @@
       <div class="portfolio-preview" style="padding:0;overflow:hidden;">
         <img src="martina.jpeg"
              alt="Sito web Martina Iannotti Nutrizionista"
-             style="width:100%;height:180px;object-fit:cover;object-position:top;display:block;transition:transform 0.3s ease;"
-             onmouseover="this.style.transform='scale(1.02)'"
+             style="width:100%;height:260px;object-fit:cover;object-position:top center;display:block;transition:transform 0.4s ease;image-rendering:-webkit-optimize-contrast;image-rendering:crisp-edges;"
+             onmouseover="this.style.transform='scale(1.03)'"
              onmouseout="this.style.transform='scale(1)'" />
       </div>
       <div class="portfolio-body">
@@ -638,10 +638,10 @@
   <div class="section fade-in">
     <p class="section-label">// contatti</p>
     <div class="contact-strip">
-      <a class="contact-item" href="/cdn-cgi/l/email-protection#b4d9d5c6d7dbd8d5c6dbd7d7d59ac4f4d3d9d5ddd89ad7dbd9">
+      <span class="contact-item" id="mailBtn" style="cursor:pointer;">
         <svg viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><polyline points="2,4 12,13 22,4"/></svg>
-        <span class="__cf_email__" data-cfemail="a2cfc3d0c1cdcec3d0cdc1c1c38cd2e2c5cfc3cbce8cc1cdcf">[email&#160;protected]</span>
-      </a>
+        <span id="mailLabel">Caricamento...</span>
+      </span>
       <span class="contact-item" id="waContact" onclick="revealPhone()">
         <svg viewBox="0 0 24 24"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
         <span id="waContactLabel">WhatsApp — clicca per vedere</span>
@@ -655,7 +655,7 @@
     <div class="footer">
       <div class="footer-legal">
         Collaborazioni svolte ai sensi dell'art. 2222 del Codice Civile (Prestazione d'opera occasionale).<br>
-        Per informazioni: <a href="/cdn-cgi/l/email-protection#a1ccc0d3c2cecdc0d3cec2c2c08fd1e1c6ccc0c8cd8fc2cecc"><span class="__cf_email__" data-cfemail="85e8e4f7e6eae9e4f7eae6e6e4abf5c5e2e8e4ece9abe6eae8">[email&#160;protected]</span></a>
+        Per informazioni: <span id="footerMail"></span>
       </div>
       <div class="footer-bottom">
         <p class="footer-note">// Frascati &amp; Castelli Romani · Roma</p>
@@ -666,7 +666,37 @@
 
 </div>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+<script>
+  (function() {
+    var u = 'marcolarocca.p';
+    var d = 'gmail.com';
+    var e = u + '@' + d;
+    var ml = document.getElementById('mailLabel');
+    var mb = document.getElementById('mailBtn');
+    var fm = document.getElementById('footerMail');
+    if (ml) ml.textContent = e;
+    if (mb) mb.onclick = function(){ window.location.href = 'mailto:' + e; };
+    if (fm) {
+      var a = document.createElement('a');
+      a.href = 'mailto:' + e;
+      a.textContent = e;
+      a.style.color = 'var(--green)';
+      a.style.textDecoration = 'none';
+      fm.appendChild(a);
+    }
+  })();
+
   var shown = false;
   function revealPhone() {
-    if (shown) { window.open('https://wa.me/3934602
+    if (shown) { window.open('https://wa.me/393460200899'); return; }
+    shown = true;
+    var n = '393460200899';
+    var d = '+39 346 020 0899';
+    document.getElementById('waHeroLabel').textContent = d;
+    document.getElementById('waContactLabel').textContent = d;
+    document.getElementById('waHero').onclick = function(){ window.open('https://wa.me/'+n); };
+    document.getElementById('waContact').onclick = function(){ window.open('https://wa.me/'+n); };
+  }
+</script>
+</body>
+</html>
