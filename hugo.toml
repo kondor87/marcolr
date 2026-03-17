@@ -1,0 +1,14 @@
+baseURL = "/"
+languageCode = "it"
+title = "Marco La Rocca — Siti Web & Automazioni · Frascati"
+
+[params]
+  description = "Il tuo sito non si trova su Google? Ti aiuto a farti trovare dai clienti a Frascati e nei Castelli Romani. Siti web professionali per professionisti e piccole imprese."
+  author = "Marco La Rocca"
+
+[taxonomies]
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true

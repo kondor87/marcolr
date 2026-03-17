@@ -1,0 +1,38 @@
+{{ define "main" }}
+<div class="container">
+
+    <nav class="site-top-nav fade-in">
+        <a class="nav-item" href="/">Home</a>
+        <a class="nav-item active" href="/blog/">Blog</a>
+    </nav>
+
+    <div class="fade-in" style="margin-bottom:2.5rem;">
+        <h1 class="name" style="margin-bottom:0.5rem;">Blog</h1>
+        <p class="tagline">Consigli pratici su siti web, SEO e presenza online per professionisti.</p>
+    </div>
+
+    <div class="blog-grid">
+        {{ range .Pages }}
+        <a class="blog-card reveal" href="{{ .Permalink }}">
+            {{ with .Params.image }}
+            <img class="blog-card-image" src="{{ . }}" alt="{{ $.Title }}" />
+            {{ end }}
+            <div class="blog-card-body">
+                <p class="blog-card-date">{{ .Date.Format "02 Gen 2006" }}</p>
+                <p class="blog-card-title">{{ .Title }}</p>
+                <p class="blog-card-excerpt">{{ .Summary }}</p>
+            </div>
+        </a>
+        {{ end }}
+    </div>
+
+    {{ if not .Pages }}
+    <div class="why-card" style="grid-template-columns:1fr;text-align:center;">
+        <div class="why-text">
+            Nessun articolo ancora. Torna presto!
+        </div>
+    </div>
+    {{ end }}
+
+</div>
+{{ end }}

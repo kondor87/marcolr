@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} — Marco La Rocca{{ end }}</title>
+    <meta name="description"
+        content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.description }}{{ end }}" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="/css/style.css" />
+    {{ block "head" . }}{{ end }}
+</head>
+
+<body>
+    {{ block "main" . }}{{ end }}
+
+    <script>
+        /* Scroll Reveal */
+        (function () {
+            var els = document.querySelectorAll('.reveal');
+            if (!els.length) return;
+            var io = new IntersectionObserver(function (entries) {
+                entries.forEach(function (e) {
+                    if (e.isIntersecting) {
+                        e.target.classList.add('revealed');
+                        io.unobserve(e.target);
+                    }
+                });
+            }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+            els.forEach(function (el) { io.observe(el); });
+        })();
+    </script>
+    {{ block "scripts" . }}{{ end }}
+</body>
+
+</html>
