@@ -15,7 +15,12 @@
 
     <article class="fade-in">
         <div class="blog-header">
-            <p class="blog-header-date">{{ .Date.Format "02 Gennaio 2006" }}</p>
+            <p class="blog-header-date">
+                {{ if .Params.categories }}
+                <span style="color:var(--green);font-weight:700;text-transform:uppercase;">{{ index .Params.categories 0 }}</span> &bull; 
+                {{ end }}
+                {{ .Date.Format "02 Gennaio 2006" }}
+            </p>
             <h1 class="blog-header-title">{{ .Title }}</h1>
             {{ with .Params.image }}
             <img class="blog-cover" src="{{ . }}" alt="{{ $.Title }}" />
