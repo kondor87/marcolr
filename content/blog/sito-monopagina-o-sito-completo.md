@@ -53,4 +53,4 @@ Se vuoi costruire **autorevolezza e posizionamento** nel tuo comune e attirare t
 
 Se vuoi **ottimizzare il tuo tempo e smettere di rincorrere le chat WhatsApp**, l'investimento in un **sistema di prenotazioni integrato sul sito** si ripaga letteralmente nei primi mesi.
 
-[Sei ancora indeciso? Clicca qui per prenotare una veloce consulenza gratuita di 20 minuti](/). Ti farò qualche domanda e ti proporrò il contenitore digitale migliore per te, senza fronzoli o costi nascosti.
+[Sei ancora indeciso? Clicca qui per prenotare una veloce consulenza gratuita di 20 minuti](/#contacts). Ti farò qualche domanda e ti proporrò il contenitore digitale migliore per te, senza fronzoli o costi nascosti.

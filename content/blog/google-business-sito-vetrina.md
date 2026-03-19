@@ -45,4 +45,4 @@ Aprire solo la mappa è come mettere un'insegna su una porta chiusa.
 
 Per questo motivo, nel mio servizio base di creazione siti per professionisti, **l'ottimizzazione e il collegamento della scheda Google Business è sempre inclusa**. La sinergia tra i due è ciò che porta risultati reali.
 
-[Prenota una chiacchierata di 20 min](/). Capiremo insieme come strutturare la tua vetrina locale!
+[Prenota una chiacchierata di 20 min](/#contacts). Capiremo insieme come strutturare la tua vetrina locale!

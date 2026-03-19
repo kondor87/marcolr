@@ -40,4 +40,4 @@ Per fare un aggiornamento in totale sicurezza, il "tagliando" va fatto seguendo 
 ### L'assistenza tecnica "su richiesta" serve a questo
 Io dico sempre: tu sei un professionista e il tuo lavoro è fatturare nel tuo settore. Concentrati sui tuoi clienti. Non dovresti passare la domenica mattina col batticuore per paura di rompere il sito premendo il tasto "Aggiorna". 
 
-Se hai bisogno del tuo personale "meccanico digitale" che di tanto in tanto entri, faccia i backup di sicurezza, aggiorni i sistemi e si assicuri che il tuo motore giri fluido e veloce per attrarre clienti da Google, [scrivimi per un'assistenza tecnica](/). La facciamo su richiesta, quando serve, senza abbonamenti stringenti.
+Se hai bisogno del tuo personale "meccanico digitale" che di tanto in tanto entri, faccia i backup di sicurezza, aggiorni i sistemi e si assicuri che il tuo motore giri fluido e veloce per attrarre clienti da Google, [scrivimi per un'assistenza tecnica](/#contacts). La facciamo su richiesta, quando serve, senza abbonamenti stringenti.
