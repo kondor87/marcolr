@@ -7,6 +7,64 @@
     <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} — Marco La Rocca{{ end }}</title>
     <meta name="description"
         content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.description }}{{ end }}" />
+
+    <!-- Canonical -->
+    <link rel="canonical" href="{{ .Permalink }}" />
+
+    <!-- Open Graph -->
+    <meta property="og:title"
+        content="{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} — Marco La Rocca{{ end }}" />
+    <meta property="og:description"
+        content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.description }}{{ end }}" />
+    <meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}" />
+    <meta property="og:url" content="{{ .Permalink }}" />
+    {{ with .Params.image }}
+    <meta property="og:image" content="{{ . | absURL }}" />{{ end }}
+    <meta property="og:locale" content="it_IT" />
+    <meta property="og:site_name" content="Marco La Rocca" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }}{{ end }}" />
+    <meta name="twitter:description"
+        content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.description }}{{ end }}" />
+
+    <!-- Structured Data (Schema.org) -->
+    {{ if .IsHome }}
+    <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Marco La Rocca — Siti Web & Automazioni",
+    "description": "{{ .Site.Params.description }}",
+    "url": "{{ .Site.BaseURL }}",
+    "areaServed": {
+      "@type": "Place",
+      "name": "Frascati, Castelli Romani, Roma"
+    },
+    "serviceType": ["Web Design", "Web Development", "SEO"],
+    "priceRange": "€€"
+  }
+  </script>
+    {{ end }}
+
+    {{ if .IsPage }}
+    <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "{{ .Title }}",
+    "description": "{{ .Description }}",
+    "datePublished": "{{ .Date.Format "2006-01-02" }}",
+    "author": {
+      "@type": "Person",
+      "name": "Marco La Rocca"
+    }{{ with .Params.image }},
+    "image": "{{ . | absURL }}"{{ end }}
+  }
+  </script>
+    {{ end }}
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
