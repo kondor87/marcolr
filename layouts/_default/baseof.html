@@ -73,9 +73,6 @@
         rel="stylesheet" />
     <link rel="stylesheet" href="/css/style.css?v={{ now.Unix }}" />
     {{ block "head" . }}{{ end }}
-    
-    <!-- Iubenda Cookie Banner Widget -->
-    <script type="text/javascript" src="https://embeds.iubenda.com/widgets/e9b3d75a-33f9-41ef-9594-69d5554dc6c0.js"></script>
 </head>
 
 <body>
@@ -99,6 +96,9 @@
     </script>
     {{ block "scripts" . }}{{ end }}
     <script type="text/javascript">(function (w,d) {var loader = function () {var s = d.createElement("script"), tag = d.getElementsByTagName("script")[0]; s.src="https://cdn.iubenda.com/iubenda.js"; tag.parentNode.insertBefore(s,tag);}; if(w.addEventListener){w.addEventListener("load", loader, false);}else if(w.attachEvent){w.attachEvent("onload", loader);}else{w.onload = loader;}})(window, document);</script>
+    
+    <!-- Iubenda Cookie Banner Widget -->
+    <script type="text/javascript" src="https://embeds.iubenda.com/widgets/e9b3d75a-33f9-41ef-9594-69d5554dc6c0.js"></script>
 </body>
 
 </html>
