@@ -47,6 +47,6 @@ Il tuo sito web è **casa tua**. Lì le regole le fai tu, il design è come vuoi
 
 ---
 
-Se hai uno studio ai Castelli Romani e pensi sia arrivato il momento di fare questo salto di qualità lavorando in modo più intelligente, anziché più faticoso, possiamo sentirci. 
+Se hai uno studio ai Castelli Romani e pensi sia arrivato il momento di fare questo salto di qualità, possiamo scambiarci due parole senza impegno. 
 
-[Contattami per una consulenza gratuita di 20 minuti](/#contacts). Niente pacchetti agenzia pre-confezionati: ascolto le tue esigenze e capiamo se e come posso aiutarti.
+[Scrivimi per raccontarmi la tua situazione](/#contacts). Ti dico onestamente se e come posso aiutarti.

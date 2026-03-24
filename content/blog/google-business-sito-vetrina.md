@@ -30,7 +30,7 @@ Un utente indeciso, che non è ancora pronto a chiamare, cliccherà quel pulsant
 
 Un segreto che molti ignorano: **Google legge il tuo sito web per decidere quanto in alto metterti sulla mappa**.
 
-Se il tuo sito è ben strutturato, contiene le giuste le parole chiave ("Nutrizionista Castelli Romani", "Diete personalizzate"), ed è considerato veloce e affidabile da Google (tecnicamente in target con i _Core Web Vitals_), queste metriche andranno a "confermare" a Google che sei la risorsa migliore per l'utente, e ti posizionerà più in alto su Maps rispetto a chi usa solo la scheda senza sito.
+Se il tuo sito è ben strutturato, contiene le parole chiave giuste ("Nutrizionista Castelli Romani", "Diete personalizzate"), ed è considerato veloce e affidabile da Google, queste metriche contribuiscono a rafforzare la tua presenza complessiva online. Google tende a premiare chi offre informazioni più complete e coerenti, e avere un sito collegato alla scheda può darti un vantaggio rispetto a chi usa solo la scheda senza sito.
 
 ## 4. Risparmi tempo (e l'utente anche)
 
@@ -43,6 +43,6 @@ Il sito filtra i "curiosi" e lascia arrivare a te solo chi è in target.
 ### Non lasciare la tua vetrina a metà
 Aprire solo la mappa è come mettere un'insegna su una porta chiusa. 
 
-Per questo motivo, nel mio servizio base di creazione siti per professionisti, **l'ottimizzazione e il collegamento della scheda Google Business è sempre inclusa**. La sinergia tra i due è ciò che porta risultati reali.
+Quando realizzo un sito per un professionista, il collegamento e l'ottimizzazione della scheda Google Business fanno sempre parte del lavoro.
 
-[Prenota una chiacchierata di 20 min](/#contacts). Capiremo insieme come strutturare la tua vetrina locale!
+[Ti va di parlarne? Scrivimi senza impegno](/#contacts).

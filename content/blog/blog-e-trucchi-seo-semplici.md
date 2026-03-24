@@ -45,4 +45,4 @@ Alla fine di ogni post inserisci sempre un invito all'azione chiaro e gentile. "
 ---
 
 ### Non sai da dove iniziare?
-Avere la piattaforma tecnica giusta e ottimizzata è il primo passo, ma poi dovrai "alimentarla" coi tuoi contenuti. Quando realizzo un [Sito Vetrina](/#contacts), il blog è sempre incluso. Non solo: durante la consegna dedico sempre una chiamata per mostrarti come caricare facilmente i tuoi articoli in totale autonomia, applicando queste semplici regole senza doverti mai preoccupare della parte tecnica che c'è dietro (plugin, aggiornamenti, ecc. — a quelli ci penso io!).
+Avere la piattaforma tecnica giusta e ottimizzata è il primo passo, ma poi dovrai "alimentarla" coi tuoi contenuti. Se hai bisogno di una mano per mettere in piedi il tuo sito con il blog già pronto, [scrivimi senza impegno](/#contacts). Ti spiego anche come aggiornarlo in totale autonomia.

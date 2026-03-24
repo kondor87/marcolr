@@ -49,8 +49,8 @@ Qui entriamo nel livello "Pro". Non si tratta solo di mostrare chi sei, ma di fa
 
 Se stai muovendo i **primissimi passi**, un **Monopagina veloce ed elegante** è infinitamente meglio di non avere un sito o di affidarsi solo a Instagram. Ma ti starà stretto se vuoi una strategia a lungo termine.
 
-Se vuoi costruire **autorevolezza e posizionamento** nel tuo comune e attirare traffico costante dai motori di ricerca, il **Sito a 5 pagine** è la scelta sensata e naturale e il mio consiglio primario.
+Se vuoi costruire **autorevolezza e posizionamento** nel tuo comune e attirare traffico dai motori di ricerca, il **Sito a 5 pagine** è la scelta più sensata per la maggior parte dei professionisti.
 
 Se vuoi **ottimizzare il tuo tempo e smettere di rincorrere le chat WhatsApp**, l'investimento in un **sistema di prenotazioni integrato sul sito** si ripaga letteralmente nei primi mesi.
 
-[Sei ancora indeciso? Clicca qui per prenotare una veloce consulenza gratuita di 20 minuti](/#contacts). Ti farò qualche domanda e ti proporrò il contenitore digitale migliore per te, senza fronzoli o costi nascosti.
+[Non sai quale fa per te? Scrivimi, senza impegno](/#contacts). Ti faccio qualche domanda e ti dico onestamente quale soluzione ha più senso per la tua situazione.
