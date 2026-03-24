@@ -24,7 +24,7 @@
                     {{ if .Params.categories }}
                     <span style="color:var(--green);font-weight:700;">{{ index .Params.categories 0 }}</span> &bull; 
                     {{ end }}
-                    {{ .Date.Format "02 Gen 2006" }}
+                    {{ .Date.Format "02/01/2006" }}
                 </p>
                 <p class="blog-card-title">{{ .Title }}</p>
                 <p class="blog-card-excerpt">{{ .Summary }}</p>
