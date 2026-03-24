@@ -1,6 +1,6 @@
 ---
 title: "Sito Monopagina, 5 Pagine o Prenotazioni Online? Come scegliere il sito giusto per la tua attività"
-date: 2026-03-19T14:30:00+01:00
+date: 2025-12-05T14:30:00+01:00
 description: "Non tutti i siti sono uguali. C'è chi ha bisogno solo di un biglietto da visita digitale, e chi di un vero e proprio 'segretario virtuale'. Ecco come orientarti."
 image: "/images/blog_scelta_sito.png"
 categories: ["Business Digitale"]

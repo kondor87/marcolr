@@ -1,6 +1,6 @@
 ---
 title: "Il 'Tagliando' del tuo sito web: perché aggiornare WordPress è come cambiare l'olio all'auto"
-date: 2026-03-18T10:00:00+01:00
+date: 2025-10-15T10:00:00+01:00
 description: "Ignorare le notifiche di WordPress è come ignorare la spia rossa sul cruscotto: all'inizio non succede niente, ma prima o poi ti lascia a piedi."
 image: "/images/blog_tagliando_wp.png"
 categories: ["Manutenzione"]

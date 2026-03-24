@@ -1,6 +1,6 @@
 ---
 title: "Perché dovresti avere un Blog (e 4 trucchi SEO che puoi usare anche se non sei un tecnico)"
-date: 2026-03-19T15:00:00+01:00
+date: 2026-01-20T15:00:00+01:00
 description: "Pensi che il blog sia morto? Sbagliato. È l'arma più potente per farti trovare su Google. Ecco come scriverlo senza impazzire con la SEO."
 image: "/images/blog_seo_semplice.png"
 categories: ["SEO Locale"]

@@ -1,6 +1,6 @@
 ---
 title: "La Scheda Google Business e un Sito Vetrina: l'accoppiata perfetta per i professionisti locali"
-date: 2026-03-19T14:00:00+01:00
+date: 2025-11-10T14:00:00+01:00
 description: "Pensi che Google Maps basti per farti trovare dai clienti? Scopri perché abbinare una Scheda Google ottimizzata a un Sito Vetrina veloce è il trucco per convertire chi ti cerca in chi ti sceglie."
 image: "/images/blog_google_business_site.png"
 categories: ["SEO Locale"]

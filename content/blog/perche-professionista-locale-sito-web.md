@@ -1,6 +1,6 @@
 ---
 title: "Perché un professionista locale ha bisogno di un sito web (anche se ha già i social)"
-date: 2026-03-19T10:00:00+01:00
+date: 2026-02-18T10:00:00+01:00
 description: "Instagram e Facebook sono ottimi, ma se sei un professionista (fisioterapista, nutrizionista, psicologo) a Frascati o ai Castelli Romani, un sito web è il vero motore per trovare clienti in automatico."
 image: "/images/blog_website_local_pro.png"
 categories: ["Business Digitale"]
