@@ -1,9 +1,9 @@
 baseURL = "https://laroccadigitale.it/"
 languageCode = "it"
-title = "Marco La Rocca — Siti Web & Automazioni · Frascati"
+title = "Marco La Rocca — Siti Web · Frascati"
 
 [params]
-  description = "Il tuo sito non si trova su Google? Ti aiuto a farti trovare dai clienti a Frascati e nei Castelli Romani. Siti web professionali per professionisti e piccole imprese."
+  description = "Aiuto professionisti locali a essere visibili online. Su richiesta, realizzo siti web essenziali e curati per piccole attività a Frascati e nei Castelli Romani."
   author = "Marco La Rocca"
 
 [taxonomies]

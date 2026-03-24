@@ -35,16 +35,16 @@
     <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "ProfessionalService",
-    "name": "Marco La Rocca — Siti Web & Automazioni",
+    "@type": "Person",
+    "name": "Marco La Rocca",
     "description": "{{ .Site.Params.description }}",
     "url": "{{ .Site.BaseURL }}",
-    "areaServed": {
-      "@type": "Place",
-      "name": "Frascati, Castelli Romani, Roma"
-    },
-    "serviceType": ["Web Design", "Web Development", "SEO"],
-    "priceRange": "€€"
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Frascati",
+      "addressRegion": "Roma",
+      "addressCountry": "IT"
+    }
   }
   </script>
     {{ end }}
