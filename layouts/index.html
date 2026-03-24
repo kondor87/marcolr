@@ -244,6 +244,40 @@
         </div>
     </div>
 
+    <!-- FAQ -->
+    <div class="section reveal">
+        <p class="section-label">// domande frequenti</p>
+        <style>
+            .faq-list { max-width: 700px; margin: 0 auto; }
+            .faq-item { border: 1px solid var(--border); border-radius: 12px; margin-bottom: 0.75rem; overflow: hidden; transition: border-color 0.3s; }
+            .faq-item:hover { border-color: var(--green); }
+            .faq-question { width: 100%; background: none; border: none; padding: 1.25rem 1.5rem; font-family: 'DM Sans', sans-serif; font-size: 15px; font-weight: 500; color: var(--text); cursor: pointer; display: flex; justify-content: space-between; align-items: center; text-align: left; }
+            .faq-question::after { content: '+'; font-size: 20px; color: var(--green); font-weight: 300; transition: transform 0.3s; flex-shrink: 0; margin-left: 1rem; }
+            .faq-item.open .faq-question::after { content: '−'; }
+            .faq-answer { max-height: 0; overflow: hidden; transition: max-height 0.4s ease, padding 0.3s ease; }
+            .faq-answer-inner { padding: 0 1.5rem 1.25rem; font-size: 14px; line-height: 1.7; color: var(--text-muted); }
+            .faq-item.open .faq-answer { max-height: 300px; }
+        </style>
+        <div class="faq-list">
+            <div class="faq-item">
+                <button class="faq-question" onclick="this.parentElement.classList.toggle('open')">Il sito è mio o devo pagare un canone?</button>
+                <div class="faq-answer"><div class="faq-answer-inner">Il sito è di tua completa proprietà. Non ci sono canoni mensili, abbonamenti o vincoli. Ti consegno tutto (codice, accessi, dominio) e sei libero di gestirlo come vuoi.</div></div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question" onclick="this.parentElement.classList.toggle('open')">Posso aggiornarlo da solo dopo la consegna?</button>
+                <div class="faq-answer"><div class="faq-answer-inner">Sì. Se il sito è su WordPress, ti mostro come modificare testi, foto e aggiungere articoli al blog in totale autonomia. Non serve alcuna competenza tecnica.</div></div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question" onclick="this.parentElement.classList.toggle('open')">Quanto tempo ci vuole per avere il sito pronto?</button>
+                <div class="faq-answer"><div class="faq-answer-inner">Dipende dalla complessità, ma un sito vetrina è normalmente pronto in 2-3 settimane dalla prima chiacchierata. Ti mostro una bozza prima di procedere, così non ci sono sorprese.</div></div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question" onclick="this.parentElement.classList.toggle('open')">E se dopo ho bisogno di modifiche?</button>
+                <div class="faq-answer"><div class="faq-answer-inner">Nessun problema. Possiamo concordare singoli interventi di volta in volta, senza vincoli o abbonamenti. Paghi solo per quello che ti serve, quando ti serve.</div></div>
+            </div>
+        </div>
+    </div>
+
     <!-- STACK -->
     <div class="section reveal">
         <p class="section-label">// strumenti che utilizzo</p>
