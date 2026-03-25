@@ -1,6 +1,6 @@
 ---
 title: "Quanto costa davvero un sito web? Guida onesta per chi parte da zero"
-date: 2026-03-25T10:00:00+01:00
+date: 2026-03-24T10:00:00+01:00
 description: "300€? 3.000€? 10.000€? I prezzi dei siti web sono un mistero per chi non è del mestiere. Ecco una guida trasparente alle voci di costo reali, senza giri di parole."
 image: "/images/blog_scelta_sito.png"
 categories: ["Business Digitale"]
