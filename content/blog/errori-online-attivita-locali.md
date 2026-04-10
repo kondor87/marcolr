@@ -8,9 +8,7 @@ tags: ["errori sito web", "attività locale online", "visibilità Google", "mark
 draft: false
 ---
 
-Lavoro ogni giorno con professionisti e piccole attività dei Castelli Romani. E c'è una cosa che noto quasi sempre: non è che "il digitale non funziona". È che spesso si fanno **errori evitabili** che costano clienti reali, senza nemmeno rendersene conto.
-
-Ecco i 5 più frequenti — e come risolverli senza spendere un centesimo (o quasi).
+I 5 errori più frequenti — e come risolverli senza spendere un centesimo (o quasi).
 
 ## 1. La Scheda Google incompleta (o peggio: non reclamata)
 
