@@ -10,12 +10,31 @@
 
     <div class="fade-in" style="margin-bottom:2.5rem;">
         <h1 class="name" style="margin-bottom:0.5rem;">Blog</h1>
-        <p class="tagline">Consigli pratici su siti web, SEO e presenza online per professionisti.</p>
+        <p class="tagline">Consigli pratici su siti web, SEO, AI e automazione per professionisti e attività locali.</p>
     </div>
 
-    <div class="blog-grid">
+    <!-- FILTRI CATEGORIA -->
+    {{ $allCats := slice }}
+    {{ range .Pages }}
+        {{ with .Params.categories }}
+            {{ range . }}
+                {{ $allCats = $allCats | append . }}
+            {{ end }}
+        {{ end }}
+    {{ end }}
+    {{ $uniqueCats := $allCats | uniq }}
+    {{ if gt (len $uniqueCats) 1 }}
+    <div class="blog-filters fade-in" style="margin-bottom:1.5rem;">
+        <button class="blog-filter-pill active" data-category="tutti" onclick="filterBlog('tutti', this)">Tutti</button>
+        {{ range $uniqueCats }}
+        <button class="blog-filter-pill" data-category="{{ . }}" onclick="filterBlog('{{ . }}', this)">{{ . }}</button>
+        {{ end }}
+    </div>
+    {{ end }}
+
+    <div class="blog-grid" id="blogGrid">
         {{ range .Pages }}
-        <a class="blog-card reveal" href="{{ .Permalink }}">
+        <a class="blog-card reveal" href="{{ .Permalink }}" data-category="{{ if .Params.categories }}{{ index .Params.categories 0 }}{{ end }}">
             {{ with .Params.image }}
             <img class="blog-card-image" src="{{ . }}" alt="{{ $.Title }}" />
             {{ end }}
@@ -58,4 +77,29 @@
     </div>
 
 </div>
+
+<script>
+function filterBlog(category, btn) {
+    var cards = document.querySelectorAll('#blogGrid .blog-card');
+    var pills = document.querySelectorAll('.blog-filter-pill');
+    
+    pills.forEach(function(p) { p.classList.remove('active'); });
+    btn.classList.add('active');
+    
+    cards.forEach(function(card) {
+        if (category === 'tutti' || card.getAttribute('data-category') === category) {
+            card.style.display = '';
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(12px)';
+            setTimeout(function() {
+                card.style.transition = 'opacity 0.3s ease, transform 0.3s ease';
+                card.style.opacity = '1';
+                card.style.transform = 'translateY(0)';
+            }, 50);
+        } else {
+            card.style.display = 'none';
+        }
+    });
+}
+</script>
 {{ end }}

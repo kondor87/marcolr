@@ -796,6 +796,37 @@ body::before {
 }
 
 /* BLOG */
+/* Blog Filter Pills */
+.blog-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.blog-filter-pill {
+  font-size: 12px;
+  font-family: 'Space Mono', monospace;
+  padding: 5px 14px;
+  border-radius: 20px;
+  background: var(--bg-secondary);
+  border: 0.5px solid var(--border);
+  color: var(--text-secondary);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.blog-filter-pill:hover {
+  border-color: var(--green-border);
+  color: var(--green);
+}
+
+.blog-filter-pill.active {
+  background: var(--green-light);
+  border-color: var(--green-border);
+  color: var(--green-dark);
+  font-weight: 500;
+}
+
 .blog-grid {
   display: grid;
   grid-template-columns: 1fr;
