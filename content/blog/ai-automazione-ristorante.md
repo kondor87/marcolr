@@ -2,7 +2,7 @@
 title: "Come un ristorante può usare l'AI per risparmiare 10 ore a settimana"
 date: 2026-04-14T10:00:00+02:00
 description: "Chatbot intelligenti, risposte automatiche alle recensioni, contenuti social generati dall'AI: ecco cosa può fare davvero l'intelligenza artificiale per un ristorante locale (e cosa invece è semplice automazione)."
-image: "/images/blog_website_local_pro.png"
+image: "/images/blog_ai_ristorante.png"
 categories: ["AI & Automazione"]
 tags: ["intelligenza artificiale ristorante", "chatbot ristorante", "automazione ristorazione", "AI per attività locali"]
 draft: false
@@ -13,6 +13,8 @@ draft: false
 Questa è la reazione più comune quando parlo di AI con i ristoratori della zona. E li capisco: quando pensi all'intelligenza artificiale, ti vengono in mente robot, Silicon Valley, cose da film. Ma la realtà è molto più semplice — e molto più vicina a te di quanto pensi.
 
 ## Prima di tutto: AI e automazione non sono la stessa cosa
+
+![AI vs Automazione — la differenza spiegata in modo semplice](/images/ai-vs-automazione.png)
 
 Facciamo chiarezza, perché c'è molta confusione:
 
