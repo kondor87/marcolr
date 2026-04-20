@@ -80,6 +80,3 @@ Se hai un'attività locale e ti sei riconosciuto in uno (o più) di questi error
 
 [Scrivimi, senza impegno](/#contacts).
 
-### Leggi anche:
-- [La Scheda Google Business e un Sito Vetrina: l'accoppiata perfetta](/blog/google-business-sito-vetrina/)
-- [Quanto costa davvero un sito web?](/blog/quanto-costa-sito-web/)

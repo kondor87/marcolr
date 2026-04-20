@@ -42,6 +42,3 @@ Io dico sempre: tu sei un professionista e il tuo lavoro è fatturare nel tuo se
 
 Se hai bisogno di qualcuno che di tanto in tanto entri, faccia i backup di sicurezza, aggiorni i sistemi e si assicuri che il tuo motore giri fluido, [scrivimi pure](/#contacts). Lo facciamo come intervento singolo, quando serve, senza vincoli.
 
-### Leggi anche:
-- [Perché dovresti avere un Blog (e 4 trucchi SEO)](/blog/blog-e-trucchi-seo-semplici/)
-- [Sito Monopagina o Completo? Come scegliere](/blog/sito-monopagina-o-sito-completo/)

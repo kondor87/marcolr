@@ -1,0 +1,56 @@
+{{ define "main" }}
+<div class="container">
+
+    <nav class="site-top-nav fade-in">
+        <a class="nav-item" href="/">Home</a>
+        <a class="nav-item" href="/#servizi">Cosa faccio</a>
+        <a class="nav-item active" href="/blog/">Blog</a>
+        <a class="nav-item" href="/#contacts">Contatti</a>
+    </nav>
+
+    <div class="fade-in" style="margin-bottom:2.5rem;">
+        <p class="section-label">// tutti gli articoli</p>
+        <h1 class="name" style="margin-bottom:0.5rem;">Archivio</h1>
+        <p class="tagline">{{ len (where .Site.RegularPages "Section" "blog") }} articoli pubblicati su siti web, SEO, AI e automazione per attività locali.</p>
+    </div>
+
+    <!-- Archivio per anno -->
+    {{ $posts := where .Site.RegularPages "Section" "blog" }}
+    {{ $byYear := $posts.GroupByDate "2006" }}
+
+    {{ range $byYear }}
+    <div class="archive-year reveal" style="margin-bottom:2.5rem;">
+        <p class="section-label" style="font-size:13px;margin-bottom:1rem;">// {{ .Key }}</p>
+        <div class="archive-list">
+            {{ range .Pages }}
+            <a class="archive-item" href="{{ .Permalink }}">
+                <span class="archive-date">{{ .Date.Format "02 Gen" }}</span>
+                <span class="archive-cat">
+                    {{ if .Params.categories }}{{ index .Params.categories 0 }}{{ end }}
+                </span>
+                <span class="archive-title">{{ .Title }}</span>
+                <span class="archive-read">{{ .ReadingTime }} min</span>
+            </a>
+            {{ end }}
+        </div>
+    </div>
+    {{ end }}
+
+    <div class="footer" style="margin-top:3rem;">
+        <div class="footer-legal">
+            Le collaborazioni descritte su questo sito vengono svolte in modo occasionale e non abituale,
+            ai sensi dell'art. 2222 del Codice Civile. Non viene esercitata attività professionale continuativa.
+            Ogni collaborazione è concordata singolarmente e regolata tramite ricevuta per prestazione occasionale.
+        </div>
+        <div class="footer-links" style="text-align:center;margin:1rem 0;font-size:12px;">
+            <a href="https://www.iubenda.com/privacy-policy/88789889" class="iubenda-white iubenda-noiframe iubenda-embed" title="Privacy Policy" style="color:var(--green);text-decoration:none;">Privacy Policy</a>
+            <span style="color:var(--text-muted);margin:0 0.5rem;">·</span>
+            <a href="https://www.iubenda.com/privacy-policy/88789889/cookie-policy" class="iubenda-white iubenda-noiframe iubenda-embed" title="Cookie Policy" style="color:var(--green);text-decoration:none;">Cookie Policy</a>
+        </div>
+        <div class="footer-bottom">
+            <p class="footer-note">© 2026 Marco La Rocca</p>
+        </div>
+    </div>
+
+</div>
+{{ end }}

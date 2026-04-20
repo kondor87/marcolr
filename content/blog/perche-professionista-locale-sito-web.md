@@ -51,6 +51,3 @@ Se hai uno studio ai Castelli Romani e pensi sia arrivato il momento di fare que
 
 [Scrivimi per raccontarmi la tua situazione](/#contacts). Ti dico onestamente se e come posso aiutarti.
 
-### Leggi anche:
-- [Quanto costa davvero un sito web? Guida onesta per chi parte da zero](/blog/quanto-costa-sito-web/)
-- [5 errori online che fanno perdere clienti alle attività locali](/blog/errori-online-attivita-locali/)

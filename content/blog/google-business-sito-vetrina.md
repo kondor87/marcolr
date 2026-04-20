@@ -47,6 +47,3 @@ Quando realizzo un sito per un professionista, il collegamento e l'ottimizzazion
 
 [Ti va di parlarne? Scrivimi senza impegno](/#contacts).
 
-### Leggi anche:
-- [Perché un professionista locale ha bisogno di un sito web](/blog/perche-professionista-locale-sito-web/)
-- [5 errori online che fanno perdere clienti alle attività locali](/blog/errori-online-attivita-locali/)

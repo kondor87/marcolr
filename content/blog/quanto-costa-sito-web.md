@@ -84,6 +84,3 @@ Se hai un'attività locale e vuoi capire qual è la soluzione giusta per te, scr
 
 [Scrivimi, senza impegno](/#contacts).
 
-### Leggi anche:
-- [Sito Monopagina, 5 Pagine o Prenotazioni Online? Come scegliere](/blog/sito-monopagina-o-sito-completo/)
-- [Perché un professionista locale ha bisogno di un sito web](/blog/perche-professionista-locale-sito-web/)
