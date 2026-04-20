@@ -3,7 +3,7 @@ title: "Nutrizionista: dove l'AI fa davvero la differenza (e dove basta una buon
 date: 2026-05-05T10:00:00+02:00
 description: "Form pre-visita e promemoria sono automazione. Il diario alimentare fotografico con riconoscimento AI è un'altra cosa. Ecco cosa serve davvero a chi gestisce uno studio di nutrizione."
 image: "/images/blog_ai_nutrizionista.png"
-categories: ["AI & Automazione"]
+categories: ["AI e Automazione"]
 tags: ["intelligenza artificiale nutrizionista", "automazione studio nutrizione", "gestione pazienti AI", "follow-up automatico"]
 draft: false
 ---

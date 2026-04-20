@@ -3,7 +3,7 @@ title: "AI e automazione per piccole attività: la guida onesta (senza fuffa)"
 date: 2026-05-12T10:00:00+02:00
 description: "Cos'è davvero l'intelligenza artificiale, cos'è automazione (e perché tutti le confondono), cosa può fare concretamente per la tua attività locale, e quando conviene investirci."
 image: "/images/blog_ai_guida.png"
-categories: ["AI & Automazione"]
+categories: ["AI e Automazione"]
 tags: ["intelligenza artificiale attività locali", "automazione piccole imprese", "AI per professionisti", "guida AI business"]
 draft: false
 ---

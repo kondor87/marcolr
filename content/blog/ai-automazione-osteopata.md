@@ -3,7 +3,7 @@ title: "Osteopata: perché un chatbot vale più di una segretaria part-time (e c
 date: 2026-04-28T10:00:00+02:00
 description: "Booking online e promemoria sono automazione, non AI. Il chatbot che risponde ai pazienti in linguaggio naturale è AI. Facciamo chiarezza su cosa serve davvero per gestire uno studio di osteopatia."
 image: "/images/blog_ai_osteopata.png"
-categories: ["AI & Automazione"]
+categories: ["AI e Automazione"]
 tags: ["intelligenza artificiale osteopata", "automazione studio osteopatia", "chatbot prenotazioni", "gestione pazienti AI"]
 draft: false
 ---
