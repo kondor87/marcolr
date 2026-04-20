@@ -41,7 +41,8 @@
             <div class="blog-card-body">
                 <p class="blog-card-date">
                     {{ if .Params.categories }}
-                    <span style="color:var(--green);font-weight:700;">{{ index .Params.categories 0 }}</span> &bull; 
+                    {{ $cat := index .Params.categories 0 }}
+                    <a href="/categories/{{ $cat | urlize }}/" style="color:var(--green);font-weight:700;text-decoration:none;">{{ $cat }}</a> &bull; 
                     {{ end }}
                     {{ .Date.Format "02/01/2006" }}
                 </p>

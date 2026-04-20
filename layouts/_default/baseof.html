@@ -8,6 +8,7 @@
     <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} — Marco La Rocca{{ end }}</title>
     <meta name="description"
         content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.description }}{{ end }}" />
+    <meta name="keywords" content="{{ if .Keywords }}{{ delimit .Keywords ", " }}{{ else if .Params.tags }}{{ delimit .Params.tags ", " }}{{ else }}siti web Frascati, web designer Castelli Romani, consulenza SEO locale, automazione AI professionisti{{ end }}" />
 
     <!-- Canonical -->
     <link rel="canonical" href="{{ .Permalink }}" />

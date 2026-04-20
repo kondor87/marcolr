@@ -19,15 +19,24 @@
         <div class="blog-header">
             <p class="blog-header-date">
                 {{ if .Params.categories }}
-                <span style="color:var(--green);font-weight:700;text-transform:uppercase;">{{ index .Params.categories 0 }}</span> &bull; 
+                {{ $cat := index .Params.categories 0 }}
+                <a href="/categories/{{ $cat | urlize }}/" style="color:var(--green);font-weight:700;text-transform:uppercase;text-decoration:none;">{{ $cat }}</a> &bull; 
                 {{ end }}
-                {{ .Date.Format "02/01/2006" }}
+                {{ .Date.Format "02/01/2006" }} &bull; 
+                <span style="color:var(--text-secondary);">{{ .ReadingTime }} min lettura</span>
             </p>
             <h1 class="blog-header-title">{{ .Title }}</h1>
             {{ with .Params.image }}
             <img class="blog-cover" src="{{ . }}" alt="{{ $.Title }}" />
             {{ end }}
         </div>
+
+        {{ if .TableOfContents }}
+        <nav class="blog-toc" aria-label="Indice dell'articolo">
+            <p class="blog-toc-title">📑 In questo articolo</p>
+            {{ .TableOfContents }}
+        </nav>
+        {{ end }}
 
         <div class="blog-content">
             {{ .Content }}

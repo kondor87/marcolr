@@ -1188,6 +1188,49 @@ body::before {
   margin-bottom: 0.5rem;
 }
 
+/* BLOG TOC */
+.blog-toc {
+  background: var(--bg-secondary);
+  border: 0.5px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 1.25rem;
+  margin-bottom: 2rem;
+  font-size: 14px;
+}
+
+.blog-toc-title {
+  font-family: 'Space Mono', monospace;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+  color: var(--text);
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.blog-toc ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.blog-toc ul ul {
+  padding-left: 1.25rem;
+  margin-top: 0.25rem;
+}
+
+.blog-toc a {
+  text-decoration: none;
+  color: var(--text-secondary);
+  transition: color 0.2s;
+  display: block;
+  padding: 0.15rem 0;
+}
+
+.blog-toc a:hover {
+  color: var(--green);
+}
+
 /* STICKY NAV */
 @media (max-width: 768px) {
   .site-top-nav {

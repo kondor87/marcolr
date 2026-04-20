@@ -196,7 +196,7 @@
                 <img class="blog-card-image" src="{{ . }}" alt="{{ $.Title }}" />
                 {{ end }}
                 <div class="blog-card-body">
-                    <p class="blog-card-date">{{ .Date.Format "02/01/2006" }}</p>
+                    <p class="blog-card-date">{{ .Date.Format "02/01/2006" }} &bull; <span>{{ .ReadingTime }} min lettura</span></p>
                     <p class="blog-card-title">{{ .Title }}</p>
                     <p class="blog-card-excerpt">{{ .Summary | plainify | htmlUnescape | truncate 150 }}</p>
                 </div>
