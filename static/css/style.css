@@ -982,15 +982,17 @@ body::before {
 }
 
 /* TABELLE BLOG */
+.blog-content .table-wrapper {
+  overflow-x: auto;
+  margin: 1.5rem 0;
+  border: 0.5px solid var(--border);
+  border-radius: var(--radius-md);
+}
+
 .blog-content table {
   width: 100%;
   border-collapse: collapse;
-  margin: 1.5rem 0;
   font-size: 13px;
-  overflow-x: auto;
-  display: block;
-  border: 0.5px solid var(--border);
-  border-radius: var(--radius-md);
 }
 
 .blog-content thead {
@@ -1024,7 +1026,6 @@ body::before {
 .blog-content td strong {
   color: var(--text);
 }
-
 
 
 .blog-back {
