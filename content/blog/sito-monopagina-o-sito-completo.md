@@ -54,3 +54,7 @@ Se vuoi costruire **autorevolezza e posizionamento** nel tuo comune e attirare t
 Se vuoi **ottimizzare il tuo tempo e smettere di rincorrere le chat WhatsApp**, l'investimento in un **sistema di prenotazioni integrato sul sito** si ripaga letteralmente nei primi mesi.
 
 [Non sai quale fa per te? Scrivimi, senza impegno](/#contacts). Ti faccio qualche domanda e ti dico onestamente quale soluzione ha più senso per la tua situazione.
+
+### Leggi anche:
+- [Quanto costa davvero un sito web?](/blog/quanto-costa-sito-web/)
+- [La Scheda Google Business e un Sito Vetrina: l'accoppiata perfetta](/blog/google-business-sito-vetrina/)

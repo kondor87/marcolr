@@ -16,7 +16,7 @@
                 <span class="dot-pulse"></span>
                 Frascati · Castelli Romani · Roma
             </div>
-            <h1 class="name">Marco<br><span class="accent">La Rocca</span></h1>
+            <h1 class="name">Marco<br><span class="accent">La Rocca</span><span class="sr-only"> — Siti Web per Professionisti a Frascati e Castelli Romani</span></h1>
             <p class="tagline">Aiuto professionisti locali a essere visibili online.</p>
             <p class="tagline-sub">Su richiesta, realizzo siti web per professionisti e piccole attività che hanno bisogno di una presenza online essenziale e curata.</p>
             <div class="cta-row">
@@ -190,7 +190,7 @@
     <div class="section reveal">
         <p class="section-label">// dal blog</p>
         <div class="blog-grid">
-            {{ range first 2 $posts }}
+            {{ range first 6 $posts }}
             <a class="blog-card" href="{{ .Permalink }}">
                 {{ with .Params.image }}
                 <img class="blog-card-image" src="{{ . }}" alt="{{ $.Title }}" />

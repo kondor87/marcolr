@@ -74,10 +74,12 @@ Tutto il resto è rumore.
 | Zero recensioni | Meno fiducia dei clienti | Chiedi + rispondi sempre |
 | Troppi canali mal gestiti | Confusione e abbandono | Fai bene 2 cose, non 6 |
 
-La buona notizia? **Nessuno di questi errori richiede un budget enorme per essere risolto.** Servono un po' di tempo, un pizzico di strategia e — se vuoi — qualcuno che ti aiuti a partire col piede giusto.
-
 ---
 
 Se hai un'attività locale e ti sei riconosciuto in uno (o più) di questi errori, scrivimi. Ti dico cosa sistemare per primo — e cosa può aspettare.
 
 [Scrivimi, senza impegno](/#contacts).
+
+### Leggi anche:
+- [La Scheda Google Business e un Sito Vetrina: l'accoppiata perfetta](/blog/google-business-sito-vetrina/)
+- [Quanto costa davvero un sito web?](/blog/quanto-costa-sito-web/)

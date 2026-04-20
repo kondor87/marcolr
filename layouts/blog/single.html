@@ -53,6 +53,31 @@
         </div>
     </div>
 
+    <!-- Articoli correlati -->
+    {{ $related := where .Site.RegularPages "Section" "blog" | shuffle | first 3 }}
+    {{ $current := .Permalink }}
+    {{ $filtered := slice }}
+    {{ range $related }}{{ if ne .Permalink $current }}{{ $filtered = $filtered | append . }}{{ end }}{{ end }}
+    {{ if $filtered }}
+    <div class="section reveal" style="margin-top:2rem;">
+        <p class="section-label">// potrebbe interessarti anche</p>
+        <div class="blog-grid">
+            {{ range first 3 $filtered }}
+            <a class="blog-card" href="{{ .Permalink }}">
+                {{ with .Params.image }}
+                <img class="blog-card-image" src="{{ . }}" alt="{{ $.Title }}" />
+                {{ end }}
+                <div class="blog-card-body">
+                    <p class="blog-card-date">{{ .Date.Format "02/01/2006" }}</p>
+                    <p class="blog-card-title">{{ .Title }}</p>
+                    <p class="blog-card-excerpt">{{ .Summary | plainify | htmlUnescape | truncate 120 }}</p>
+                </div>
+            </a>
+            {{ end }}
+        </div>
+    </div>
+    {{ end }}
+
     <div class="footer" style="margin-top:3rem;">
         <div class="footer-legal">
             Le collaborazioni descritte su questo sito vengono svolte in modo occasionale e non abituale,

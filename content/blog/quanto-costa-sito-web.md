@@ -83,3 +83,7 @@ Non è un costo enorme. È un investimento che, se fatto bene, si ripaga da solo
 Se hai un'attività locale e vuoi capire qual è la soluzione giusta per te, scrivimi. Ti dico onestamente cosa ti serve — e soprattutto cosa *non* ti serve.
 
 [Scrivimi, senza impegno](/#contacts).
+
+### Leggi anche:
+- [Sito Monopagina, 5 Pagine o Prenotazioni Online? Come scegliere](/blog/sito-monopagina-o-sito-completo/)
+- [Perché un professionista locale ha bisogno di un sito web](/blog/perche-professionista-locale-sito-web/)

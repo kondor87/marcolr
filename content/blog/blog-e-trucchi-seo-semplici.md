@@ -46,3 +46,7 @@ Alla fine di ogni post inserisci sempre un invito all'azione chiaro e gentile. "
 
 ### Non sai da dove iniziare?
 Avere la piattaforma tecnica giusta e ottimizzata è il primo passo, ma poi dovrai "alimentarla" coi tuoi contenuti. Se hai bisogno di una mano per mettere in piedi il tuo sito con il blog già pronto, [scrivimi senza impegno](/#contacts). Ti spiego anche come aggiornarlo in totale autonomia.
+
+### Leggi anche:
+- [Perché un professionista locale ha bisogno di un sito web](/blog/perche-professionista-locale-sito-web/)
+- [Il "Tagliando" del tuo sito web: perché aggiornare WordPress è fondamentale](/blog/perche-aggiornare-plugin-wordpress/)

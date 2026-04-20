@@ -57,11 +57,23 @@
     "headline": "{{ .Title }}",
     "description": "{{ .Description }}",
     "datePublished": "{{ .Date.Format "2006-01-02" }}",
+    "dateModified": "{{ .Lastmod.Format "2006-01-02" }}",
     "author": {
       "@type": "Person",
       "name": "Marco La Rocca"
     }{{ with .Params.image }},
     "image": "{{ . | absURL }}"{{ end }}
+  }
+  </script>
+    <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "{{ .Site.BaseURL }}" },
+      { "@type": "ListItem", "position": 2, "name": "Blog", "item": "{{ .Site.BaseURL }}blog/" },
+      { "@type": "ListItem", "position": 3, "name": "{{ .Title }}" }
+    ]
   }
   </script>
     {{ end }}
