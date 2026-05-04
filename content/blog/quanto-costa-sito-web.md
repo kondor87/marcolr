@@ -1,7 +1,7 @@
 ---
-title: "Quanto costa davvero un sito web? Guida onesta per chi parte da zero"
+title: "Quanto Costa un Sito Web? Guida ai Prezzi Reali"
 date: 2026-03-24T10:00:00+01:00
-description: "300€? 3.000€? 10.000€? I prezzi dei siti web sono un mistero per chi non è del mestiere. Ecco una guida trasparente alle voci di costo reali, senza giri di parole."
+description: "I prezzi dei siti web sono un mistero? Ecco una guida trasparente alle voci di costo reali e ricorrenti, per capire quanto spendere senza sorprese."
 image: "/images/blog_scelta_sito.png"
 categories: ["Business Digitale"]
 tags: ["costo sito web", "preventivo sito", "sito vetrina prezzo", "investimento digitale"]
@@ -10,7 +10,7 @@ draft: false
 
 "Ma quanto costa fare un sito?"
 
-È la prima domanda che mi chiede chiunque — ed è anche la più difficile a cui rispondere, perché la risposta vera è: **dipende**. Ma "dipende" non ti aiuta. Quindi proviamo a fare chiarezza una volta per tutte.
+È la domanda più frequente e difficile a cui rispondere. Spesso ti senti dire "dipende", ma non ti aiuta a capire. Proviamo a fare chiarezza una volta per tutte, con numeri veri.
 
 ## Le 3 voci di costo che nessuno ti spiega
 

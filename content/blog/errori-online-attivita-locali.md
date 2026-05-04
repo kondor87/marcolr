@@ -1,18 +1,18 @@
 ---
-title: "5 errori online che fanno perdere clienti alle attività locali (e come evitarli)"
+title: "5 Errori Online che Fanno Perdere Clienti"
 date: 2026-04-01T10:00:00+02:00
-description: "Scheda Google incompleta, sito inesistente, social abbandonati: ecco i 5 errori digitali più comuni tra professionisti e piccole attività — e cosa fare per risolverli subito."
+description: "Scheda Google incompleta, nessun sito web e social abbandonati: ecco i 5 errori digitali più comuni tra i professionisti locali e come risolverli."
 image: "/images/blog_website_local_pro.png"
 categories: ["Business Digitale"]
 tags: ["errori sito web", "attività locale online", "visibilità Google", "marketing locale"]
 draft: false
 ---
 
-I 5 errori più frequenti — e come risolverli senza spendere un centesimo (o quasi).
+I 5 errori più frequenti sul web, e come risolverli senza spendere un centesimo.
 
-## 1. La Scheda Google incompleta (o peggio: non reclamata)
+## 1. La Scheda Google incompleta (o non reclamata)
 
-Quando qualcuno cerca *"fisioterapista Frascati"* o *"pizzeria Grottaferrata"*, la prima cosa che vede sono le **Schede Google Maps**. Se la tua non c'è, o è mezza vuota, stai regalando clienti ai tuoi concorrenti.
+Quando qualcuno cerca *"fisioterapista Frascati"* o *"pizzeria Grottaferrata"*, le **Schede Google Maps** sono la prima cosa che vede. Se la tua manca o è vuota, stai regalando clienti alla concorrenza.
 
 **Errori tipici:**
 *   Nessuna foto (o solo una foto sfocata del 2018).
