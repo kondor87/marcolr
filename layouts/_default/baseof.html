@@ -20,8 +20,11 @@
         content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.description }}{{ end }}" />
     <meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}" />
     <meta property="og:url" content="{{ .Permalink }}" />
-    {{ with .Params.image }}
-    <meta property="og:image" content="{{ . | absURL }}" />{{ end }}
+    {{ if .Params.image }}
+    <meta property="og:image" content="{{ .Params.image | absURL }}" />
+    {{ else }}
+    <meta property="og:image" content="{{ "/images/marco-avatar.png" | absURL }}" />
+    {{ end }}
     <meta property="og:locale" content="it_IT" />
     <meta property="og:site_name" content="Marco La Rocca" />
 
@@ -30,6 +33,11 @@
     <meta name="twitter:title" content="{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }}{{ end }}" />
     <meta name="twitter:description"
         content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.description }}{{ end }}" />
+    {{ if .Params.image }}
+    <meta name="twitter:image" content="{{ .Params.image | absURL }}" />
+    {{ else }}
+    <meta name="twitter:image" content="{{ "/images/marco-avatar.png" | absURL }}" />
+    {{ end }}
 
     <!-- Structured Data (Schema.org) -->
     {{ if .IsHome }}
@@ -40,6 +48,11 @@
     "name": "Marco La Rocca",
     "description": "{{ .Site.Params.description }}",
     "url": "{{ .Site.BaseURL }}",
+    "image": "{{ "/images/marco-avatar.png" | absURL }}",
+    "sameAs": [
+      "https://www.linkedin.com/in/marco-la-rocca",
+      "https://github.com/kondor87"
+    ],
     "address": {
       "@type": "PostalAddress",
       "addressLocality": "Frascati",

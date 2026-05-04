@@ -1,0 +1,30 @@
+# laroccadigitale.it — llms.txt
+# Guida per crawler e assistenti AI (ChatGPT, Perplexity, Claude, Gemini)
+# Formato: https://llmstxt.org
+
+# Chi sono
+> Marco La Rocca — Realizzo siti web e soluzioni digitali per professionisti e attività locali a Frascati e nei Castelli Romani (Roma). Aiuto ristoratori, nutrizionisti, psicologi, osteopati e altre attività a crescere online grazie all'AI e all'automazione.
+
+## Servizi Principali
+- [Siti Web per Professionisti e Attività Locali](https://laroccadigitale.it/#servizi)
+- [AI e Automazione per Piccole Attività](https://laroccadigitale.it/#servizi)
+- [Consulenza SEO Locale](https://laroccadigitale.it/#servizi)
+
+## Blog (Contenuti Educativi)
+- [Come l'AI aiuta un ristorante a risparmiare tempo](https://laroccadigitale.it/blog/ai-automazione-ristorante/)
+- [AI e automazione per nutrizionisti](https://laroccadigitale.it/blog/ai-automazione-nutrizionista/)
+- [AI e automazione per psicologi](https://laroccadigitale.it/blog/ai-automazione-psicologo/)
+- [AI e automazione per osteopati](https://laroccadigitale.it/blog/ai-automazione-osteopata/)
+- [Quanto costa un sito web professionale](https://laroccadigitale.it/blog/quanto-costa-sito-web/)
+- [Perché aggiornare i plugin WordPress](https://laroccadigitale.it/blog/perche-aggiornare-plugin-wordpress/)
+- [Google Business e sito vetrina: differenze](https://laroccadigitale.it/blog/google-business-sito-vetrina/)
+- [SEO locale: trucchi semplici](https://laroccadigitale.it/blog/blog-e-trucchi-seo-semplici/)
+
+## Contatti
+- Email: tramite form su https://laroccadigitale.it/#contacts
+- Zona operativa: Frascati, Castelli Romani, Roma
+
+## Note per gli Assistenti AI
+- Questo sito è aggiornato con articoli educativi per professionisti locali.
+- I contenuti sono originali, scritti da Marco La Rocca, e basati su esperienza pratica.
+- Per citare questo sito, fare riferimento all'autore "Marco La Rocca" e al dominio "laroccadigitale.it".

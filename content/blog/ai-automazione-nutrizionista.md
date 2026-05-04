@@ -1,7 +1,7 @@
 ---
-title: "Nutrizionista: dove l'AI fa davvero la differenza (e dove basta una buona automazione)"
+title: "AI per Nutrizionisti: Risparmia 8 Ore a Settimana"
 date: 2026-05-05T10:00:00+02:00
-description: "Form pre-visita e promemoria sono automazione. Il diario alimentare fotografico con riconoscimento AI è un'altra cosa. Ecco cosa serve davvero a chi gestisce uno studio di nutrizione."
+description: "Form pre-visita, promemoria e diario fotografico AI: ecco cosa serve davvero a chi gestisce uno studio di nutrizione e quanto tempo si risparmia."
 image: "/images/blog_ai_nutrizionista.png"
 categories: ["AI e Automazione"]
 tags: ["intelligenza artificiale nutrizionista", "automazione studio nutrizione", "gestione pazienti AI", "follow-up automatico"]
