@@ -1,18 +1,18 @@
 ---
-title: "AI per psicologi e terapeuti: cosa è davvero intelligenza artificiale e cosa è (solo) automazione"
+title: "AI per Psicologi: Come Automatizzare lo Studio"
 date: 2026-04-21T10:00:00+02:00
-description: "Calendly non è AI. Un chatbot che fa screening dei pazienti sì. Facciamo chiarezza su cosa può fare davvero l'intelligenza artificiale per uno studio di psicologia — e cosa invece è semplice automazione (utile comunque)."
+description: "Calendly è automazione. Un chatbot che fa screening dei pazienti è AI. Scopri come l'intelligenza artificiale può farti risparmiare ore di lavoro."
 image: "/images/blog_ai_psicologo.png"
 categories: ["AI e Automazione"]
 tags: ["intelligenza artificiale psicologo", "automazione studio psicologia", "chatbot terapeuta", "gestione appuntamenti AI"]
 draft: false
 ---
 
-Se sei uno psicologo o un terapeuta, probabilmente passi una buona parte della tua giornata a fare cose che **non c'entrano nulla con la tua professione**: rispondere a messaggi WhatsApp, gestire l'agenda, inviare promemoria, rincorrere pagamenti.
+Se sei uno psicologo o un terapeuta, passi troppa parte della giornata a fare cose che **non c'entrano nulla con la tua professione**. Rispondi ai messaggi, gestisci l'agenda e invii promemoria.
 
-Tutto questo tempo che perdi in "amministrazione" è tempo che potresti dedicare ai tuoi pazienti — o a te stesso.
+Questo tempo "amministrativo" potresti dedicarlo ai tuoi pazienti o a te stesso.
 
-Ma prima di parlare di soluzioni, facciamo una cosa che quasi nessuno fa: **essere onesti su cosa è AI e cosa no**.
+Prima di parlare di soluzioni, facciamo una cosa che quasi nessuno fa: **siamo onesti su cosa è AI e cosa no**.
 
 ## La differenza che nessuno ti spiega
 
