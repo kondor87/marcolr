@@ -104,7 +104,7 @@ body::before {
 }
 
 .container {
-  max-width: 760px;
+  max-width: 860px;
   margin: 0 auto;
   padding: 3rem 1.5rem 5rem;
   position: relative;
@@ -158,6 +158,102 @@ body::before {
   border-color: var(--green-border);
 }
 
+/* HERO RIGHT COLUMN */
+.hero-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* TERMINAL MOCKUP */
+.hero-terminal {
+  background: rgba(0, 0, 0, 0.45);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 0.75rem 1rem;
+  font-family: 'Space Mono', monospace;
+  font-size: 10.5px;
+  width: 188px;
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  line-height: 1.6;
+}
+
+@media (prefers-color-scheme: light) {
+  .hero-terminal {
+    background: rgba(248,250,252,0.85);
+    border-color: rgba(0,0,0,0.10);
+  }
+}
+
+.terminal-dot-row {
+  display: flex;
+  gap: 5px;
+  margin-bottom: 0.6rem;
+}
+
+.t-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+.t-dot.red    { background: #FF5F57; }
+.t-dot.yellow { background: #FEBC2E; }
+.t-dot.green  { background: #28C840; }
+
+.terminal-line {
+  display: flex;
+  gap: 5px;
+  margin-bottom: 2px;
+}
+
+.t-prompt { color: var(--green); }
+.t-cmd    { color: var(--text); }
+.t-flag   { color: var(--indigo, #818CF8); }
+
+.t-output {
+  color: var(--text-secondary);
+  padding-left: 12px;
+  margin-bottom: 0.4rem;
+}
+
+.t-check { color: var(--green); }
+
+.t-cursor::after {
+  content: '|';
+  color: var(--green);
+  animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0; }
+}
+
+/* AI CARD — indigo accent */
+.service-card.ai-card {
+  border-top-color: var(--indigo, #818CF8);
+}
+
+.service-card.ai-card .service-badge {
+  background: var(--indigo-light, rgba(129,140,248,0.12));
+  border-color: rgba(129, 140, 248, 0.30);
+  color: var(--indigo, #818CF8);
+}
+
+.service-card.ai-card .service-icon {
+  background: var(--indigo-light, rgba(129,140,248,0.12));
+}
+
+.service-card.ai-card .service-icon svg {
+  stroke: var(--indigo, #818CF8);
+}
+
+.service-card.ai-card .service-price {
+  color: var(--indigo, #818CF8);
+}
 /* HERO */
 .hero {
   display: grid;
@@ -1152,7 +1248,7 @@ body::before {
     grid-template-columns: 1fr;
   }
 
-  .avatar {
+  .hero-right {
     display: none;
   }
 
