@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/png" href="/favicon.png" />
-    <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} — Marco La Rocca{{ end }}</title>
+    <title>{{ if .IsHome }}Siti Web Frascati e Castelli Romani — Marco La Rocca{{ else }}{{ .Title }} — Marco La Rocca{{ end }}</title>
     <meta name="description"
         content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.description }}{{ end }}" />
     <meta name="keywords" content="{{ if .Keywords }}{{ delimit .Keywords ", " }}{{ else if .Params.tags }}{{ delimit .Params.tags ", " }}{{ else }}siti web Frascati, web designer Castelli Romani, consulenza SEO locale, automazione AI professionisti{{ end }}" />
@@ -15,15 +15,19 @@
 
     <!-- Open Graph -->
     <meta property="og:title"
-        content="{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} — Marco La Rocca{{ end }}" />
+        content="{{ if .IsHome }}Siti Web Frascati e Castelli Romani — Marco La Rocca{{ else }}{{ .Title }} — Marco La Rocca{{ end }}" />
     <meta property="og:description"
         content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.description }}{{ end }}" />
     <meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}" />
     <meta property="og:url" content="{{ .Permalink }}" />
     {{ if .Params.image }}
     <meta property="og:image" content="{{ .Params.image | absURL }}" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
     {{ else }}
     <meta property="og:image" content="{{ "/images/marco-avatar.png" | absURL }}" />
+    <meta property="og:image:width" content="400" />
+    <meta property="og:image:height" content="400" />
     {{ end }}
     <meta property="og:locale" content="it_IT" />
     <meta property="og:site_name" content="Marco La Rocca" />
@@ -44,20 +48,77 @@
     <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Marco La Rocca",
-    "description": "{{ .Site.Params.description }}",
-    "url": "{{ .Site.BaseURL }}",
-    "image": "{{ "/images/marco-avatar.png" | absURL }}",
-    "sameAs": [
-      "https://github.com/kondor87"
-    ],
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Frascati",
-      "addressRegion": "Roma",
-      "addressCountry": "IT"
-    }
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://laroccadigitale.it/#website",
+        "url": "https://laroccadigitale.it/",
+        "name": "Marco La Rocca — Siti Web Frascati",
+        "description": "{{ .Site.Params.description }}",
+        "inLanguage": "it-IT"
+      },
+      {
+        "@type": "ProfessionalService",
+        "@id": "https://laroccadigitale.it/#business",
+        "name": "Marco La Rocca — Siti Web",
+        "url": "https://laroccadigitale.it/",
+        "image": "https://laroccadigitale.it/images/marco-avatar.png",
+        "description": "Realizzo siti web per professionisti e attivita locali a Frascati e nei Castelli Romani. Design curato, SEO locale, prezzi onesti.",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Frascati",
+          "addressLocality": "Frascati",
+          "addressRegion": "RM",
+          "postalCode": "00044",
+          "addressCountry": "IT"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 41.808,
+          "longitude": 12.682
+        },
+        "areaServed": [
+          {"@type": "City", "name": "Frascati"},
+          {"@type": "City", "name": "Grottaferrata"},
+          {"@type": "City", "name": "Marino"},
+          {"@type": "City", "name": "Albano Laziale"},
+          {"@type": "City", "name": "Velletri"},
+          {"@type": "City", "name": "Genzano di Roma"},
+          {"@type": "City", "name": "Rocca di Papa"},
+          {"@type": "City", "name": "Castel Gandolfo"}
+        ],
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Servizi Web",
+          "itemListElement": [
+            {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Realizzazione Siti Web"}},
+            {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "SEO Locale"}},
+            {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Automazione AI"}}
+          ]
+        },
+        "sameAs": [
+          "https://github.com/kondor87"
+        ]
+      },
+      {
+        "@type": "Person",
+        "@id": "https://laroccadigitale.it/#person",
+        "name": "Marco La Rocca",
+        "url": "https://laroccadigitale.it/",
+        "image": "https://laroccadigitale.it/images/marco-avatar.png",
+        "jobTitle": "Web Designer e Consulente AI",
+        "worksFor": {"@id": "https://laroccadigitale.it/#business"},
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Frascati",
+          "addressRegion": "RM",
+          "addressCountry": "IT"
+        },
+        "sameAs": [
+          "https://github.com/kondor87"
+        ]
+      }
+    ]
   }
   </script>
     {{ end }}

@@ -20,7 +20,7 @@ Quando qualcuno cerca *"fisioterapista Frascati"* o *"pizzeria Grottaferrata"*, 
 *   Nessuna risposta alle recensioni — né a quelle positive né a quelle negative.
 *   Descrizione mancante o generica.
 
-**Come risolverlo:** Reclama la tua scheda su [Google Business Profile](https://business.google.com/), compila **ogni singolo campo**, carica almeno 5-10 foto recenti e rispondi a tutte le recensioni. Bastano 30 minuti una tantum.
+**Come risolverlo:** Reclama la tua scheda su [Google Business Profile](https://business.google.com/), compila **ogni singolo campo**, carica almeno 5-10 foto recenti e rispondi a tutte le recensioni. Bastano 30 minuti una tantum. Leggi anche: [Google Business e Sito Vetrina: perché funzionano insieme](/blog/google-business-sito-vetrina/).
 
 ## 2. Non avere un sito web (e affidarsi solo ai social)
 
@@ -79,4 +79,10 @@ Tutto il resto è rumore.
 Se hai un'attività locale e ti sei riconosciuto in uno (o più) di questi errori, scrivimi. Ti dico cosa sistemare per primo — e cosa può aspettare.
 
 [Scrivimi, senza impegno](/#contacts).
+
+---
+
+**Articoli correlati:**
+- [Perché un Professionista ha Bisogno di un Sito Web](/blog/perche-professionista-locale-sito-web/)
+- [Google Business e Sito Vetrina: Accoppiata Vincente](/blog/google-business-sito-vetrina/)
 
