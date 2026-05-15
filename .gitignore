@@ -1,3 +1,16 @@
 public/
 resources/
 .hugo_build.lock
+
+# Credenziali e file sensibili
+.agent/credentials/gsc-credentials.json
+.agent/credentials/gsc-token.json
+.agent/credentials/client_secret.json
+
+# File di log
+hugo-server.log
+*.log
+
+# Cache Python
+**/__pycache__/
+*.pyc
