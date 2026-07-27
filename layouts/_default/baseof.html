@@ -4,6 +4,37 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-5TD66VKJ');</script>
+    <!-- End Google Tag Manager -->
+
+    <!-- Google Analytics (GA4) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XH543Y70CJ"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-XH543Y70CJ');
+    </script>
+    <!-- End Google Analytics -->
+
+    <!-- Google Search Console Verification -->
+    <meta name="google-site-verification" content="QNUV9vpkabwgZRjU0Mug2AmKsFapTFcE0yOvKpjWusA" />
+
+    <!-- Microsoft Clarity -->
+    <script type="text/javascript">
+      (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+      })(window,document,"clarity","script","INSERISCI_CLARITY_ID");
+    </script>
+    <!-- End Microsoft Clarity -->
     <link rel="icon" type="image/png" href="/favicon.png" />
     <title>{{ if .IsHome }}Siti Web Frascati e Castelli Romani — Marco La Rocca{{ else }}{{ .Title }} — Marco La Rocca{{ end }}</title>
     <meta name="description"
@@ -162,6 +193,11 @@
 </head>
 
 <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5TD66VKJ"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
     {{ block "main" . }}{{ end }}
 
     <script>
