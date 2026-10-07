@@ -14,3 +14,7 @@ hugo-server.log
 # Cache Python
 **/__pycache__/
 *.pyc
+
+# Screenshot di controllo delle versioni grafiche
+.impeccable/review/
+versioni/*/.impeccable/review/

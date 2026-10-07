@@ -1,0 +1,27 @@
+{{ define "main" }}
+    <div class="fade-in" style="margin-bottom:2rem;">
+        <h1 class="name" style="margin-bottom:0.5rem;">Lavori</h1>
+        <div class="tagline">{{ .Content }}</div>
+    </div>
+
+    {{ range .Pages.ByWeight }}
+    <a class="portfolio-card reveal" href="{{ .RelPermalink }}" style="margin-bottom:1.25rem;">
+        <div class="portfolio-preview" style="padding:0;overflow:hidden;">
+            {{ partial "shared/img.html" (dict "src" .Params.image "alt" (printf "Sito web %s" .Title) "width" 720 "ratio" "16/9" "anchor" "Top" "class" "portfolio-img") }}
+        </div>
+        <div class="portfolio-body">
+            <span class="portfolio-tag">{{ .Params.sector }} · {{ .Params.location }}</span>
+            <h2 class="portfolio-title">{{ .Title }}</h2>
+            <p class="portfolio-desc">{{ .Description }}</p>
+            <span class="portfolio-link">Leggi com'è andata →</span>
+        </div>
+    </a>
+    {{ end }}
+
+    <div class="why-card reveal" style="grid-template-columns:1fr;text-align:center;margin-top:2rem;">
+        <div class="why-text">
+            <strong style="display:block;margin-bottom:0.5rem;">Il prossimo potrebbe essere il tuo.</strong>
+            <a class="btn-primary" href="/#contacts" style="display:inline-flex;margin-top:0.75rem;">Raccontami cosa ti serve</a>
+        </div>
+    </div>
+{{ end }}

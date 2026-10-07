@@ -1,14 +1,18 @@
 baseURL = "https://laroccadigitale.it/"
 languageCode = "it"
+defaultContentLanguage = "it"
+titleCaseStyle = "none"
 title = "Marco La Rocca — Siti Web · Frascati"
 
 [params]
-  description = "Realizzo siti web per professionisti e attività locali a Frascati e nei Castelli Romani. Design curato, SEO locale, prezzi onesti. Scrivimi senza impegno."
+  description = "Realizzo siti web per professionisti e attività locali a Frascati e nei Castelli Romani. Design curato, SEO locale, sito di tua proprietà. Scrivimi senza impegno."
   author = "Marco La Rocca"
+  ogImage = "/images/og-default.png"
+  github = "https://github.com/kondor87"
 
+# Solo categorie: i tag generavano ~50 pagine quasi vuote (thin content).
 [taxonomies]
   category = "categories"
-  tag = "tags"
 
 [markup]
   [markup.goldmark]
@@ -19,19 +23,54 @@ title = "Marco La Rocca — Siti Web · Frascati"
     ordered = false
     startLevel = 2
 
-# SEO
-enableRobotsTXT = true
+# Articoli correlati per argomento (sostituisce la scelta casuale con shuffle)
+[related]
+  includeNewer = true
+  threshold = 20
+  toLower = true
+  [[related.indices]]
+    name = "tags"
+    weight = 100
+  [[related.indices]]
+    name = "categories"
+    weight = 60
+
+# Le immagini in static/images sono anche "assets", così Hugo le può
+# ridimensionare e convertire in WebP (vedi partials/shared/img.html).
+[module]
+  [[module.mounts]]
+    source = "assets"
+    target = "assets"
+  [[module.mounts]]
+    source = "static/images"
+    target = "assets/images"
+  [[module.mounts]]
+    source = "static"
+    target = "static"
+
+[imaging]
+  quality = 80
+  resampleFilter = "Lanczos"
+
+enableRobotsTXT = false
 
 [sitemap]
-  changefreq = "weekly"
-  priority = 0.5
+  changefreq = "monthly"
   filename = "sitemap.xml"
 
-[params.sitemap]
-  priority = 0.5
-  
-[params.sitemap.home]
-  priority = 1.0
+# llms.txt generato automaticamente da tutti gli articoli (layouts/index.llms.txt)
+[outputFormats.llms]
+  mediaType = "text/plain"
+  baseName = "llms"
+  isPlainText = true
+  notAlternative = true
 
 [outputs]
-  home = ["HTML", "RSS"]
+  home = ["HTML", "RSS", "llms"]
+
+# L'indice /categories/ non serve a nessuno: fuori dalla sitemap (ed è noindex).
+[[cascade]]
+  [cascade.sitemap]
+    disable = true
+  [cascade.target]
+    kind = "taxonomy"

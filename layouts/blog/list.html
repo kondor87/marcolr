@@ -1,12 +1,4 @@
 {{ define "main" }}
-<div class="container">
-
-    <nav class="site-top-nav fade-in">
-        <a class="nav-item" href="/">Home</a>
-        <a class="nav-item" href="/#servizi">Cosa faccio</a>
-        <a class="nav-item active" href="/blog/">Blog</a>
-        <a class="nav-item" href="/#contacts">Contatti</a>
-    </nav>
 
     <div class="fade-in" style="margin-bottom:2rem;">
         <h1 class="name" style="margin-bottom:0.5rem;">Blog</h1>
@@ -28,19 +20,17 @@
     {{ $uniqueCats := $allCats | uniq }}
     {{ if gt (len $uniqueCats) 1 }}
     <div class="blog-filters fade-in" style="margin-bottom:1.5rem;">
-        <button class="blog-filter-pill active" data-category="tutti" onclick="filterBlog('tutti', this)">Tutti</button>
+        <button type="button" aria-pressed="true" class="blog-filter-pill active" data-category="tutti" onclick="filterBlog('tutti', this)">Tutti</button>
         {{ range $uniqueCats }}
-        <button class="blog-filter-pill" data-category="{{ . }}" onclick="filterBlog('{{ . }}', this)">{{ . }}</button>
+        <button type="button" aria-pressed="false" class="blog-filter-pill" data-category="{{ . }}" onclick="filterBlog('{{ . }}', this)">{{ . }}</button>
         {{ end }}
     </div>
     {{ end }}
 
     <div class="blog-grid" id="blogGrid">
         {{ range .Pages }}
-        <a class="blog-card reveal" href="{{ .Permalink }}" data-category="{{ if .Params.categories }}{{ index .Params.categories 0 }}{{ end }}">
-            {{ with .Params.image }}
-            <img class="blog-card-image" src="{{ . }}" alt="{{ $.Title }}" />
-            {{ end }}
+        <a class="blog-card reveal" href="{{ .RelPermalink }}" data-category="{{ if .Params.categories }}{{ index .Params.categories 0 }}{{ end }}">
+            {{ with .Params.image }}{{ partial "shared/img.html" (dict "src" . "alt" "" "width" 400 "ratio" "16/9" "class" "blog-card-image") }}{{ end }}
             <div class="blog-card-body">
                 <p class="blog-card-date">
                     {{ if .Params.categories }}
@@ -49,7 +39,7 @@
                     {{ end }}
                     {{ .Date.Format "02/01/2006" }}
                 </p>
-                <p class="blog-card-title">{{ .Title }}</p>
+                <h2 class="blog-card-title">{{ .Title }}</h2>
                 <p class="blog-card-excerpt">{{ .Summary | plainify | htmlUnescape | truncate 150 }}</p>
             </div>
         </a>
@@ -64,33 +54,13 @@
     </div>
     {{ end }}
 
-    <div class="footer" style="margin-top:3rem;">
-        <div class="footer-legal">
-            Le collaborazioni descritte su questo sito vengono svolte in modo occasionale e non abituale,
-            ai sensi dell'art. 2222 del Codice Civile. Non viene esercitata attività professionale continuativa.
-            Ogni collaborazione è concordata singolarmente e regolata tramite ricevuta per prestazione occasionale.
-        </div>
-        <div class="footer-links" style="text-align:center;margin:1rem 0;font-size:12px;">
-            <a href="/archivio" style="color:var(--text-muted);text-decoration:none;margin-right:0.75rem;">Archivio articoli</a>
-            <span style="color:var(--text-muted);margin:0 0.5rem;">·</span>
-            <a href="https://www.iubenda.com/privacy-policy/88789889" class="iubenda-white iubenda-noiframe iubenda-embed" title="Privacy Policy" style="color:var(--green);text-decoration:none;">Privacy Policy</a>
-            <span style="color:var(--text-muted);margin:0 0.5rem;">·</span>
-            <a href="https://www.iubenda.com/privacy-policy/88789889/cookie-policy" class="iubenda-white iubenda-noiframe iubenda-embed" title="Cookie Policy" style="color:var(--green);text-decoration:none;">Cookie Policy</a>
-        </div>
-        <div class="footer-bottom">
-            <p class="footer-note">© 2026 Marco La Rocca</p>
-        </div>
-    </div>
-
-</div>
-
 <script>
 function filterBlog(category, btn) {
     var cards = document.querySelectorAll('#blogGrid .blog-card');
     var pills = document.querySelectorAll('.blog-filter-pill');
     
-    pills.forEach(function(p) { p.classList.remove('active'); });
-    btn.classList.add('active');
+    pills.forEach(function(p) { p.classList.remove('active'); p.setAttribute('aria-pressed','false'); });
+    btn.classList.add('active'); btn.setAttribute('aria-pressed','true');
     
     cards.forEach(function(card) {
         if (category === 'tutti' || card.getAttribute('data-category') === category) {

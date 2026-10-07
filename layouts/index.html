@@ -1,40 +1,29 @@
 {{ define "main" }}
-<div class="container">
-
-    <!-- NAV -->
-    <nav class="site-top-nav fade-in">
-        <a class="nav-item active" href="/">Home</a>
-        <a class="nav-item" href="#servizi">Cosa faccio</a>
-        <a class="nav-item" href="/blog/">Blog</a>
-        <a class="nav-item" href="#contacts">Contatti</a>
-    </nav>
+{{ $p := .Params }}
+{{ $mail := `<svg viewBox="0 0 24 24" aria-hidden="true" style="width:15px;height:15px;stroke:#fff;fill:none;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round"><rect x="2" y="4" width="20" height="16" rx="2" /><polyline points="2,4 12,13 22,4" /></svg>` | safeHTML }}
 
     <!-- HERO -->
     <div class="hero fade-in">
         <div>
             <div class="badge-location">
                 <span class="dot-pulse"></span>
-                Frascati · Castelli Romani · Roma
+                {{ $p.hero.kicker }}
             </div>
-            <h1 class="name">Marco<br><span class="accent">La Rocca</span><span class="sr-only"> — Siti Web per Professionisti a Frascati e Castelli Romani</span></h1>
-            <p class="tagline">Realizzazione siti internet a Frascati e Castelli Romani.</p>
-            <p class="tagline-sub">Soluzioni essenziali e curate per professionisti e piccole attività. Ti aiuto a farti trovare su Google in modo semplice e diretto.</p>
+            <h1 style="margin:0;font-weight:inherit;">
+                <span class="name" style="display:block;">Marco<br><span class="accent">La Rocca</span></span>
+                <span class="tagline" style="display:block;">{{ $p.hero.title }}</span>
+            </h1>
+            <p class="tagline-sub">{{ $p.hero.lead }}</p>
             <div class="cta-row">
-                <a class="btn-primary" href="#contacts">
-                    <svg viewBox="0 0 24 24"
-                        style="width:15px;height:15px;stroke:#fff;fill:none;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round">
-                        <rect x="2" y="4" width="20" height="16" rx="2" />
-                        <polyline points="2,4 12,13 22,4" />
-                    </svg>
-                    Scrivimi — senza impegno
-                </a>
+                <a class="btn-primary" href="#contacts">{{ $mail }} {{ $p.hero.cta }}</a>
+                <a class="btn-secondary" href="/lavori/">{{ $p.hero.ctaSecondary }}</a>
             </div>
         </div>
         <div class="hero-right">
             <div class="avatar" style="padding: 2px;">
-                <img src="/images/marco-avatar.png" alt="Marco La Rocca" style="width: 100%; height: 100%; border-radius: 50%; object-fit: cover;" />
+                {{ partial "shared/img.html" (dict "src" "/images/marco-avatar.png" "alt" "Marco La Rocca" "width" 160 "priority" true "class" "avatar-img") }}
             </div>
-            <div class="hero-terminal">
+            <div class="hero-terminal" aria-hidden="true">
                 <div class="terminal-dot-row">
                     <span class="t-dot red"></span>
                     <span class="t-dot yellow"></span>
@@ -48,169 +37,92 @@
         </div>
     </div>
 
-    <!-- SERVICES -->
-    <div class="section reveal" id="servizi">
-        <p class="section-label">// cosa posso fare per te</p>
+    <!-- SERVIZI -->
+    <section class="section reveal" id="servizi">
+        <h2 class="section-label">// cosa posso fare per te</h2>
         <div class="services-grid">
-
-            <div class="service-card primary">
-                <span class="service-badge">Collaborazione su richiesta</span>
-                <div class="service-icon">
-                    <svg viewBox="0 0 24 24">
-                        <rect x="3" y="3" width="18" height="18" rx="2" />
-                        <polyline points="3,9 21,9" />
-                        <line x1="9" y1="21" x2="9" y2="9" />
-                    </svg>
-                </div>
-                <p class="service-title">Realizzazione Siti Web e Vetrina</p>
-                <p class="service-price">collaborazione occasionale</p>
-                <p class="service-desc">Creo il tuo sito web partendo da zero. Design mobile-first, ottimizzato per la ricerca locale (SEO) e pensato per farti trovare dai clienti della tua zona.</p>
+            {{ range $i, $s := $p.servizi }}
+            <div class="service-card primary{{ if $i }} ai-card{{ end }}">
+                <span class="service-badge">Su richiesta</span>
+                <h3 class="service-title">{{ $s.title }}</h3>
+                <p class="service-desc">{{ $s.text }}</p>
                 <ul class="service-includes">
-                    <li>Design professionale e mobile-first</li>
-                    <li>Ottimizzazione SEO di base</li>
-                    <li>Collegamento alla Scheda Google Business</li>
-                    <li>Modulo contatti e ricezione e-mail</li>
-                    <li>Certificato SSL (lucchetto di sicurezza)</li>
-                    <li>Sito di tua proprietà al 100%</li>
-                    <li>Eventuali modifiche successive concordate singolarmente</li>
+                    {{ range $s.items }}<li>{{ . }}</li>{{ end }}
                 </ul>
             </div>
-
-            <div class="service-card primary ai-card">
-                <span class="service-badge">Collaborazione su richiesta</span>
-                <div class="service-icon">
-                    <svg viewBox="0 0 24 24">
-                        <path d="M12 2a4 4 0 0 1 4 4v2a4 4 0 0 1-8 0V6a4 4 0 0 1 4-4z" />
-                        <path d="M9 12h6" />
-                        <path d="M12 12v4" />
-                        <rect x="4" y="16" width="16" height="6" rx="2" />
-                    </svg>
-                </div>
-                <p class="service-title">AI & Automazione</p>
-                <p class="service-price">personalizzato su esigenza</p>
-                <p class="service-desc">Su richiesta, configuro strumenti di automazione e intelligenza artificiale per semplificare la gestione della tua attività.</p>
-                <ul class="service-includes">
-                    <li>Chatbot per prenotazioni e domande frequenti</li>
-                    <li>Promemoria automatici per appuntamenti</li>
-                    <li>Risposte automatiche alle recensioni Google</li>
-                    <li>Follow-up e gestione ricorrenze pazienti/clienti</li>
-                    <li>Form digitali e raccolta dati pre-visita</li>
-                    <li>Configurazione personalizzata sul tuo caso</li>
-                    <li>Ogni intervento concordato singolarmente</li>
-                </ul>
-            </div>
-
+            {{ end }}
         </div>
-        <div style="text-align:center;margin-top:1.5rem;">
-            <a class="btn-primary" href="#contacts" style="display:inline-flex;">
-                <svg viewBox="0 0 24 24"
-                    style="width:15px;height:15px;stroke:#fff;fill:none;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round">
-                    <rect x="2" y="4" width="20" height="16" rx="2" />
-                    <polyline points="2,4 12,13 22,4" />
-                </svg>
-                Scrivimi
-            </a>
-        </div>
-    </div>
+        <p style="text-align:center;margin-top:1.5rem;">
+            <a class="btn-secondary" href="/siti-web-frascati-castelli-romani/" style="display:inline-flex;">Come lavoro sui siti per attività locali →</a>
+        </p>
+    </section>
 
-
-    <!-- COME FUNZIONA -->
-    <div class="section reveal">
-        <p class="section-label">// come funziona, in pratica</p>
-        <div class="process-grid">
-            <div class="process-step">
-                <div class="process-num">01</div>
-                <p class="process-title">Ci sentiamo</p>
-                <p class="process-desc">Una chiacchierata informale per capire se e come posso aiutarti. Zero impegno.</p>
-            </div>
-            <div class="process-step">
-                <div class="process-num">02</div>
-                <p class="process-title">Ti propongo un'idea</p>
-                <p class="process-desc">Ti mostro una bozza. Se ti piace, procediamo. Altrimenti nessun problema.</p>
-            </div>
-            <div class="process-step">
-                <div class="process-num">03</div>
-                <p class="process-title">Consegna</p>
-                <p class="process-desc">Ti consegno il sito finito, pronto e di tua completa proprietà.</p>
-            </div>
-        </div>
-    </div>
-
-    <!-- FOR WHO -->
-    <div class="section reveal">
-        <p class="section-label">// a chi è rivolto</p>
-        <div class="forwho-grid">
-            <div class="forwho-item"><span class="forwho-dot"></span>Professionisti della salute</div>
-            <div class="forwho-item"><span class="forwho-dot"></span>Studi professionali</div>
-            <div class="forwho-item"><span class="forwho-dot"></span>Piccole attività locali</div>
-        </div>
-    </div>
-
-    <!-- PORTFOLIO -->
-    <div class="section reveal">
-        <p class="section-label">// lavori recenti</p>
-        <a class="portfolio-card" href="https://www.martinaiannottinutrizione.it/" target="_blank" rel="noopener">
+    <!-- LAVORI -->
+    {{ $lavori := where .Site.RegularPages "Section" "lavori" }}
+    {{ if $lavori }}
+    <section class="section reveal">
+        <h2 class="section-label">// lavori realizzati</h2>
+        {{ range $lavori.ByWeight }}
+        <a class="portfolio-card" href="{{ .RelPermalink }}" style="margin-bottom:1rem;">
             <div class="portfolio-preview" style="padding:0;overflow:hidden;">
-                <img src="/images/martina.jpeg" alt="Sito web Martina Iannotti Nutrizionista"
-                    style="width:100%;height:260px;object-fit:cover;object-position:top center;display:block;transition:transform 0.4s ease;"
-                    onmouseover="this.style.transform='scale(1.03)'" onmouseout="this.style.transform='scale(1)'" />
+                {{ partial "shared/img.html" (dict "src" .Params.image "alt" (printf "Sito web %s" .Title) "width" 720 "ratio" "16/9" "anchor" "Top" "class" "portfolio-img") }}
             </div>
             <div class="portfolio-body">
-                <span class="portfolio-tag">Sito vetrina · WordPress</span>
-                <p class="portfolio-title">Martina Iannotti — Nutrizionista</p>
-                <p class="portfolio-desc">Progettazione e sviluppo del sito professionale. Obiettivo: presenza digitale
-                    credibile per una libera professionista del settore sanitario, ottimizzata per la ricerca locale.
-                </p>
-                <span class="portfolio-link">
-                    martinaiannottinutrizione.it
-                    <svg viewBox="0 0 24 24">
-                        <line x1="7" y1="17" x2="17" y2="7" />
-                        <polyline points="7 7 17 7 17 17" />
-                    </svg>
-                </span>
+                <span class="portfolio-tag">{{ .Params.sector }} · {{ .Params.location }}</span>
+                <h3 class="portfolio-title">{{ .Title }}</h3>
+                <p class="portfolio-desc">{{ .Description }}</p>
+                <span class="portfolio-link">Leggi com'è andata →</span>
             </div>
         </a>
+        {{ end }}
 
-        <div class="testimonial">
-            <div class="testimonial-quote">"</div>
-            <p class="testimonial-text">Mi sono trovata davvero benissimo con Marco, oltre alla professionalità ha
-                mostrato sempre disponibilitá e gentilezza nei miei confronti. Mi ha aiutata a creare un sito
-                esattamente come lo immaginavo e inoltre mi ha anche insegnato a saperlo gestire in autonomia!
-                Straconsigliato😍💪</p>
-            <p class="testimonial-author">Martina Iannotti</p>
-            <p class="testimonial-role">Biologa Nutrizionista · Pescara</p>
-        </div>
+        {{ with $p.testimonianza }}
+        <figure class="testimonial">
+            <div class="testimonial-quote" aria-hidden="true">"</div>
+            <blockquote class="testimonial-text">{{ .text }}</blockquote>
+            <figcaption>
+                <p class="testimonial-author">{{ .author }}</p>
+                <p class="testimonial-role">{{ .role }}</p>
+            </figcaption>
+        </figure>
+        {{ end }}
+    </section>
+    {{ end }}
 
-        <div class="portfolio-more">
-            Hai un'idea per il tuo sito? Scrivimi, ti dico come potrei aiutarti.
-            Senza impegno.
-        </div>
-        <div style="text-align:center;margin-top:1.25rem;">
-            <a class="btn-primary" href="#contacts" style="display:inline-flex;">
-                <svg viewBox="0 0 24 24"
-                    style="width:15px;height:15px;stroke:#fff;fill:none;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round">
-                    <rect x="2" y="4" width="20" height="16" rx="2" />
-                    <polyline points="2,4 12,13 22,4" />
-                </svg>
-                Scrivimi
-            </a>
-        </div>
-    </div>
+    <!-- COME FUNZIONA -->
+    <section class="section reveal">
+        <h2 class="section-label">// come funziona, in pratica</h2>
+        <ol class="process-grid" style="list-style:none;">
+            {{ range $i, $s := $p.processo }}
+            <li class="process-step">
+                <div class="process-num">0{{ add $i 1 }}</div>
+                <h3 class="process-title">{{ $s.title }}</h3>
+                <p class="process-desc">{{ $s.text }}</p>
+            </li>
+            {{ end }}
+        </ol>
+    </section>
 
-    <!-- BLOG PREVIEW -->
+    <!-- PER CHI -->
+    <section class="section reveal">
+        <h2 class="section-label">// a chi è rivolto</h2>
+        <div class="forwho-grid">
+            {{ range $p.perChi }}<div class="forwho-item"><span class="forwho-dot"></span>{{ . }}</div>{{ end }}
+        </div>
+    </section>
+
+    <!-- BLOG -->
     {{ $posts := where .Site.RegularPages "Section" "blog" }}
     {{ if $posts }}
-    <div class="section reveal">
-        <p class="section-label">// dal blog</p>
+    <section class="section reveal">
+        <h2 class="section-label">// dal blog</h2>
         <div class="blog-grid">
             {{ range first 6 $posts }}
-            <a class="blog-card" href="{{ .Permalink }}">
-                {{ with .Params.image }}
-                <img class="blog-card-image" src="{{ . }}" alt="{{ $.Title }}" />
-                {{ end }}
+            <a class="blog-card" href="{{ .RelPermalink }}">
+                {{ with .Params.image }}{{ partial "shared/img.html" (dict "src" . "alt" "" "width" 400 "ratio" "16/9" "class" "blog-card-image") }}{{ end }}
                 <div class="blog-card-body">
                     <p class="blog-card-date">{{ .Date.Format "02/01/2006" }} &bull; <span>{{ .ReadingTime }} min lettura</span></p>
-                    <p class="blog-card-title">{{ .Title }}</p>
+                    <h3 class="blog-card-title">{{ .Title }}</h3>
                     <p class="blog-card-excerpt">{{ .Summary | plainify | htmlUnescape | truncate 150 }}</p>
                 </div>
             </a>
@@ -219,208 +131,86 @@
         <div style="text-align:center;margin-top:1rem;">
             <a class="btn-secondary" href="/blog/" style="display:inline-flex;">Tutti gli articoli →</a>
         </div>
-    </div>
+    </section>
     {{ end }}
 
     <!-- CHI SONO -->
-    <div class="section reveal">
-        <p class="section-label">// chi sono</p>
+    <section class="section reveal">
+        <h2 class="section-label">// chi sono</h2>
         <div class="why-card" style="grid-template-columns:1fr;">
             <div class="why-text" style="font-size:14px;line-height:1.75;">
-                <strong style="font-size:16px;display:block;margin-bottom:0.5rem;">Sono Marco e vivo a Frascati.</strong>
-                Aiuto i professionisti locali a farsi trovare su Google. Niente promesse irrealizzabili, solo soluzioni concrete per la tua attività.
-                <br><br>
-                Non sono un'agenzia. Parli direttamente con me, dalla prima chiamata alla consegna del sito. Ho un approccio estremamente pratico, nato lavorando a contatto diretto con studi medici e professionisti.
-                <br><br>
-                Il mio metodo è semplice. Capisco di cosa hai bisogno. Costruisco un sito internet veloce e curato. Te lo consegno "chiavi in mano". Senza vincoli, canoni mensili o sorprese.
+                {{ range $i, $t := $p.chiSono }}<p{{ if $i }} style="margin-top:1rem;"{{ end }}>{{ $t }}</p>{{ end }}
             </div>
         </div>
-    </div>
+    </section>
 
-    <!-- WHY ME -->
-    <div class="section reveal">
-        <p class="section-label">// perché lavorare con me</p>
+    <!-- PERCHÉ -->
+    <section class="section reveal">
+        <h2 class="section-label">// perché lavorare con me</h2>
         <div class="whyme-grid">
+            {{ range $p.perche }}
             <div class="whyme-item">
-                <div class="whyme-icon-wrap">
-                    <svg viewBox="0 0 24 24" class="whyme-icon">
-                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
-                        <circle cx="12" cy="7" r="4" />
-                    </svg>
-                </div>
-                <p class="whyme-text"><strong>Parli direttamente con chi realizza il sito</strong> — niente agenzia,
-                    niente intermediari</p>
+                <p class="whyme-text"><strong>{{ .title }}</strong> — {{ .text }}</p>
             </div>
-            <div class="whyme-item">
-                <div class="whyme-icon-wrap">
-                    <svg viewBox="0 0 24 24" class="whyme-icon">
-                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
-                        <circle cx="12" cy="10" r="3" />
-                    </svg>
-                </div>
-                <p class="whyme-text"><strong>Sono di Frascati</strong> — conosco il territorio e capisco le esigenze di
-                    chi lavora qui</p>
-            </div>
-            <div class="whyme-item">
-                <div class="whyme-icon-wrap">
-                    <svg viewBox="0 0 24 24" class="whyme-icon">
-                        <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
-                    </svg>
-                </div>
-                <p class="whyme-text"><strong>Linguaggio semplice</strong> — niente tecnicismi, solo soluzioni concrete
-                </p>
-            </div>
-            <div class="whyme-item">
-                <div class="whyme-icon-wrap">
-                    <svg viewBox="0 0 24 24" class="whyme-icon">
-                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
-                    </svg>
-                </div>
-                <p class="whyme-text"><strong>Disponibile per eventuali interventi futuri</strong> — concordati singolarmente e senza vincoli</p>
-            </div>
+            {{ end }}
         </div>
-    </div>
+    </section>
 
     <!-- FAQ -->
-    <div class="section reveal">
-        <p class="section-label">// domande frequenti</p>
+    <section class="section reveal">
+        <h2 class="section-label">// domande frequenti</h2>
         <style>
             .faq-list { max-width: 700px; margin: 0 auto; }
             .faq-item { border: 1px solid var(--border); border-radius: 12px; margin-bottom: 0.75rem; overflow: hidden; transition: border-color 0.3s; }
             .faq-item:hover { border-color: var(--green); }
-            .faq-question { width: 100%; background: none; border: none; padding: 1.25rem 1.5rem; font-family: 'DM Sans', sans-serif; font-size: 15px; font-weight: 500; color: var(--text); cursor: pointer; display: flex; justify-content: space-between; align-items: center; text-align: left; }
-            .faq-question::after { content: '+'; font-size: 20px; color: var(--green); font-weight: 300; transition: transform 0.3s; flex-shrink: 0; margin-left: 1rem; }
-            .faq-item.open .faq-question::after { content: '−'; }
-            .faq-answer { max-height: 0; overflow: hidden; transition: max-height 0.4s ease, padding 0.3s ease; }
-            .faq-answer-inner { padding: 0 1.5rem 1.25rem; font-size: 14px; line-height: 1.7; color: var(--text-muted); }
-            .faq-item.open .faq-answer { max-height: 300px; }
+            .faq-item summary { list-style: none; padding: 1.25rem 1.5rem; font-size: 15px; font-weight: 500; color: var(--text); cursor: pointer; display: flex; justify-content: space-between; align-items: center; }
+            .faq-item summary::-webkit-details-marker { display: none; }
+            .faq-item summary::after { content: '+'; font-size: 20px; color: var(--green); font-weight: 300; margin-left: 1rem; }
+            .faq-item[open] summary::after { content: '−'; }
+            .faq-answer-inner { padding: 0 1.5rem 1.25rem; font-size: 14px; line-height: 1.7; color: var(--text-secondary); }
         </style>
         <div class="faq-list">
-            <div class="faq-item">
-                <button class="faq-question" onclick="this.parentElement.classList.toggle('open')">Il sito è mio o devo pagare un canone?</button>
-                <div class="faq-answer"><div class="faq-answer-inner">Il sito è di tua completa proprietà. Non ci sono canoni mensili, abbonamenti o vincoli. Ti consegno tutto (codice, accessi, dominio) e sei libero di gestirlo come vuoi.</div></div>
-            </div>
-            <div class="faq-item">
-                <button class="faq-question" onclick="this.parentElement.classList.toggle('open')">Posso aggiornarlo da solo dopo la consegna?</button>
-                <div class="faq-answer"><div class="faq-answer-inner">Sì. WordPress è pensato per essere gestito in autonomia: testi, foto e articoli del blog si aggiornano senza competenze tecniche.</div></div>
-            </div>
-            <div class="faq-item">
-                <button class="faq-question" onclick="this.parentElement.classList.toggle('open')">Quanto tempo ci vuole per avere il sito pronto?</button>
-                <div class="faq-answer"><div class="faq-answer-inner">Dipende dalla complessità. Come riferimento, un sito vetrina richiede circa 2-3 settimane. Ti mostro una bozza prima di procedere, così non ci sono sorprese.</div></div>
-            </div>
-            <div class="faq-item">
-                <button class="faq-question" onclick="this.parentElement.classList.toggle('open')">E se dopo ho bisogno di modifiche?</button>
-                <div class="faq-answer"><div class="faq-answer-inner">Nessun problema. Possiamo valutare eventuali interventi di volta in volta, senza vincoli né abbonamenti.</div></div>
-            </div>
+            {{ range $p.faq }}
+            <details class="faq-item">
+                <summary>{{ .q }}</summary>
+                <div class="faq-answer-inner">{{ .a }}</div>
+            </details>
+            {{ end }}
         </div>
-    </div>
+    </section>
 
-    <!-- STACK -->
-    <div class="section reveal">
-        <p class="section-label">// strumenti che utilizzo</p>
+    <!-- STRUMENTI -->
+    <section class="section reveal">
+        <h2 class="section-label">// strumenti che utilizzo</h2>
         <div class="pills">
-            <span class="pill">WordPress</span>
-            <span class="pill">HTML / CSS</span>
-            <span class="pill">SEO</span>
-            <span class="pill">Google Business</span>
-            <span class="pill">Google Analytics</span>
-            <span class="pill accent">AI & Automazione</span>
-            <span class="pill">Chatbot</span>
+            {{ range $p.strumenti }}<span class="pill">{{ . }}</span>{{ end }}
         </div>
-    </div>
+    </section>
 
-    <!-- CONTACTS -->
-    <div class="section reveal" id="contacts">
-        <p class="section-label">// scrivimi</p>
-
+    <!-- CONTATTI -->
+    <section class="section reveal" id="contacts">
+        <h2 class="section-label">// scrivimi</h2>
         <p class="contact-intro">Hai un'idea o una necessità? Scrivimi, senza impegno.</p>
-
-        <!-- Contact Form (Netlify) -->
-        <form class="contact-form" name="contatto" method="POST" data-netlify="true" netlify-honeypot="bot-field">
-            <input type="hidden" name="form-name" value="contatto" />
-            <p style="display:none"><label>Non compilare: <input name="bot-field" /></label></p>
-            <div class="form-group">
-                <label for="nome">Nome</label>
-                <input type="text" id="nome" name="nome" required placeholder="Il tuo nome" />
-            </div>
-            <div class="form-group">
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" required placeholder="La tua email" />
-            </div>
-            <div class="form-group">
-                <label for="messaggio">Messaggio</label>
-                <textarea id="messaggio" name="messaggio" required
-                    placeholder="Ciao Marco, ho uno studio a Frascati e mi servirebbe..."></textarea>
-            </div>
-            <button type="submit" class="btn-primary">
-                <svg viewBox="0 0 24 24"
-                    style="width:15px;height:15px;stroke:#fff;fill:none;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round">
-                    <rect x="2" y="4" width="20" height="16" rx="2" />
-                    <polyline points="2,4 12,13 22,4" />
-                </svg>
-                Invia messaggio
-            </button>
-        </form>
-
+        {{ partial "contact-form.html" . }}
         <div class="contact-strip">
-            <span class="contact-item" id="mailBtn" style="cursor:pointer;">
-                <svg viewBox="0 0 24 24">
-                    <rect x="2" y="4" width="20" height="16" rx="2" />
-                    <polyline points="2,4 12,13 22,4" />
-                </svg>
-                <span id="mailLabel">Clicca per vedere l'email</span>
-            </span>
+            <button type="button" class="contact-item" id="mailBtn" style="cursor:pointer;background:none;border:0;color:inherit;font:inherit;">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2" /><polyline points="2,4 12,13 22,4" /></svg>
+                <span id="mailLabel">Mostra l'indirizzo email</span>
+            </button>
         </div>
-
-        <div class="footer">
-            <div class="footer-legal">
-                Le collaborazioni descritte su questo sito vengono svolte in modo occasionale e non abituale,
-                ai sensi dell'art. 2222 del Codice Civile. Non viene esercitata attività professionale continuativa.
-                Ogni collaborazione è concordata singolarmente e regolata tramite ricevuta per prestazione occasionale.<br>
-                Per informazioni: <span id="footerMail">clicca sull'icona email qui sopra</span>
-            </div>
-            <div class="footer-links" style="text-align:center;margin:1rem 0;font-size:12px;">
-                <a href="https://www.iubenda.com/privacy-policy/88789889" class="iubenda-white iubenda-noiframe iubenda-embed" title="Privacy Policy" style="color:var(--green);text-decoration:none;">Privacy Policy</a>
-                <span style="color:var(--text-muted);margin:0 0.5rem;">·</span>
-                <a href="https://www.iubenda.com/privacy-policy/88789889/cookie-policy" class="iubenda-white iubenda-noiframe iubenda-embed" title="Cookie Policy" style="color:var(--green);text-decoration:none;">Cookie Policy</a>
-            </div>
-            <div class="footer-bottom">
-                <p class="footer-note">// Frascati &amp; Castelli Romani · Roma</p>
-                <p class="footer-note">© 2026 Marco La Rocca</p>
-            </div>
-        </div>
-    </div>
-
-</div>
+    </section>
 {{ end }}
 
 {{ define "scripts" }}
 <script>
     (function () {
-        /* Email offuscata in Base64 — invisibile ai bot */
-        var _k = 'bWFyY29sYXJvY2NhLnBAZ21haWwuY29t';
-        var _r = false;
-        var ml = document.getElementById('mailLabel');
-        var mb = document.getElementById('mailBtn');
-
-        if (mb) mb.onclick = function () {
-            if (!_r) {
-                _r = true;
-                var e = atob(_k);
-                if (ml) ml.textContent = e;
-                var fm = document.getElementById('footerMail');
-                if (fm) {
-                    fm.textContent = '';
-                    var a = document.createElement('a');
-                    a.href = 'mail' + 'to:' + e;
-                    a.textContent = e;
-                    a.style.color = 'var(--green)';
-                    a.style.textDecoration = 'none';
-                    fm.appendChild(a);
-                }
-            } else {
-                window.location.href = 'mail' + 'to:' + atob(_k);
-            }
+        /* Email offuscata in Base64: i bot che leggono l'HTML non la vedono */
+        var k = 'bWFyY29sYXJvY2NhLnBAZ21haWwuY29t', shown = false;
+        var label = document.getElementById('mailLabel'), btn = document.getElementById('mailBtn');
+        if (btn) btn.onclick = function () {
+            var e = atob(k);
+            if (!shown) { shown = true; if (label) label.textContent = e; }
+            else { window.location.href = 'mail' + 'to:' + e; }
         };
     })();
 </script>

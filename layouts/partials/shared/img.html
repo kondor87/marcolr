@@ -1,0 +1,39 @@
+{{- /*
+  Immagine responsive. Uso:
+  {{ partial "shared/img.html" (dict "src" "/images/x.png" "alt" "..." "width" 640 "sizes" "(min-width: 900px) 640px, 100vw" "class" "..." "priority" false "ratio" "16/9") }}
+  - width: larghezza massima mostrata (px). Genera 1x e 2x in WebP.
+  - ratio (facoltativo, "16/9"): ritaglia l'immagine a quel rapporto.
+  - priority: true per l'immagine LCP (niente lazy, fetchpriority high).
+  Se il file non è un'immagine elaborabile (es. SVG) esce un <img> semplice.
+*/ -}}
+{{- $src := .src }}
+{{- $w := .width | default 800 }}
+{{- $alt := .alt | default "" }}
+{{- $priority := .priority | default false }}
+{{- $res := resources.Get (strings.TrimPrefix "/" $src) }}
+{{- if and $res (in (slice "png" "jpeg" "jpg" "webp") (strings.TrimPrefix "image/" $res.MediaType.Type)) }}
+  {{- $set := slice }}
+  {{- $first := "" }}
+  {{- range $mult := slice 1 2 }}
+    {{- $tw := mul $w $mult }}
+    {{- if le $tw $res.Width }}
+      {{- $img := "" }}
+      {{- with $.ratio }}
+        {{- $parts := split . "/" }}
+        {{- $th := div (mul $tw (int (index $parts 1))) (int (index $parts 0)) }}
+        {{- $img = $res.Fill (printf "%dx%d webp q80 %s" $tw $th ($.anchor | default "Center")) }}
+      {{- else }}
+        {{- $img = $res.Resize (printf "%dx webp q80" $tw) }}
+      {{- end }}
+      {{- if not $first }}{{ $first = $img }}{{ end }}
+      {{- $set = $set | append (printf "%s %dw" $img.RelPermalink $img.Width) }}
+    {{- end }}
+  {{- end }}
+  {{- if not $first }}
+    {{- $first = $res.Resize (printf "%dx webp q80" $res.Width) }}
+    {{- $set = slice (printf "%s %dw" $first.RelPermalink $first.Width) }}
+  {{- end }}
+<img src="{{ $first.RelPermalink }}" srcset="{{ delimit $set ", " }}" sizes="{{ .sizes | default (printf "(min-width: %dpx) %dpx, 100vw" $w $w) }}" width="{{ $first.Width }}" height="{{ $first.Height }}" alt="{{ $alt }}"{{ with .class }} class="{{ . }}"{{ end }}{{ if $priority }} fetchpriority="high"{{ else }} loading="lazy"{{ end }} decoding="async" />
+{{- else }}
+<img src="{{ $src }}" alt="{{ $alt }}"{{ with .class }} class="{{ . }}"{{ end }}{{ if not $priority }} loading="lazy"{{ end }} decoding="async" />
+{{- end }}

@@ -1,6 +1,6 @@
 [build]
   publish = "public"
-  command = "hugo"
+  command = "hugo --gc --minify"
 
 [build.environment]
   HUGO_VERSION = "0.158.0"
@@ -13,4 +13,35 @@
     Referrer-Policy = "strict-origin-when-cross-origin"
     Strict-Transport-Security = "max-age=31536000; includeSubDomains; preload"
     Permissions-Policy = "camera=(), microphone=(), geolocation=()"
-    Content-Security-Policy = "default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.iubenda.com https://embeds.iubenda.com https://www.googletagmanager.com https://www.clarity.ms https://www.google-analytics.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self' https:; frame-src 'self' https://www.googletagmanager.com; frame-ancestors 'none'"
+    # Clarity carica lo script da scripts.clarity.ms (da qui *.clarity.ms);
+    # iubenda carica CSS, font e iframe da cdn.iubenda.com / www.iubenda.com.
+    Content-Security-Policy = "default-src 'self'; script-src 'self' 'unsafe-inline' https://*.iubenda.com https://www.googletagmanager.com https://*.clarity.ms https://www.google-analytics.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://*.iubenda.com; font-src 'self' https://fonts.gstatic.com https://*.iubenda.com; img-src 'self' data: https:; connect-src 'self' https:; frame-src 'self' https://www.googletagmanager.com https://*.iubenda.com; frame-ancestors 'none'; base-uri 'self'; form-action 'self'"
+
+# CSS con nome "fingerprint": può restare in cache per sempre.
+[[headers]]
+  for = "/css/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/fonts/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+# Immagini: le versioni WebP generate da Hugo hanno un hash nel nome.
+[[headers]]
+  for = "/images/*"
+  [headers.values]
+    Cache-Control = "public, max-age=2592000"
+
+# La landing locale è passata dal blog a una pagina dedicata.
+[[redirects]]
+  from = "/blog/siti-web-castelli-romani/"
+  to = "/siti-web-frascati-castelli-romani/"
+  status = 301
+
+# Le pagine dei tag non esistono più (erano quasi tutte vuote).
+[[redirects]]
+  from = "/tags/*"
+  to = "/blog/"
+  status = 301

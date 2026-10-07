@@ -1,0 +1,167 @@
+{{- /*
+  JSON-LD centrato sulla persona (Person + Service), non su un'azienda:
+  Marco lavora con prestazione occasionale, senza sede né partita IVA.
+  Niente streetAddress/geo inventati. Quando ci sarà una P.IVA si potrà
+  passare a ProfessionalService collegandolo con lo stesso @id.
+*/ -}}
+{{- $base := .Site.BaseURL }}
+{{- $person := printf "%s#person" $base }}
+{{- $website := printf "%s#website" $base }}
+{{- $avatar := "/images/marco-avatar.png" | absURL }}
+
+{{- if .IsHome }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "{{ $website }}",
+      "url": "{{ $base }}",
+      "name": "Marco La Rocca — Siti web a Frascati",
+      "description": {{ .Site.Params.description | jsonify }},
+      "inLanguage": "it-IT",
+      "publisher": {"@id": "{{ $person }}"}
+    },
+    {
+      "@type": "Person",
+      "@id": "{{ $person }}",
+      "name": "Marco La Rocca",
+      "url": "{{ $base }}",
+      "image": "{{ $avatar }}",
+      "description": "Informatico di Frascati. Su richiesta realizza siti web per professionisti e piccole attività dei Castelli Romani, con SEO locale e piccole automazioni.",
+      "homeLocation": {"@type": "City", "name": "Frascati"},
+      "knowsAbout": ["Siti web", "Siti vetrina", "SEO locale", "WordPress", "Hugo", "Performance web", "Automazione", "Intelligenza artificiale"],
+      "knowsLanguage": "it",
+      "sameAs": [{{ .Site.Params.github | jsonify }}],
+      "makesOffer": [
+        {"@type": "Offer", "itemOffered": {"@id": "{{ $base }}#servizio-siti-web"}},
+        {"@type": "Offer", "itemOffered": {"@id": "{{ $base }}#servizio-automazione"}}
+      ]
+    },
+    {
+      "@type": "Service",
+      "@id": "{{ $base }}#servizio-siti-web",
+      "name": "Realizzazione siti web per professionisti e attività locali",
+      "serviceType": "Realizzazione siti web",
+      "url": "{{ "siti-web-frascati-castelli-romani/" | absURL }}",
+      "provider": {"@id": "{{ $person }}"},
+      "areaServed": [
+        {"@type": "City", "name": "Frascati"}, {"@type": "City", "name": "Grottaferrata"},
+        {"@type": "City", "name": "Marino"}, {"@type": "City", "name": "Albano Laziale"},
+        {"@type": "City", "name": "Velletri"}, {"@type": "City", "name": "Genzano di Roma"},
+        {"@type": "City", "name": "Rocca di Papa"}, {"@type": "City", "name": "Castel Gandolfo"},
+        {"@type": "City", "name": "Monte Porzio Catone"},
+        {"@type": "AdministrativeArea", "name": "Castelli Romani"}
+      ]
+    },
+    {
+      "@type": "Service",
+      "@id": "{{ $base }}#servizio-automazione",
+      "name": "Automazioni e strumenti AI per piccole attività",
+      "serviceType": "Automazione",
+      "provider": {"@id": "{{ $person }}"},
+      "areaServed": {"@type": "AdministrativeArea", "name": "Castelli Romani"}
+    }
+  ]
+}
+</script>
+
+{{- else if and .IsPage (eq .Section "blog") }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "@id": "{{ .Permalink }}#articolo",
+      "mainEntityOfPage": {"@type": "WebPage", "@id": "{{ .Permalink }}"},
+      "headline": {{ .Title | jsonify }},
+      "description": {{ (.Description | default .Site.Params.description) | jsonify }},
+      "datePublished": "{{ .Date.Format "2006-01-02T15:04:05-07:00" }}",
+      "dateModified": "{{ .Lastmod.Format "2006-01-02T15:04:05-07:00" }}",
+      "inLanguage": "it-IT",
+      "image": "{{ (.Params.image | default .Site.Params.ogImage) | absURL }}",
+      "author": {"@id": "{{ $person }}"},
+      "publisher": {"@id": "{{ $person }}"},
+      "isPartOf": {"@id": "{{ $website }}"},
+      "wordCount": {{ .WordCount }}{{ with .Params.categories }},
+      "articleSection": {{ index . 0 | jsonify }}{{ end }}{{ with .Params.tags }},
+      "keywords": {{ delimit . ", " | jsonify }}{{ end }}
+    },
+    {
+      "@type": "Person",
+      "@id": "{{ $person }}",
+      "name": "Marco La Rocca",
+      "url": "{{ $base }}",
+      "image": "{{ $avatar }}",
+      "sameAs": [{{ .Site.Params.github | jsonify }}]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Home", "item": "{{ $base }}"},
+        {"@type": "ListItem", "position": 2, "name": "Blog", "item": "{{ "blog/" | absURL }}"},
+        {"@type": "ListItem", "position": 3, "name": {{ .Title | jsonify }}, "item": "{{ .Permalink }}"}
+      ]
+    }
+  ]
+}
+</script>
+
+{{- else if and .IsPage (eq .Section "lavori") }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": ["CreativeWork", "WebPage"],
+      "@id": "{{ .Permalink }}#lavoro",
+      "url": "{{ .Permalink }}",
+      "name": {{ .Title | jsonify }},
+      "description": {{ .Description | jsonify }},
+      "inLanguage": "it-IT",
+      "genre": "Case study",
+      "datePublished": "{{ .Date.Format "2006-01-02" }}",
+      "dateModified": "{{ .Lastmod.Format "2006-01-02" }}",
+      "creator": {"@id": "{{ $person }}"},
+      "isPartOf": {"@id": "{{ $website }}"},
+      "image": "{{ (.Params.image | default .Site.Params.ogImage) | absURL }}"{{ with .Params.client }},
+      "about": {"@type": "Organization", "name": {{ . | jsonify }}{{ with $.Params.clientUrl }}, "url": {{ . | jsonify }}{{ end }}}{{ end }}
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Home", "item": "{{ $base }}"},
+        {"@type": "ListItem", "position": 2, "name": "Lavori", "item": "{{ "lavori/" | absURL }}"},
+        {"@type": "ListItem", "position": 3, "name": {{ .Title | jsonify }}, "item": "{{ .Permalink }}"}
+      ]
+    }
+  ]
+}
+</script>
+
+{{- else if .IsPage }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Home", "item": "{{ $base }}"},
+    {"@type": "ListItem", "position": 2, "name": {{ .Title | jsonify }}, "item": "{{ .Permalink }}"}
+  ]
+}
+</script>
+{{- end }}
+
+{{- with .Params.faq }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [{{ range $i, $f := . }}{{ if $i }},{{ end }}
+    {"@type": "Question", "name": {{ $f.q | jsonify }}, "acceptedAnswer": {"@type": "Answer", "text": {{ $f.a | jsonify }}}}{{ end }}
+  ]
+}
+</script>
+{{- end }}

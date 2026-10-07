@@ -1,0 +1,79 @@
+{{- /*
+  Head condiviso tra il sito attuale e le versioni in versioni/*.
+  Contiene: consenso (Google Consent Mode v2 + iubenda), analytics, meta SEO,
+  Open Graph, JSON-LD. Lo stile resta nel baseof di ogni versione.
+*/ -}}
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+{{- /* 1. Consenso: tutto negato finché iubenda non riceve la scelta dell'utente.
+       Su iubenda deve essere attiva l'opzione "Google Consent Mode",
+       altrimenti GA4 resta in modalità "negato" anche dopo l'accettazione. */}}
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('consent', 'default', {
+    ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied',
+    analytics_storage: 'denied', functionality_storage: 'granted', security_storage: 'granted',
+    wait_for_update: 500
+  });
+  gtag('set', 'ads_data_redaction', true);
+</script>
+<script src="https://embeds.iubenda.com/widgets/e9b3d75a-33f9-41ef-9594-69d5554dc6c0.js"></script>
+
+{{- /* 2. Analytics. GA4 passa solo da qui: non aggiungere un tag GA4 anche in GTM. */}}
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5TD66VKJ');</script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XH543Y70CJ"></script>
+<script>gtag('js', new Date()); gtag('config', 'G-XH543Y70CJ');</script>
+<script>
+  (function(c,l,a,r,i,t,y){
+    c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+    t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+    y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+  })(window,document,"clarity","script","xt34tbj6ym");
+</script>
+
+<meta name="google-site-verification" content="QNUV9vpkabwgZRjU0Mug2AmKsFapTFcE0yOvKpjWusA" />
+
+{{- /* 3. Meta SEO */}}
+{{- $title := .Title }}
+{{- if .IsHome }}{{ $title = "Siti web a Frascati e Castelli Romani — Marco La Rocca" }}
+{{- else if .Params.seoTitle }}{{ $title = .Params.seoTitle }}
+{{- else }}{{ $title = printf "%s — Marco La Rocca" .Title }}{{ end }}
+{{- $desc := .Site.Params.description }}
+{{- with .Description }}{{ $desc = . }}{{ else }}{{ if .IsPage }}{{ $desc = .Summary | plainify | htmlUnescape | truncate 155 }}{{ end }}{{ end }}
+{{- $img := .Site.Params.ogImage }}{{ $imgW := 1200 }}{{ $imgH := 630 }}
+{{- with .Params.image }}{{ $img = . }}{{ $imgW = 0 }}{{ end }}
+
+<title>{{ $title }}</title>
+<meta name="description" content="{{ $desc }}" />
+<link rel="canonical" href="{{ .Permalink }}" />
+{{- if or (eq .Kind "taxonomy") .Params.noindex }}
+<meta name="robots" content="noindex, follow" />
+{{- end }}
+<link rel="icon" type="image/png" href="/favicon.png" />
+{{- with .OutputFormats.Get "rss" }}
+<link rel="alternate" type="application/rss+xml" title="Blog di Marco La Rocca" href="{{ .Permalink }}" />
+{{- end }}
+
+<meta property="og:title" content="{{ $title }}" />
+<meta property="og:description" content="{{ $desc }}" />
+<meta property="og:type" content="{{ if and .IsPage (eq .Section "blog") }}article{{ else }}website{{ end }}" />
+<meta property="og:url" content="{{ .Permalink }}" />
+<meta property="og:image" content="{{ $img | absURL }}" />
+{{- if $imgW }}
+<meta property="og:image:width" content="{{ $imgW }}" />
+<meta property="og:image:height" content="{{ $imgH }}" />
+{{- end }}
+<meta property="og:locale" content="it_IT" />
+<meta property="og:site_name" content="Marco La Rocca" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="{{ $title }}" />
+<meta name="twitter:description" content="{{ $desc }}" />
+<meta name="twitter:image" content="{{ $img | absURL }}" />
+
+{{ partial "shared/schema.html" . }}

@@ -1,39 +1,26 @@
 {{ define "main" }}
-<div class="container">
-
-    <nav class="site-top-nav fade-in">
-        <a class="nav-item" href="/">Home</a>
-        <a class="nav-item" href="/#servizi">Cosa faccio</a>
-        <a class="nav-item active" href="/blog/">Blog</a>
-        <a class="nav-item" href="/#contacts">Contatti</a>
-    </nav>
-
     <a class="blog-back fade-in" href="/blog/">
-        <svg viewBox="0 0 24 24">
-            <polyline points="15 18 9 12 15 6" />
-        </svg>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="15 18 9 12 15 6" /></svg>
         Torna al blog
     </a>
 
     <article class="fade-in">
-        <div class="blog-header">
+        <header class="blog-header">
             <p class="blog-header-date">
-                {{ if .Params.categories }}
-                {{ $cat := index .Params.categories 0 }}
-                <a href="/categories/{{ $cat | urlize }}/" style="color:var(--green);font-weight:700;text-transform:uppercase;text-decoration:none;">{{ $cat }}</a> &bull; 
+                {{ with .Params.categories }}{{ $cat := index . 0 }}
+                <a href="/categories/{{ $cat | urlize }}/" style="color:var(--green);font-weight:700;text-transform:uppercase;text-decoration:none;">{{ $cat }}</a> &bull;
                 {{ end }}
-                {{ .Date.Format "02/01/2006" }} &bull; 
-                <span style="color:var(--text-secondary);">{{ .ReadingTime }} min lettura</span>
+                <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "02/01/2006" }}</time>
+                {{ if gt (.Lastmod.Sub .Date).Hours 48 }}&bull; aggiornato il <time datetime="{{ .Lastmod.Format "2006-01-02" }}">{{ .Lastmod.Format "02/01/2006" }}</time>{{ end }}
+                &bull; <span style="color:var(--text-secondary);">{{ .ReadingTime }} min lettura</span>
             </p>
             <h1 class="blog-header-title">{{ .Title }}</h1>
-            {{ with .Params.image }}
-            <img class="blog-cover" src="{{ . }}" alt="{{ $.Title }}" />
-            {{ end }}
-        </div>
+            {{ with .Params.image }}{{ partial "shared/img.html" (dict "src" . "alt" "" "width" 720 "ratio" "16/9" "priority" true "class" "blog-cover") }}{{ end }}
+        </header>
 
         {{ if .TableOfContents }}
         <nav class="blog-toc" aria-label="Indice dell'articolo">
-            <p class="blog-toc-title">📑 In questo articolo</p>
+            <p class="blog-toc-title">In questo articolo</p>
             {{ .TableOfContents }}
         </nav>
         {{ end }}
@@ -42,85 +29,41 @@
             {{ .Content }}
         </div>
 
-        <!-- Bio Autore E-E-A-T -->
-        <div class="author-box reveal" style="margin-top:4rem; padding:1.5rem; background:var(--bg-secondary); border-radius:var(--radius-lg); border:1px solid var(--border); display:flex; gap:1.5rem; align-items:center;">
-            <div style="flex-shrink:0;">
-                <img src="/images/marco-avatar.png" alt="Marco La Rocca" style="width:70px; height:70px; border-radius:50%; object-fit:cover; border:2px solid var(--green);">
-            </div>
-            <div>
-                <p style="font-family:'Space Mono', monospace; font-size:11px; color:var(--green); margin-bottom:0.25rem; font-weight:700; text-transform:uppercase;">L'Autore</p>
-                <p style="font-weight:700; margin-bottom:0.4rem; font-size:17px; color:var(--text);">Marco La Rocca</p>
-                <p style="font-size:13.5px; line-height:1.5; color:var(--text-secondary); margin:0;">
-                    Realizzo soluzioni digitali e siti web per professionisti a Frascati e nei Castelli Romani. 
-                    Aiuto le attività locali a crescere grazie all'AI e all'automazione.
-                </p>
-            </div>
-        </div>
+        {{ partial "author-box.html" . }}
     </article>
 
-    <!-- CTA dopo articolo -->
-    <div class="section reveal" style="margin-top:3rem;">
+    <section class="section reveal" style="margin-top:3rem;">
         <div class="why-card" style="grid-template-columns:1fr;text-align:center;">
             <div class="why-text">
-                <strong style="display:block;margin-bottom:0.5rem;">Hai bisogno di un sito o vuoi automatizzare la tua attività?</strong>
+                <strong style="display:block;margin-bottom:0.5rem;">Hai bisogno di un sito o vuoi semplificare il lavoro del tuo studio?</strong>
                 Scrivimi, senza impegno.
                 <br><br>
-                <a class="btn-primary" href="/#contacts" style="display:inline-flex;">
-                    <svg viewBox="0 0 24 24"
-                        style="width:15px;height:15px;stroke:#fff;fill:none;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round">
-                        <rect x="2" y="4" width="20" height="16" rx="2" />
-                        <polyline points="2,4 12,13 22,4" />
-                    </svg>
-                    Scrivimi
-                </a>
+                <a class="btn-primary" href="/#contacts" style="display:inline-flex;">Scrivimi</a>
             </div>
         </div>
-    </div>
+    </section>
 
-    <!-- Articoli correlati -->
-    {{ $related := where .Site.RegularPages "Section" "blog" | shuffle | first 3 }}
-    {{ $current := .Permalink }}
-    {{ $filtered := slice }}
-    {{ range $related }}{{ if ne .Permalink $current }}{{ $filtered = $filtered | append . }}{{ end }}{{ end }}
-    {{ if $filtered }}
-    <div class="section reveal" style="margin-top:2rem;">
-        <p class="section-label">// potrebbe interessarti anche</p>
+    {{ $related := .Site.RegularPages.Related . | first 3 }}
+    {{ with $related }}
+    <section class="section reveal" style="margin-top:2rem;">
+        <h2 class="section-label">// potrebbe interessarti anche</h2>
         <div class="blog-grid">
-            {{ range first 3 $filtered }}
-            <a class="blog-card" href="{{ .Permalink }}">
-                {{ with .Params.image }}
-                <img class="blog-card-image" src="{{ . }}" alt="{{ $.Title }}" />
-                {{ end }}
+            {{ range . }}
+            <a class="blog-card" href="{{ .RelPermalink }}">
+                {{ with .Params.image }}{{ partial "shared/img.html" (dict "src" . "alt" "" "width" 400 "ratio" "16/9" "class" "blog-card-image") }}{{ end }}
                 <div class="blog-card-body">
                     <p class="blog-card-date">{{ .Date.Format "02/01/2006" }}</p>
-                    <p class="blog-card-title">{{ .Title }}</p>
+                    <h3 class="blog-card-title">{{ .Title }}</h3>
                     <p class="blog-card-excerpt">{{ .Summary | plainify | htmlUnescape | truncate 120 }}</p>
                 </div>
             </a>
             {{ end }}
         </div>
-    </div>
+    </section>
     {{ end }}
 
-    <div class="footer" style="margin-top:3rem;">
-        <div class="footer-legal">
-            Le collaborazioni descritte su questo sito vengono svolte in modo occasionale e non abituale,
-            ai sensi dell'art. 2222 del Codice Civile. Non viene esercitata attività professionale continuativa.
-            Ogni collaborazione è concordata singolarmente e regolata tramite ricevuta per prestazione occasionale.
-        </div>
-        <div class="footer-links" style="text-align:center;margin:1rem 0;font-size:12px;">
-            <a href="https://www.iubenda.com/privacy-policy/88789889" class="iubenda-white iubenda-noiframe iubenda-embed" title="Privacy Policy" style="color:var(--green);text-decoration:none;">Privacy Policy</a>
-            <span style="color:var(--text-muted);margin:0 0.5rem;">·</span>
-            <a href="https://www.iubenda.com/privacy-policy/88789889/cookie-policy" class="iubenda-white iubenda-noiframe iubenda-embed" title="Cookie Policy" style="color:var(--green);text-decoration:none;">Cookie Policy</a>
-        </div>
-        <div class="footer-bottom">
-            <p class="footer-note">© 2026 Marco La Rocca</p>
-        </div>
-    </div>
-
-</div>
 <script>
-/* Wrappa le tabelle del blog per overflow-x su mobile */
+/* Tabelle scorrevoli su mobile */
 document.querySelectorAll('.blog-content table').forEach(function(t) {
     var w = document.createElement('div');
     w.className = 'table-wrapper';

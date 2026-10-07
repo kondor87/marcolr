@@ -1,0 +1,5 @@
+{{- /* Riquadro di attenzione negli articoli. Uso: {{< box title="..." >}}testo markdown{{< /box >}} */ -}}
+<aside class="post-box" role="note">
+  {{ with .Get "title" }}<p class="post-box-title"><strong>{{ . }}</strong></p>{{ end }}
+  {{ .Inner | markdownify }}
+</aside>

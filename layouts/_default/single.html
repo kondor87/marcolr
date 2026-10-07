@@ -1,0 +1,22 @@
+{{ define "main" }}
+    <article class="fade-in">
+        <header class="blog-header">
+            {{ with .Params.kicker }}<p class="blog-header-date">{{ . }}</p>{{ end }}
+            <h1 class="blog-header-title">{{ .Title }}</h1>
+        </header>
+        <div class="blog-content">
+            {{ .Content }}
+        </div>
+        {{ with .Params.faq }}
+        <section class="section" style="margin-top:3rem;">
+            <h2 class="section-label">// domande frequenti</h2>
+            {{ range . }}
+            <details class="faq-item" style="border:1px solid var(--border);border-radius:12px;margin-bottom:0.75rem;padding:1rem 1.25rem;">
+                <summary style="cursor:pointer;font-weight:500;">{{ .q }}</summary>
+                <p style="margin-top:0.75rem;font-size:14px;line-height:1.7;color:var(--text-secondary);">{{ .a }}</p>
+            </details>
+            {{ end }}
+        </section>
+        {{ end }}
+    </article>
+{{ end }}

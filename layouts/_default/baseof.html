@@ -2,209 +2,36 @@
 <html lang="it">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-5TD66VKJ');</script>
-    <!-- End Google Tag Manager -->
-
-    <!-- Google Analytics (GA4) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XH543Y70CJ"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-XH543Y70CJ');
-    </script>
-    <!-- End Google Analytics -->
-
-    <!-- Google Search Console Verification -->
-    <meta name="google-site-verification" content="QNUV9vpkabwgZRjU0Mug2AmKsFapTFcE0yOvKpjWusA" />
-
-    <!-- Microsoft Clarity -->
-    <script type="text/javascript">
-      (function(c,l,a,r,i,t,y){
-        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-      })(window,document,"clarity","script","xt34tbj6ym");
-    </script>
-    <!-- End Microsoft Clarity -->
-    <link rel="icon" type="image/png" href="/favicon.png" />
-    <title>{{ if .IsHome }}Siti Web Frascati e Castelli Romani — Marco La Rocca{{ else }}{{ .Title }} — Marco La Rocca{{ end }}</title>
-    <meta name="description"
-        content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.description }}{{ end }}" />
-    <meta name="keywords" content="{{ if .Keywords }}{{ delimit .Keywords ", " }}{{ else if .Params.tags }}{{ delimit .Params.tags ", " }}{{ else }}siti web Frascati, web designer Castelli Romani, consulenza SEO locale, automazione AI professionisti{{ end }}" />
-
-    <!-- Canonical -->
-    <link rel="canonical" href="{{ .Permalink }}" />
-
-    <!-- Open Graph -->
-    <meta property="og:title"
-        content="{{ if .IsHome }}Siti Web Frascati e Castelli Romani — Marco La Rocca{{ else }}{{ .Title }} — Marco La Rocca{{ end }}" />
-    <meta property="og:description"
-        content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.description }}{{ end }}" />
-    <meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}" />
-    <meta property="og:url" content="{{ .Permalink }}" />
-    {{ if .Params.image }}
-    <meta property="og:image" content="{{ .Params.image | absURL }}" />
-    <meta property="og:image:width" content="1200" />
-    <meta property="og:image:height" content="630" />
-    {{ else }}
-    <meta property="og:image" content="{{ "/images/marco-avatar.png" | absURL }}" />
-    <meta property="og:image:width" content="400" />
-    <meta property="og:image:height" content="400" />
-    {{ end }}
-    <meta property="og:locale" content="it_IT" />
-    <meta property="og:site_name" content="Marco La Rocca" />
-
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }}{{ end }}" />
-    <meta name="twitter:description"
-        content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.description }}{{ end }}" />
-    {{ if .Params.image }}
-    <meta name="twitter:image" content="{{ .Params.image | absURL }}" />
-    {{ else }}
-    <meta name="twitter:image" content="{{ "/images/marco-avatar.png" | absURL }}" />
-    {{ end }}
-
-    <!-- Structured Data (Schema.org) -->
-    {{ if .IsHome }}
-    <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "WebSite",
-        "@id": "https://laroccadigitale.it/#website",
-        "url": "https://laroccadigitale.it/",
-        "name": "Marco La Rocca — Siti Web Frascati",
-        "description": "{{ .Site.Params.description }}",
-        "inLanguage": "it-IT"
-      },
-      {
-        "@type": "ProfessionalService",
-        "@id": "https://laroccadigitale.it/#business",
-        "name": "Marco La Rocca — Siti Web",
-        "url": "https://laroccadigitale.it/",
-        "image": "https://laroccadigitale.it/images/marco-avatar.png",
-        "description": "Realizzo siti web per professionisti e attivita locali a Frascati e nei Castelli Romani. Design curato, SEO locale, prezzi onesti.",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "Frascati",
-          "addressLocality": "Frascati",
-          "addressRegion": "RM",
-          "postalCode": "00044",
-          "addressCountry": "IT"
-        },
-        "geo": {
-          "@type": "GeoCoordinates",
-          "latitude": 41.808,
-          "longitude": 12.682
-        },
-        "areaServed": [
-          {"@type": "City", "name": "Frascati"},
-          {"@type": "City", "name": "Grottaferrata"},
-          {"@type": "City", "name": "Marino"},
-          {"@type": "City", "name": "Albano Laziale"},
-          {"@type": "City", "name": "Velletri"},
-          {"@type": "City", "name": "Genzano di Roma"},
-          {"@type": "City", "name": "Rocca di Papa"},
-          {"@type": "City", "name": "Castel Gandolfo"}
-        ],
-        "hasOfferCatalog": {
-          "@type": "OfferCatalog",
-          "name": "Servizi Web",
-          "itemListElement": [
-            {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Realizzazione Siti Web"}},
-            {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "SEO Locale"}},
-            {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Automazione AI"}}
-          ]
-        },
-        "sameAs": [
-          "https://github.com/kondor87"
-        ]
-      },
-      {
-        "@type": "Person",
-        "@id": "https://laroccadigitale.it/#person",
-        "name": "Marco La Rocca",
-        "url": "https://laroccadigitale.it/",
-        "image": "https://laroccadigitale.it/images/marco-avatar.png",
-        "jobTitle": "Web Designer e Consulente AI",
-        "worksFor": {"@id": "https://laroccadigitale.it/#business"},
-        "address": {
-          "@type": "PostalAddress",
-          "addressLocality": "Frascati",
-          "addressRegion": "RM",
-          "addressCountry": "IT"
-        },
-        "sameAs": [
-          "https://github.com/kondor87"
-        ]
-      }
-    ]
-  }
-  </script>
-    {{ end }}
-
-    {{ if .IsPage }}
-    <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "BlogPosting",
-    "headline": "{{ .Title }}",
-    "description": "{{ .Description }}",
-    "datePublished": "{{ .Date.Format "2006-01-02" }}",
-    "dateModified": "{{ .Lastmod.Format "2006-01-02" }}",
-    "author": {
-      "@type": "Person",
-      "name": "Marco La Rocca"
-    }{{ with .Params.image }},
-    "image": "{{ . | absURL }}"{{ end }}
-  }
-  </script>
-    <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-      { "@type": "ListItem", "position": 1, "name": "Home", "item": "{{ .Site.BaseURL }}" },
-      { "@type": "ListItem", "position": 2, "name": "Blog", "item": "{{ .Site.BaseURL }}blog/" },
-      { "@type": "ListItem", "position": 3, "name": "{{ .Title }}" }
-    ]
-  }
-  </script>
-    {{ end }}
-
+    {{ partial "shared/head.html" . }}
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
         href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap"
         rel="stylesheet" />
-    <link rel="stylesheet" href="/css/style.css?v={{ now.Unix }}" />
+    {{ $css := resources.Get "css/style.css" | minify | fingerprint }}
+    <link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}" />
     {{ block "head" . }}{{ end }}
 </head>
 
 <body>
-    <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5TD66VKJ"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
 
-    {{ block "main" . }}{{ end }}
+    <div class="container">
+        {{ partial "nav.html" . }}
+        {{ block "main" . }}{{ end }}
+        {{ partial "footer.html" . }}
+    </div>
 
     <script>
         /* Scroll Reveal */
         (function () {
             var els = document.querySelectorAll('.reveal');
             if (!els.length) return;
+            if (!('IntersectionObserver' in window) || window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                els.forEach(function (el) { el.classList.add('revealed'); });
+                return;
+            }
             var io = new IntersectionObserver(function (entries) {
                 entries.forEach(function (e) {
                     if (e.isIntersecting) {
@@ -217,10 +44,7 @@
         })();
     </script>
     {{ block "scripts" . }}{{ end }}
-    <script type="text/javascript">(function (w,d) {var loader = function () {var s = d.createElement("script"), tag = d.getElementsByTagName("script")[0]; s.src="https://cdn.iubenda.com/iubenda.js"; tag.parentNode.insertBefore(s,tag);}; if(w.addEventListener){w.addEventListener("load", loader, false);}else if(w.attachEvent){w.attachEvent("onload", loader);}else{w.onload = loader;}})(window, document);</script>
-    
-    <!-- Iubenda Cookie Banner Widget -->
-    <script type="text/javascript" src="https://embeds.iubenda.com/widgets/e9b3d75a-33f9-41ef-9594-69d5554dc6c0.js"></script>
+    <script>(function (w,d) {var loader = function () {var s = d.createElement("script"), tag = d.getElementsByTagName("script")[0]; s.src="https://cdn.iubenda.com/iubenda.js"; tag.parentNode.insertBefore(s,tag);}; if(w.addEventListener){w.addEventListener("load", loader, false);}else if(w.attachEvent){w.attachEvent("onload", loader);}else{w.onload = loader;}})(window, document);</script>
 </body>
 
 </html>
