@@ -19,15 +19,15 @@ servizi:
       - "Modulo contatti, certificato SSL, privacy"
       - "Dominio e accessi intestati a te"
       - "Ti spiego come aggiornarlo da solo"
-  - title: "Automazioni e AI, dove servono"
-    text: "Meno tempo al telefono e su WhatsApp, più tempo per il tuo lavoro."
+  - title: "Prenotazioni e moduli sul sito"
+    text: "Meno tempo al telefono e su WhatsApp: chi visita il sito prenota o ti scrive da solo."
     items:
-      - "Prenotazioni online e promemoria"
-      - "Moduli digitali prima dell'appuntamento"
-      - "Bozze di risposta alle recensioni"
-      - "Chatbot per le domande frequenti"
-      - "Attenzione a privacy e dati sanitari"
-      - "Prima l'automazione semplice, poi l'AI"
+      - "Prenotazione online collegata al tuo calendario"
+      - "Moduli da compilare prima dell'appuntamento"
+      - "Pulsanti per chiamarti, scriverti su WhatsApp, raggiungerti"
+      - "Collegamento con la scheda Google Business"
+      - "Strumenti scelti con attenzione a privacy e dati sanitari"
+      - "Solo quello che ti serve davvero"
 
 processo:
   - title: "Ci sentiamo"
@@ -69,7 +69,7 @@ faq:
   - q: "E se dopo servono modifiche?"
     a: "Le valutiamo di volta in volta: ogni modifica è un intervento a sé, con il suo prezzo concordato prima. Nessun abbonamento."
 
-strumenti: ["WordPress", "Hugo", "HTML e CSS", "SEO", "Google Business", "Google Analytics", "Automazioni", "AI"]
+strumenti: ["WordPress", "Hugo", "HTML e CSS", "SEO", "Google Business", "Google Search Console", "Prenotazioni online"]
 
 testimonianza:
   text: "Mi sono trovata davvero benissimo con Marco, oltre alla professionalità ha mostrato sempre disponibilità e gentilezza nei miei confronti. Mi ha aiutata a creare un sito esattamente come lo immaginavo e inoltre mi ha anche insegnato a saperlo gestire in autonomia! Straconsigliato😍💪"

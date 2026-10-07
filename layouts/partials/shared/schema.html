@@ -29,14 +29,14 @@
       "name": "Marco La Rocca",
       "url": "{{ $base }}",
       "image": "{{ $avatar }}",
-      "description": "Informatico di Frascati. Su richiesta realizza siti web per professionisti e piccole attività dei Castelli Romani, con SEO locale e piccole automazioni.",
+      "description": "Informatico di Frascati. Su richiesta realizza siti web per professionisti e piccole attività dei Castelli Romani, con SEO locale, prenotazioni online e moduli.",
       "homeLocation": {"@type": "City", "name": "Frascati"},
-      "knowsAbout": ["Siti web", "Siti vetrina", "SEO locale", "WordPress", "Hugo", "Performance web", "Automazione", "Intelligenza artificiale"],
+      "knowsAbout": ["Siti web", "Siti vetrina", "SEO locale", "WordPress", "Hugo", "Performance web", "Google Business Profile"],
       "knowsLanguage": "it",
       "sameAs": [{{ .Site.Params.github | jsonify }}],
       "makesOffer": [
         {"@type": "Offer", "itemOffered": {"@id": "{{ $base }}#servizio-siti-web"}},
-        {"@type": "Offer", "itemOffered": {"@id": "{{ $base }}#servizio-automazione"}}
+        {"@type": "Offer", "itemOffered": {"@id": "{{ $base }}#servizio-prenotazioni"}}
       ]
     },
     {
@@ -57,9 +57,9 @@
     },
     {
       "@type": "Service",
-      "@id": "{{ $base }}#servizio-automazione",
-      "name": "Automazioni e strumenti AI per piccole attività",
-      "serviceType": "Automazione",
+      "@id": "{{ $base }}#servizio-prenotazioni",
+      "name": "Prenotazioni online e moduli sul sito",
+      "serviceType": "Sviluppo web",
       "provider": {"@id": "{{ $person }}"},
       "areaServed": {"@type": "AdministrativeArea", "name": "Castelli Romani"}
     }
@@ -81,7 +81,7 @@
       "datePublished": "{{ .Date.Format "2006-01-02T15:04:05-07:00" }}",
       "dateModified": "{{ .Lastmod.Format "2006-01-02T15:04:05-07:00" }}",
       "inLanguage": "it-IT",
-      "image": "{{ (.Params.image | default .Site.Params.ogImage) | absURL }}",
+      "image": "{{ (.Params.ogImage | default (.Params.image | default .Site.Params.ogImage)) | absURL }}",
       "author": {"@id": "{{ $person }}"},
       "publisher": {"@id": "{{ $person }}"},
       "isPartOf": {"@id": "{{ $website }}"},
@@ -126,7 +126,7 @@
       "dateModified": "{{ .Lastmod.Format "2006-01-02" }}",
       "creator": {"@id": "{{ $person }}"},
       "isPartOf": {"@id": "{{ $website }}"},
-      "image": "{{ (.Params.image | default .Site.Params.ogImage) | absURL }}"{{ with .Params.client }},
+      "image": "{{ (.Params.ogImage | default (.Params.image | default .Site.Params.ogImage)) | absURL }}"{{ with .Params.client }},
       "about": {"@type": "Organization", "name": {{ . | jsonify }}{{ with $.Params.clientUrl }}, "url": {{ . | jsonify }}{{ end }}}{{ end }}
     },
     {

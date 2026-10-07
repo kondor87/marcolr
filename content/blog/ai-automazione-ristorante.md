@@ -2,7 +2,7 @@
 title: "AI per ristoranti: cosa automatizzare (e cosa no)"
 date: 2026-04-14T10:00:00+02:00
 description: "Scopri come chatbot e intelligenza artificiale possono far risparmiare tempo reale al tuo ristorante e migliorare l'esperienza dei tuoi clienti."
-image: "/images/copertine/ai-automazione-ristorante.png"
+ogImage: "/images/og/ai-automazione-ristorante.png"
 categories: ["AI e Automazione"]
 tags: ["intelligenza artificiale ristorante", "chatbot ristorante", "automazione ristorazione", "AI per attività locali"]
 lastmod: 2026-10-07T10:00:00+02:00
@@ -104,12 +104,18 @@ Anche con ipotesi prudenti gli strumenti si ripagano più volte. Ma il conto va 
 
 ## "Ok, ma io non sono un tecnico"
 
-Ed è esattamente il punto. Tu non devi diventare un esperto di AI. Devi solo sapere che **queste soluzioni esistono** e che qualcuno può configurarle per te.
+Ed è esattamente il punto. Tu non devi diventare un esperto di AI. Devi solo sapere che **queste soluzioni esistono** e scegliere da dove partire.
 
-È come il commercialista: non sai fare la dichiarazione dei redditi, ma sai che ti serve qualcuno che la faccia. Con l'AI è uguale.
+Molti di questi strumenti sono già pronti: il booking del gestionale, il menu digitale, le risposte alle recensioni dal profilo Google. Si attivano in poco tempo e si provano senza grandi investimenti.
 
 ---
 
-Se hai un ristorante ai Castelli Romani e ti sei riconosciuto in qualcuno di questi problemi, possiamo parlarne senza impegno. Ti spiego cosa si può fare nel tuo caso specifico e con che budget.
+Io mi occupo di siti web. Se vuoi un sito con il **menu leggibile dal telefono**, la **prenotazione diretta** e i pulsanti per chiamare e trovarti, lo realizzo io. Per chatbot e strumenti di AI il mio consiglio è partire in piccolo, con i servizi già pronti descritti qui sopra.
 
 [Scrivimi, senza impegno](/#contacts).
+
+## Fonti e approfondimenti
+
+- [WhatsApp Business Platform, prezzi dei messaggi](https://developers.facebook.com/docs/whatsapp/pricing/)
+- [Regolamento (UE) 1169/2011 sulle informazioni alimentari ai consumatori (allergeni)](https://eur-lex.europa.eu/eli/reg/2011/1169/oj)
+- [Regolamento (UE) 2024/1689, AI Act (art. 50: obblighi di trasparenza)](https://eur-lex.europa.eu/eli/reg/2024/1689/oj)

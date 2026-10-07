@@ -2,7 +2,7 @@
 title: "AI per osteopati: chatbot, promemoria o segreteria?"
 date: 2026-04-28T10:00:00+02:00
 description: "Booking e promemoria sono automazione. Un chatbot che risponde ai pazienti in linguaggio naturale è AI. Scopri cosa serve davvero al tuo studio."
-image: "/images/copertine/ai-automazione-osteopata.png"
+ogImage: "/images/og/ai-automazione-osteopata.png"
 categories: ["AI e Automazione"]
 tags: ["intelligenza artificiale osteopata", "automazione studio osteopatia", "chatbot prenotazioni", "gestione pazienti AI"]
 lastmod: 2026-10-07T10:00:00+02:00
@@ -124,6 +124,13 @@ L'AI e l'automazione si configurano una volta e poi funzionano da sole. Tu conti
 
 ---
 
-Se hai uno studio di osteopatia e ti ritrovi a fare il segretario di te stesso, possiamo parlarne. Ti mostro cosa ha senso automatizzare, dove l'AI aggiunge valore reale, e dove basta una buona automazione tradizionale.
+Io mi occupo di siti web. Se vuoi un sito con la **prenotazione online collegata al tuo calendario**, un **modulo da compilare prima della visita** o i pulsanti per chiamarti e scriverti su WhatsApp, li integro io. Per chatbot e strumenti di AI veri e propri il mio consiglio è partire in piccolo, con i servizi già pronti descritti qui sopra, e valutare con calma.
 
 [Scrivimi, senza impegno](/#contacts).
+
+## Fonti e approfondimenti
+
+- [Regolamento (UE) 2016/679, GDPR (art. 9: categorie particolari di dati)](https://eur-lex.europa.eu/eli/reg/2016/679/oj)
+- [Garante per la protezione dei dati personali](https://www.garanteprivacy.it/)
+- [Regolamento (UE) 2024/1689, AI Act (art. 50: obblighi di trasparenza)](https://eur-lex.europa.eu/eli/reg/2024/1689/oj)
+- [Legge 23 settembre 2025, n. 132, sull'intelligenza artificiale (art. 13)](https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2025-09-23;132)

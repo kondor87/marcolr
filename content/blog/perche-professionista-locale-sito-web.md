@@ -2,7 +2,7 @@
 title: "Perché un professionista ha bisogno di un sito web (anche se ha Instagram)"
 date: 2026-02-18T10:00:00+01:00
 description: "Instagram e Facebook non bastano. Se sei un professionista locale, un sito web è il vero motore per trovare clienti in automatico tramite Google."
-image: "/images/copertine/perche-professionista-locale-sito-web.png"
+ogImage: "/images/og/perche-professionista-locale-sito-web.png"
 categories: ["Business Digitale"]
 tags: ["professionisti", "presenza online", "sito vetrina", "local SEO"]
 lastmod: 2026-10-07T10:00:00+02:00
@@ -56,3 +56,8 @@ Se hai uno studio ai Castelli Romani e pensi sia arrivato il momento di fare que
 - [Google Business e Sito Vetrina: Accoppiata Vincente](/blog/google-business-sito-vetrina/)
 - [5 Errori Online che Fanno Perdere Clienti](/blog/errori-online-attivita-locali/)
 
+## Fonti e approfondimenti
+
+- [Google Business Profile, Suggerimenti per migliorare il posizionamento nei risultati locali](https://support.google.com/business/answer/7091?hl=it)
+- [Google Search Central, Creare contenuti utili, affidabili e pensati per le persone](https://developers.google.com/search/docs/fundamentals/creating-helpful-content)
+- [Google Search Central, Indicizzazione mobile-first](https://developers.google.com/search/docs/crawling-indexing/mobile/mobile-sites-mobile-first-indexing)

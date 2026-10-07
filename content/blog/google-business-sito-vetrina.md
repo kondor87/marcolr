@@ -2,7 +2,7 @@
 title: "Google Business e sito vetrina: perché funzionano insieme"
 date: 2025-11-10T14:00:00+01:00
 description: "Pensi che Google Maps basti per farti trovare? Scopri perché abbinare una Scheda Google a un Sito Vetrina è il trucco per convertire contatti in clienti."
-image: "/images/copertine/google-business-sito-vetrina.png"
+ogImage: "/images/og/google-business-sito-vetrina.png"
 categories: ["SEO Locale"]
 tags: ["google my business", "presenza online", "SEO", "clienti locali"]
 lastmod: 2026-10-07T10:00:00+02:00
@@ -29,7 +29,7 @@ Un utente indeciso, che non è ancora pronto a chiamare, cliccherà quel pulsant
 
 ## 3. Il Sito Vetrina migliora il posizionamento su Maps (SEO Locale)
 
-Una cosa che molti ignorano: **per decidere chi mostrare sulla mappa Google guarda anche il sito collegato alla scheda**. Contano la pertinenza (fai davvero quello che l'utente cerca?), la distanza e la notorietà.
+Una cosa che molti ignorano: **per decidere chi mostrare sulla mappa Google guarda anche il sito collegato alla scheda**. Secondo [Google stesso](https://support.google.com/business/answer/7091?hl=it) contano tre cose: la pertinenza (fai davvero quello che l'utente cerca?), la distanza e l'evidenza, cioè quanto l'attività è conosciuta.
 
 Se il tuo sito è ben strutturato, contiene le parole chiave giuste ("Nutrizionista Castelli Romani", "Diete personalizzate"), ed è considerato veloce e affidabile da Google, queste metriche contribuiscono a rafforzare la tua presenza complessiva online. Google tende a premiare chi offre informazioni più complete e coerenti, e avere un sito collegato alla scheda può darti un vantaggio rispetto a chi usa solo la scheda senza sito.
 
@@ -48,3 +48,8 @@ Quando realizzo un sito, il collegamento con la scheda Google Business è compre
 
 [Ti va di parlarne? Scrivimi senza impegno](/#contacts).
 
+## Fonti e approfondimenti
+
+- [Google Business Profile, Suggerimenti per migliorare il posizionamento nei risultati locali](https://support.google.com/business/answer/7091?hl=it)
+- [Google Business Profile, Linee guida per rappresentare la tua attività](https://support.google.com/business/answer/3038177?hl=it)
+- [Google Search Central, Dati strutturati per attività locali](https://developers.google.com/search/docs/appearance/structured-data/local-business)

@@ -3,7 +3,7 @@ title: "Sito per ristorante o osteria: le 9 cose che deve avere davvero"
 seoTitle: "Sito web per ristorante: cosa deve avere davvero (guida 2026)"
 date: 2026-10-07T09:00:00+02:00
 description: "Menu leggibile dal telefono, orari giusti, chiamata a un tocco, allergeni, foto vere: cosa serve davvero al sito di un ristorante o di un'osteria, e cosa no."
-image: "/images/copertine/sito-web-ristorante-cosa-deve-avere.png"
+ogImage: "/images/og/sito-web-ristorante-cosa-deve-avere.png"
 categories: ["Business Digitale"]
 tags: ["sito ristorante", "sito osteria", "menu online", "ristorante Google", "sito web ristorazione"]
 draft: false
@@ -72,3 +72,11 @@ La storia del locale, chi c'è in cucina, da dove arrivano le materie prime. Non
 | Dati strutturati e scheda Google | Il locale compare con le informazioni giuste |
 
 Hai un ristorante o un'osteria ai Castelli Romani e il tuo sito non fa queste cose? [Scrivimi](/#contacts), ti dico cosa sistemerei per primo.
+
+## Fonti e approfondimenti
+
+- [Regolamento (UE) 1169/2011 sulle informazioni alimentari ai consumatori (allergeni)](https://eur-lex.europa.eu/eli/reg/2011/1169/oj)
+- [Google Search Central, Dati strutturati per attività locali](https://developers.google.com/search/docs/appearance/structured-data/local-business)
+- [Google Business Profile, Suggerimenti per migliorare il posizionamento nei risultati locali](https://support.google.com/business/answer/7091?hl=it)
+- [PageSpeed Insights, per misurare la velocità del sito](https://pagespeed.web.dev/)
+- [Google Search Central, Indicizzazione mobile-first](https://developers.google.com/search/docs/crawling-indexing/mobile/mobile-sites-mobile-first-indexing)

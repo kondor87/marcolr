@@ -2,7 +2,7 @@
 title: "Sito monopagina o sito completo? Quale scegliere"
 date: 2025-12-05T14:30:00+01:00
 description: "Non tutti i siti sono uguali. Dal biglietto da visita digitale al segretario virtuale: scopri quale tipo di sito web serve davvero alla tua attività."
-image: "/images/copertine/sito-monopagina-o-sito-completo.png"
+ogImage: "/images/og/sito-monopagina-o-sito-completo.png"
 categories: ["Business Digitale"]
 tags: ["sito vetrina", "monopagina", "calendly", "automazioni", "landing page"]
 lastmod: 2026-10-07T10:00:00+02:00
@@ -56,3 +56,7 @@ Se vuoi **ottimizzare il tuo tempo e smettere di rincorrere le chat WhatsApp**, 
 
 [Non sai quale fa per te? Scrivimi, senza impegno](/#contacts). Ti faccio qualche domanda e ti dico onestamente quale soluzione ha più senso per la tua situazione.
 
+## Fonti e approfondimenti
+
+- [Google Search Central, Guida introduttiva alla SEO](https://developers.google.com/search/docs/fundamentals/seo-starter-guide)
+- [Regolamento (UE) 2016/679, GDPR (art. 9: categorie particolari di dati)](https://eur-lex.europa.eu/eli/reg/2016/679/oj)

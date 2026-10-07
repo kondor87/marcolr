@@ -3,7 +3,7 @@ title: "Chi possiede davvero il tuo sito? La checklist di dominio, hosting e acc
 seoTitle: "Chi possiede il tuo sito? Checklist di dominio, hosting e accessi"
 date: 2026-10-07T08:00:00+02:00
 description: "Dominio intestato ad altri, password che non hai, scheda Google di un ex fornitore: la checklist per verificare che il sito sia davvero tuo, e cosa fare se non lo è."
-image: "/images/copertine/chi-possiede-il-tuo-sito-dominio-hosting-accessi.png"
+ogImage: "/images/og/chi-possiede-il-tuo-sito-dominio-hosting-accessi.png"
 categories: ["Business Digitale"]
 tags: ["dominio intestato", "proprietà sito web", "accessi sito", "cambiare fornitore sito", "trasferimento dominio"]
 draft: false
@@ -81,3 +81,9 @@ Mettilo per iscritto, prima di cominciare:
 Se una di queste risposte non è un sì chiaro (o un "nessun canone" chiaro), fermati e chiedi spiegazioni. Ne parlo anche nella guida su [quanto costa un sito web](/blog/quanto-costa-sito-web/).
 
 Quando realizzo un sito, dominio e accessi sono intestati al cliente dal primo giorno e alla consegna lascio tutto: codice, credenziali e istruzioni. Se vuoi un controllo di come stanno le cose sul tuo sito, [scrivimi](/#contacts).
+
+## Fonti e approfondimenti
+
+- [Registro .it, il registro dei domini italiani](https://www.nic.it/)
+- [Google Business Profile, Richiedi la proprietà di un profilo](https://support.google.com/business/answer/4566671?hl=it)
+- [Google Search Console](https://search.google.com/search-console)

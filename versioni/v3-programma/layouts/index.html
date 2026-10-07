@@ -58,7 +58,7 @@
 {{ $posts := where .Site.RegularPages "Section" "blog" }}
 <section class="sec" style="padding-top:0" aria-labelledby="blog">
   <div class="wrap">
-    <div class="sec-title"><h2 id="blog">Dal blog</h2><p>Guide pratiche su siti, Google, AI e automazione, per chi ha uno studio o un locale.</p></div>
+    <div class="sec-title"><h2 id="blog">Dal blog</h2><p>Guide pratiche su siti, Google e strumenti digitali, per chi ha uno studio o un locale.</p></div>
     {{ partial "indice.html" (dict "pages" (first 6 $posts)) }}
     <p style="margin-top:2rem"><a class="link" href="/blog/">Tutti gli articoli {{ partial "icon.html" "arrow" }}</a></p>
   </div>

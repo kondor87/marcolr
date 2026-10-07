@@ -3,7 +3,7 @@ title: "AI, chatbot e dati dei pazienti: cosa deve sapere uno studio"
 seoTitle: "Chatbot e AI nello studio: GDPR, AI Act e legge 132/2025"
 date: 2026-10-07T10:00:00+02:00
 description: "Vuoi usare un chatbot o l'AI nel tuo studio? Cosa cambia con l'AI Act dal 2 agosto 2026, la legge 132/2025 e il GDPR sui dati sanitari. Una checklist pratica."
-image: "/images/copertine/ai-chatbot-dati-pazienti-gdpr.png"
+ogImage: "/images/og/ai-chatbot-dati-pazienti-gdpr.png"
 categories: ["AI e Automazione"]
 tags: ["chatbot studio medico", "GDPR dati sanitari", "AI Act", "legge 132/2025", "privacy pazienti"]
 draft: false
@@ -82,4 +82,12 @@ Per la psicologia e per chi lavora con i minori i limiti sono ancora più strett
 
 L'AI e le automazioni possono davvero togliere lavoro ripetitivo a uno studio. Ma in sanità la regola è: **prima la fiducia, poi la comodità**. Un chatbot trasparente, che fa poche cose e le fa bene, è utile. Uno che raccoglie dati sanitari senza regole è un rischio, per te e per i tuoi pazienti.
 
-Se stai valutando uno di questi strumenti per il tuo studio e vuoi un parere tecnico su come configurarlo, [scrivimi](/#contacts). Per la parte legale ti dirò onestamente quando serve sentire un esperto.
+Se ti serve un sito con prenotazione online o moduli scelti con attenzione alla privacy, [scrivimi](/#contacts). Per chatbot e AI su dati sanitari, il primo interlocutore è il tuo DPO o un legale.
+
+## Fonti e approfondimenti
+
+- [Regolamento (UE) 2016/679, GDPR (art. 9: categorie particolari di dati)](https://eur-lex.europa.eu/eli/reg/2016/679/oj)
+- [Regolamento (UE) 2024/1689, AI Act (art. 50: obblighi di trasparenza)](https://eur-lex.europa.eu/eli/reg/2024/1689/oj)
+- [Legge 23 settembre 2025, n. 132, sull'intelligenza artificiale (art. 13)](https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2025-09-23;132)
+- [Garante per la protezione dei dati personali](https://www.garanteprivacy.it/)
+- [Codice deontologico degli psicologi italiani](https://www.psy.it/codice-deontologico-degli-psicologi-italiani/)

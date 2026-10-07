@@ -2,7 +2,7 @@
 title: "Quanto costa un sito web nel 2026? Guida ai prezzi reali"
 date: 2026-03-24T10:00:00+01:00
 description: "I prezzi dei siti web sono un mistero? Ecco una guida trasparente alle voci di costo reali e ricorrenti, per capire quanto spendere senza sorprese."
-image: "/images/copertine/quanto-costa-sito-web.png"
+ogImage: "/images/og/quanto-costa-sito-web.png"
 categories: ["Business Digitale"]
 tags: ["costo sito web", "preventivo sito", "sito vetrina prezzo", "investimento digitale"]
 lastmod: 2026-10-07T10:00:00+02:00
@@ -28,7 +28,7 @@ Il dominio è il tuo indirizzo web (es. `iltuonome.it`). Costa circa 10-15€ al
 L'hosting è lo "spazio" dove il sito vive fisicamente. Per un sito vetrina di un professionista, i costi sono contenuti:
 
 *   **Hosting condiviso** (Aruba, SiteGround): 30-80€/anno — va benissimo per iniziare.
-*   **Hosting per siti statici** (Netlify, Cloudflare Pages): gratuito o quasi per siti piccoli e velocissimi. Leggi le condizioni del piano gratuito: alcuni servizi non lo permettono per usi commerciali.
+*   **Hosting per siti statici** (Netlify, Cloudflare Pages): gratuito o quasi per siti piccoli e velocissimi. Leggi le condizioni del piano gratuito: alcuni servizi, come [Vercel](https://vercel.com/docs/limits/fair-use-guidelines), non lo permettono per usi commerciali.
 
 ### 3. La Realizzazione (il costo variabile)
 
@@ -89,3 +89,10 @@ Se hai un'attività locale e vuoi capire qual è la soluzione giusta per te, scr
 
 [Scrivimi, senza impegno](/#contacts).
 
+## Fonti e approfondimenti
+
+- [Registro .it, il registro dei domini italiani](https://www.nic.it/)
+- [Netlify, piani e prezzi](https://www.netlify.com/pricing/)
+- [Vercel, Fair Use Guidelines: il piano Hobby è solo per uso personale non commerciale](https://vercel.com/docs/limits/fair-use-guidelines)
+- [Cloudflare Pages](https://pages.cloudflare.com/)
+- [Google Search Central, Core Web Vitals e risultati di ricerca](https://developers.google.com/search/docs/appearance/core-web-vitals)

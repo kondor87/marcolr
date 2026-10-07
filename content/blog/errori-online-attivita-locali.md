@@ -2,7 +2,7 @@
 title: "5 errori online che fanno perdere clienti alle attività locali"
 date: 2026-04-01T10:00:00+02:00
 description: "Scheda Google incompleta, nessun sito web e social abbandonati: ecco i 5 errori digitali più comuni tra i professionisti locali e come risolverli."
-image: "/images/copertine/errori-online-attivita-locali.png"
+ogImage: "/images/og/errori-online-attivita-locali.png"
 categories: ["Business Digitale"]
 tags: ["errori sito web", "attività locale online", "visibilità Google", "marketing locale"]
 lastmod: 2026-10-07T10:00:00+02:00
@@ -51,7 +51,7 @@ Le recensioni su Google sono il **passaparola digitale**. E funzionano esattamen
 **Cosa fare:**
 *   **Chiedi attivamente le recensioni** ai clienti soddisfatti. La maggior parte non ci pensa, ma se glielo chiedi gentilmente, lo fa volentieri.
 *   **Rispondi a tutte**, anche a quelle negative. Chi legge guarda come rispondi alle critiche quanto le stelle.
-*   **Non comprare recensioni false.** Sono vietate e Google può rimuoverle o limitare la scheda.
+*   **Non comprare recensioni false.** Sono [vietate dalle norme di Google](https://support.google.com/contributionpolicy/answer/7400114?hl=it), che può rimuoverle o limitare la scheda.
 
 ## 5. Essere ovunque (ma senza una strategia)
 
@@ -87,3 +87,9 @@ Se hai un'attività locale e ti sei riconosciuto in uno (o più) di questi error
 - [Perché un Professionista ha Bisogno di un Sito Web](/blog/perche-professionista-locale-sito-web/)
 - [Google Business e Sito Vetrina: Accoppiata Vincente](/blog/google-business-sito-vetrina/)
 
+## Fonti e approfondimenti
+
+- [Google Business Profile, Suggerimenti per migliorare il posizionamento nei risultati locali](https://support.google.com/business/answer/7091?hl=it)
+- [Google, Norme sui contenuti vietati nelle recensioni di Maps](https://support.google.com/contributionpolicy/answer/7400114?hl=it)
+- [Google Search Central, Indicizzazione mobile-first](https://developers.google.com/search/docs/crawling-indexing/mobile/mobile-sites-mobile-first-indexing)
+- [web.dev, Web Vitals](https://web.dev/articles/vitals)

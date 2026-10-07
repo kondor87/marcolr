@@ -2,7 +2,7 @@
 title: "AI e automazione per piccole attività: la guida onesta (senza fuffa)"
 date: 2026-05-12T10:00:00+02:00
 description: "AI e automazione non sono la stessa cosa. Cosa fanno davvero per un'attività locale, quanto costano e quando conviene investirci."
-image: "/images/copertine/ai-automazione-guida-attivita-locali.png"
+ogImage: "/images/og/ai-automazione-guida-attivita-locali.png"
 categories: ["AI e Automazione"]
 tags: ["intelligenza artificiale attività locali", "automazione piccole imprese", "AI per professionisti", "guida AI business"]
 lastmod: 2026-10-07T10:00:00+02:00
@@ -16,8 +16,6 @@ Questa guida è diversa. È pensata per **te** — che hai un'attività locale, 
 Spoiler: sì, ma non per tutto. E non tutto quello che ti vendono come "AI" lo è davvero.
 
 ## La prima cosa da sapere: AI e automazione NON sono la stessa cosa
-
-![AI vs Automazione — la differenza spiegata in modo semplice](/images/copertine/schema-ai-vs-automazione.png)
 
 Questo è il punto più importante di tutto l'articolo, e quasi nessuno te lo spiega chiaramente:
 
@@ -154,6 +152,13 @@ Chi ti vende "tutta AI" per tutto sta probabilmente gonfiando i prezzi. Chi ti d
 
 ---
 
-Se hai un'attività locale e vuoi capire se e come l'automazione e l'AI possono aiutarti nel tuo caso specifico, scrivimi. Nessun giro di parole, nessun preventivo gonfiato — solo una chiacchierata per capire cosa ha senso per te e cosa no.
+Io mi occupo di siti web. Se vuoi un sito con la **prenotazione online collegata al tuo calendario**, un **modulo da compilare prima della visita** o i pulsanti per chiamarti e scriverti su WhatsApp, li integro io. Per chatbot e strumenti di AI veri e propri il mio consiglio è partire in piccolo, con i servizi già pronti descritti qui sopra, e valutare con calma.
 
 [Scrivimi, senza impegno](/#contacts).
+
+## Fonti e approfondimenti
+
+- [Regolamento (UE) 2024/1689, AI Act (art. 50: obblighi di trasparenza)](https://eur-lex.europa.eu/eli/reg/2024/1689/oj)
+- [Legge 23 settembre 2025, n. 132, sull'intelligenza artificiale (art. 13)](https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2025-09-23;132)
+- [Regolamento (UE) 2016/679, GDPR (art. 9: categorie particolari di dati)](https://eur-lex.europa.eu/eli/reg/2016/679/oj)
+- [WhatsApp Business Platform, prezzi dei messaggi](https://developers.facebook.com/docs/whatsapp/pricing/)

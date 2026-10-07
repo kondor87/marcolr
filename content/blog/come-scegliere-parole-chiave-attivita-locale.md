@@ -2,7 +2,7 @@
 title: "Come Scegliere le Parole Chiave Giuste per la Tua Attività Locale"
 date: 2026-07-27T10:00:00+02:00
 description: "Le parole chiave sono il ponte tra te e i tuoi prossimi clienti su Google. Ecco come trovarle, sceglierle e usarle nel tuo sito — anche se non sai nulla di SEO."
-image: "/images/copertine/come-scegliere-parole-chiave-attivita-locale.png"
+ogImage: "/images/og/come-scegliere-parole-chiave-attivita-locale.png"
 categories: ["SEO Locale"]
 tags: ["parole chiave", "keyword research", "SEO locale", "Google", "attività locale"]
 lastmod: 2026-10-07T10:00:00+02:00
@@ -142,3 +142,11 @@ Se hai un'attività locale e vuoi capire quali parole chiave puntare nel tuo cas
 - [Perché Avere un Blog: 4 Trucchi SEO Pratici](/blog/blog-e-trucchi-seo-semplici/)
 - [5 Errori Online che Fanno Perdere Clienti](/blog/errori-online-attivita-locali/)
 - [Google Business e Sito Vetrina: Accoppiata Vincente](/blog/google-business-sito-vetrina/)
+
+## Fonti e approfondimenti
+
+- [Google Search Central, Guida introduttiva alla SEO](https://developers.google.com/search/docs/fundamentals/seo-starter-guide)
+- [Google Search Central, Come vengono generati i titoli nei risultati](https://developers.google.com/search/docs/appearance/title-link)
+- [Google Search Central, Norme relative allo spam (keyword stuffing)](https://developers.google.com/search/docs/essentials/spam-policies)
+- [Google Search Central, Contenuti e URL duplicati](https://developers.google.com/search/docs/crawling-indexing/consolidate-duplicate-urls)
+- [Google Search Central, Creare contenuti utili, affidabili e pensati per le persone](https://developers.google.com/search/docs/fundamentals/creating-helpful-content)

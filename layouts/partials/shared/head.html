@@ -47,7 +47,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 {{- $desc := .Site.Params.description }}
 {{- with .Description }}{{ $desc = . }}{{ else }}{{ if .IsPage }}{{ $desc = .Summary | plainify | htmlUnescape | truncate 155 }}{{ end }}{{ end }}
 {{- $img := .Site.Params.ogImage }}{{ $imgW := 1200 }}{{ $imgH := 630 }}
-{{- with .Params.image }}{{ $img = . }}{{ $imgW = 0 }}{{ end }}
+{{- with .Params.ogImage }}{{ $img = . }}{{ else }}{{ with .Params.image }}{{ $img = . }}{{ $imgW = 0 }}{{ end }}{{ end }}
 
 <title>{{ $title }}</title>
 <meta name="description" content="{{ $desc }}" />

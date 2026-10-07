@@ -2,7 +2,7 @@
 title: "Aggiornare i plugin di WordPress: perché farlo e come non rompere il sito"
 date: 2025-10-15T10:00:00+02:00
 description: "Ignorare le notifiche di WordPress è come ignorare la spia rossa sul cruscotto dell'auto: all'inizio non succede niente, ma prima o poi ti lascia a piedi."
-image: "/images/copertine/perche-aggiornare-plugin-wordpress.png"
+ogImage: "/images/og/perche-aggiornare-plugin-wordpress.png"
 categories: ["Manutenzione"]
 tags: ["sicurezza", "wordpress", "aggiornamenti", "prestazioni"]
 lastmod: 2026-10-07T10:00:00+02:00
@@ -52,3 +52,8 @@ Se il sito ha un hosting gestito, molti provider offrono backup automatici e agg
 
 Se gli aggiornamenti sono rimasti indietro da molto tempo, il rischio di rompere qualcosa aumenta. In quel caso conviene un intervento fatto con calma, magari su una copia del sito. Se ti serve una mano, [scrivimi](/#contacts): lo valutiamo come intervento singolo.
 
+## Fonti e approfondimenti
+
+- [WordPress.org, Aggiornare WordPress](https://wordpress.org/documentation/article/updating-wordpress/)
+- [WordPress.org, Backup di WordPress](https://wordpress.org/documentation/article/wordpress-backups/)
+- [WordPress.org, Rafforzare la sicurezza di WordPress](https://developer.wordpress.org/advanced-administration/security/hardening/)

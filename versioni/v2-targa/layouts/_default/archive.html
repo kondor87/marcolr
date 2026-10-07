@@ -1,6 +1,6 @@
 {{ define "main" }}
 {{ $posts := where .Site.RegularPages "Section" "blog" }}
-{{ partial "page-head.html" (dict "title" "Archivio" "lead" (printf "%d articoli su siti web, SEO, AI e automazione per attività locali." (len $posts)) "crumb" (dict "label" "← Blog" "url" "/blog/")) }}
+{{ partial "page-head.html" (dict "title" "Archivio" "lead" (printf "%d articoli su siti web, SEO e strumenti digitali per attività locali." (len $posts)) "crumb" (dict "label" "← Blog" "url" "/blog/")) }}
 <section class="sec stone stone--deep" style="padding-top:2rem">
   <div class="wrap archive">
     {{ range $posts.GroupByDate "2006" }}<div><h2>{{ .Key }}</h2>{{ partial "bacheca.html" (dict "pages" .Pages) }}</div>{{ end }}

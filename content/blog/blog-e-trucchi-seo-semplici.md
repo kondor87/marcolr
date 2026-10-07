@@ -2,7 +2,7 @@
 title: "Perché avere un blog: 4 consigli SEO pratici"
 date: 2026-01-20T15:00:00+01:00
 description: "Pensi che il blog sia morto? Sbagliato. È l'arma più potente per farti trovare su Google. Ecco come scriverlo senza impazzire con la SEO tecnica."
-image: "/images/copertine/blog-e-trucchi-seo-semplici.png"
+ogImage: "/images/og/blog-e-trucchi-seo-semplici.png"
 categories: ["SEO Locale"]
 tags: ["blog", "scrittura SEO", "posizionamento", "clienti locali"]
 lastmod: 2026-10-07T10:00:00+02:00
@@ -48,3 +48,8 @@ Alla fine di ogni post inserisci sempre un invito all'azione chiaro e gentile. "
 ### Non sai da dove iniziare?
 Avere la piattaforma tecnica giusta e ottimizzata è il primo passo, ma poi dovrai "alimentarla" coi tuoi contenuti. Se hai bisogno di una mano per mettere in piedi il tuo sito con il blog già pronto, [scrivimi senza impegno](/#contacts). Ti spiego anche come aggiornarlo in totale autonomia.
 
+## Fonti e approfondimenti
+
+- [Google Search Central, Best practice SEO per le immagini](https://developers.google.com/search/docs/appearance/google-images)
+- [Google Search Central, Creare contenuti utili, affidabili e pensati per le persone](https://developers.google.com/search/docs/fundamentals/creating-helpful-content)
+- [Google Search Central, Guida introduttiva alla SEO](https://developers.google.com/search/docs/fundamentals/seo-starter-guide)

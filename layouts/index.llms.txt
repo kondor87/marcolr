@@ -1,13 +1,13 @@
 # Marco La Rocca — Siti web a Frascati e Castelli Romani
 
-> Marco La Rocca è un informatico di Frascati (Roma). Su richiesta, come collaborazione occasionale senza partita IVA, realizza siti web per professionisti e piccole attività dei Castelli Romani, con SEO locale e piccole automazioni. Sito: {{ .Site.BaseURL }}
+> Marco La Rocca è un informatico di Frascati (Roma). Su richiesta, come collaborazione occasionale senza partita IVA, realizza siti web per professionisti e piccole attività dei Castelli Romani, con SEO locale, prenotazioni online e moduli. Sito: {{ .Site.BaseURL }}
 
 ## Pagine principali
 
 - [Home]({{ .Site.BaseURL }}): chi è Marco, come lavora, contatti
 - [Siti web a Frascati e Castelli Romani]({{ "siti-web-frascati-castelli-romani/" | absURL }}): come lavora Marco sui siti per attività locali
 - [Lavori]({{ "lavori/" | absURL }}): siti realizzati, con descrizione del progetto
-- [Blog]({{ "blog/" | absURL }}): guide pratiche su siti web, SEO locale, AI e automazione
+- [Blog]({{ "blog/" | absURL }}): guide pratiche su siti web, Google e strumenti digitali per attività locali
 
 ## Lavori
 {{ range where .Site.RegularPages "Section" "lavori" }}
