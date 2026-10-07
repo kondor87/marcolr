@@ -18,3 +18,6 @@ hugo-server.log
 # Screenshot di controllo delle versioni grafiche
 .impeccable/review/
 versioni/*/.impeccable/review/
+
+# Local Netlify folder
+.netlify
