@@ -42,7 +42,7 @@
         <h2 class="section-label">// cosa posso fare per te</h2>
         <div class="services-grid">
             {{ range $i, $s := $p.servizi }}
-            <div class="service-card primary{{ if $i }} ai-card{{ end }}">
+            <div class="service-card primary">
                 <span class="service-badge">Su richiesta</span>
                 <h3 class="service-title">{{ $s.title }}</h3>
                 <p class="service-desc">{{ $s.text }}</p>
@@ -89,6 +89,28 @@
     </section>
     {{ end }}
 
+    <!-- CHI SONO -->
+    <section class="section reveal">
+        <h2 class="section-label">// chi sono</h2>
+        <div class="why-card" style="grid-template-columns:1fr;">
+            <div class="why-text" style="font-size:14px;line-height:1.75;">
+                {{ range $i, $t := $p.chiSono }}<p{{ if $i }} style="margin-top:1rem;"{{ end }}>{{ $t }}</p>{{ end }}
+            </div>
+        </div>
+    </section>
+
+    <!-- PERCHÉ -->
+    <section class="section reveal">
+        <h2 class="section-label">// perché lavorare con me</h2>
+        <div class="whyme-grid">
+            {{ range $p.perche }}
+            <div class="whyme-item">
+                <p class="whyme-text"><strong>{{ .title }}</strong> — {{ .text }}</p>
+            </div>
+            {{ end }}
+        </div>
+    </section>
+
     <!-- COME FUNZIONA -->
     <section class="section reveal">
         <h2 class="section-label">// come funziona, in pratica</h2>
@@ -117,7 +139,7 @@
     <section class="section reveal">
         <h2 class="section-label">// dal blog</h2>
         <div class="blog-grid">
-            {{ range first 6 $posts }}
+            {{ range first 3 $posts }}
             <a class="blog-card" href="{{ .RelPermalink }}">
                 {{ with .Params.image }}{{ partial "shared/img.html" (dict "src" . "alt" "" "width" 400 "ratio" "16/9" "class" "blog-card-image") }}{{ end }}
                 <div class="blog-card-body">
@@ -134,27 +156,6 @@
     </section>
     {{ end }}
 
-    <!-- CHI SONO -->
-    <section class="section reveal">
-        <h2 class="section-label">// chi sono</h2>
-        <div class="why-card" style="grid-template-columns:1fr;">
-            <div class="why-text" style="font-size:14px;line-height:1.75;">
-                {{ range $i, $t := $p.chiSono }}<p{{ if $i }} style="margin-top:1rem;"{{ end }}>{{ $t }}</p>{{ end }}
-            </div>
-        </div>
-    </section>
-
-    <!-- PERCHÉ -->
-    <section class="section reveal">
-        <h2 class="section-label">// perché lavorare con me</h2>
-        <div class="whyme-grid">
-            {{ range $p.perche }}
-            <div class="whyme-item">
-                <p class="whyme-text"><strong>{{ .title }}</strong> — {{ .text }}</p>
-            </div>
-            {{ end }}
-        </div>
-    </section>
 
     <!-- FAQ -->
     <section class="section reveal">
@@ -179,13 +180,6 @@
         </div>
     </section>
 
-    <!-- STRUMENTI -->
-    <section class="section reveal">
-        <h2 class="section-label">// strumenti che utilizzo</h2>
-        <div class="pills">
-            {{ range $p.strumenti }}<span class="pill">{{ . }}</span>{{ end }}
-        </div>
-    </section>
 
     <!-- CONTATTI -->
     <section class="section reveal" id="contacts">

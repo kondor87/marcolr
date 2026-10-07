@@ -3,7 +3,7 @@ title: "Aggiornare i plugin di WordPress: perché farlo e come non rompere il si
 date: 2025-10-15T10:00:00+02:00
 description: "Ignorare le notifiche di WordPress è come ignorare la spia rossa sul cruscotto dell'auto: all'inizio non succede niente, ma prima o poi ti lascia a piedi."
 ogImage: "/images/og/perche-aggiornare-plugin-wordpress.png"
-categories: ["Manutenzione"]
+categories: ["WordPress"]
 tags: ["sicurezza", "wordpress", "aggiornamenti", "prestazioni"]
 lastmod: 2026-10-07T10:00:00+02:00
 draft: false

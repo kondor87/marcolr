@@ -18,5 +18,15 @@
             {{ end }}
         </section>
         {{ end }}
+        {{ if ne .RelPermalink "/grazie/" }}
+        <div class="why-card page-cta" style="grid-template-columns:1fr;text-align:center;">
+            <div class="why-text">
+                <strong style="display:block;margin-bottom:0.5rem;">Ti serve un sito per la tua attività?</strong>
+                Raccontami cosa ti serve: ti rispondo io.
+                <br><br>
+                <a class="btn-primary" href="/#contacts" style="display:inline-flex;">Scrivimi, senza impegno</a>
+            </div>
+        </div>
+        {{ end }}
     </article>
 {{ end }}

@@ -40,6 +40,11 @@
   to = "/siti-web-frascati-castelli-romani/"
   status = 301
 
+[[redirects]]
+  from = "/categories/manutenzione/"
+  to = "/categories/wordpress/"
+  status = 301
+
 # Le pagine dei tag non esistono più (erano quasi tutte vuote).
 [[redirects]]
   from = "/tags/*"
