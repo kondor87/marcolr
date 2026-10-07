@@ -1,7 +1,13 @@
 {{- $s := .Section }}
 <nav class="site-top-nav fade-in" aria-label="Menu principale">
-    <a class="nav-item{{ if eq $s "lavori" }} active{{ end }}" href="/lavori/">Lavori</a>
-    <a class="nav-item{{ if eq .RelPermalink "/siti-web-frascati-castelli-romani/" }} active{{ end }}" href="/siti-web-frascati-castelli-romani/">Siti web</a>
-    <a class="nav-item{{ if or (eq $s "blog") (eq .Kind "term") }} active{{ end }}" href="/blog/">Blog</a>
-    <a class="nav-item" href="/#contacts">Contatti</a>
+    <a class="nav-brand" href="/"{{ if .IsHome }} aria-current="page"{{ end }} aria-label="Marco La Rocca, torna alla home">
+        {{ partial "shared/img.html" (dict "src" "/images/marco-avatar.png" "alt" "" "width" 32 "class" "nav-brand-img" "priority" true) }}
+        <span class="nav-brand-name">Marco La Rocca</span>
+    </a>
+    <div class="nav-links">
+        <a class="nav-item{{ if eq $s "lavori" }} active{{ end }}" href="/lavori/">Lavori</a>
+        <a class="nav-item{{ if eq .RelPermalink "/siti-web-frascati-castelli-romani/" }} active{{ end }}" href="/siti-web-frascati-castelli-romani/">Siti web</a>
+        <a class="nav-item{{ if or (eq $s "blog") (eq .Kind "term") (eq .RelPermalink "/archivio/") }} active{{ end }}" href="/blog/">Blog</a>
+        <a class="nav-item" href="/#contacts">Contatti</a>
+    </div>
 </nav>

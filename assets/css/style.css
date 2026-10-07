@@ -1555,3 +1555,14 @@ html:not(.js) .reveal { opacity: 1; transform: none; }
 
 /* Riquadro di contatto in fondo alle pagine (es. pagina servizi) */
 .page-cta { margin-top: 3rem; }
+
+/* Nome e foto in alto a sinistra: riportano sempre alla home */
+.site-top-nav { justify-content: space-between; }
+.nav-brand { display: inline-flex; align-items: center; gap: .6rem; min-height: 44px; text-decoration: none; color: var(--text); font-family: 'Space Mono', monospace; font-size: 13px; font-weight: 700; white-space: nowrap; }
+.nav-brand-img { width: 32px; height: 32px; border-radius: 50%; object-fit: cover; border: 1.5px solid var(--green); }
+.nav-brand:hover { color: var(--green); }
+.nav-links { display: flex; align-items: center; gap: .5rem; }
+@media (max-width: 768px) { .site-top-nav { justify-content: space-between; } }
+@media (max-width: 640px) { .nav-brand-name { display: none; } }
+@media (max-width: 520px) { .nav-links { gap: .25rem; } .nav-item { padding: 0 9px; } }
+@media (max-width: 360px) { .nav-links { gap: 0; } .nav-item { font-size: 12px; padding: 0 6px; border-color: transparent; } .nav-item.active { border-color: var(--green-border); } }
