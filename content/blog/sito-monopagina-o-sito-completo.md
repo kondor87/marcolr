@@ -1,10 +1,11 @@
 ---
-title: "Sito Monopagina o Completo? Quale Scegliere"
+title: "Sito monopagina o sito completo? Quale scegliere"
 date: 2025-12-05T14:30:00+01:00
 description: "Non tutti i siti sono uguali. Dal biglietto da visita digitale al segretario virtuale: scopri quale tipo di sito web serve davvero alla tua attività."
-image: "/images/blog_scelta_sito.png"
+image: "/images/copertine/sito-monopagina-o-sito-completo.png"
 categories: ["Business Digitale"]
 tags: ["sito vetrina", "monopagina", "calendly", "automazioni", "landing page"]
+lastmod: 2026-10-07T10:00:00+02:00
 draft: false
 ---
 
@@ -38,12 +39,12 @@ Un sito monopagina (o *One-Page*) ha tutte le informazioni disposte in verticale
 
 ## 3. Il Sito "Segretario" (Prenotazioni, Calendly, Automazioni)
 
-Qui entriamo nel livello "Pro". Non si tratta solo di mostrare chi sei, ma di far **lavorare il sito al posto tuo**. È l'integrazione di strumenti avanzati, solitamente plugin o servizi esterni come *Calendly* (per gestire appuntamenti) o moduli di contatto avanzati con questionari preliminari (es. *Typeform*).
+Qui si fa un passo in più. Non si tratta solo di mostrare chi sei, ma di far **lavorare il sito al posto tuo**. È l'integrazione di strumenti avanzati, solitamente plugin o servizi esterni come *Calendly* (per gestire appuntamenti) o moduli di contatto avanzati con questionari preliminari (es. *Typeform*).
 
 **Perché sceglierlo:**
 *   **Risparmio di tempo:** Sei stanco di perdere decine di minuti al telefono o su WhatsApp per incastrare gli orari degli appuntamenti. Il cliente entra sul sito vedendo solo le tue disponibilità reali, clicca, prenota e a te arriva la notifica via e-mail o sul calendario dello smartphone.
 *   **Filtro sui pazienti:** Puoi fare in modo che, per contattarti, l'utente debba prima compilare un questionario per farti capire la sua situazione, permettendoti di scremare i curiosi dai veri interessati.
-*   Sembra una "sostituzione" del lavoro umano, ma in realtà eleva in modo incredibile l'esperienza del paziente, che può prenotare serenamente alle 11 di sera, dal divano di casa.
+*   Non sostituisce il rapporto umano: migliora l'esperienza del paziente, che può prenotare alle 11 di sera dal divano di casa.
 
 ## In sintesi: quale scegliere?
 
@@ -51,7 +52,7 @@ Se stai muovendo i **primissimi passi**, un **Monopagina veloce ed elegante** è
 
 Se vuoi costruire **autorevolezza e posizionamento** nel tuo comune e attirare traffico dai motori di ricerca, il **Sito a 5 pagine** è la scelta più sensata per la maggior parte dei professionisti.
 
-Se vuoi **ottimizzare il tuo tempo e smettere di rincorrere le chat WhatsApp**, l'investimento in un **sistema di prenotazioni integrato sul sito** si ripaga letteralmente nei primi mesi.
+Se vuoi **ottimizzare il tuo tempo e smettere di rincorrere le chat WhatsApp**, un **sistema di prenotazioni integrato sul sito** di solito si ripaga in fretta. Se tratti dati sanitari, scegli strumenti conformi al GDPR (ne parlo [qui](/blog/ai-chatbot-dati-pazienti-gdpr/)).
 
 [Non sai quale fa per te? Scrivimi, senza impegno](/#contacts). Ti faccio qualche domanda e ti dico onestamente quale soluzione ha più senso per la tua situazione.
 

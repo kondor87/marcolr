@@ -2,15 +2,16 @@
 title: "Come Scegliere le Parole Chiave Giuste per la Tua Attività Locale"
 date: 2026-07-27T10:00:00+02:00
 description: "Le parole chiave sono il ponte tra te e i tuoi prossimi clienti su Google. Ecco come trovarle, sceglierle e usarle nel tuo sito — anche se non sai nulla di SEO."
-image: "/images/blog_parole_chiave.png"
+image: "/images/copertine/come-scegliere-parole-chiave-attivita-locale.png"
 categories: ["SEO Locale"]
 tags: ["parole chiave", "keyword research", "SEO locale", "Google", "attività locale"]
+lastmod: 2026-10-07T10:00:00+02:00
 draft: false
 ---
 
-Hai un sito web, magari anche un blog. Ma quando cerchi il tuo servizio su Google, non compari da nessuna parte. Il problema, 9 volte su 10, è uno solo: **stai usando le parole sbagliate**.
+Hai un sito web, magari anche un blog. Ma quando cerchi il tuo servizio su Google, non compari da nessuna parte. Molto spesso il problema è uno solo: **stai usando le parole sbagliate**.
 
-Scegliere le parole chiave giuste non è magia nera da informatici. È un esercizio di buon senso — basta sapere da dove partire. Questa guida ti spiega come fare, passo dopo passo, senza strumenti a pagamento e senza gergo tecnico.
+Scegliere le parole chiave giuste non è roba da informatici. È un esercizio di buon senso — basta sapere da dove partire. Questa guida ti spiega come fare, passo dopo passo, senza strumenti a pagamento e senza gergo tecnico.
 
 ## Cosa sono le parole chiave (in parole semplici)
 
@@ -22,7 +23,7 @@ Non quelle che piacciono a te. Quelle che usano loro.
 
 ## L'errore più comune: pensare come un professionista, non come un cliente
 
-Questo è il punto dove il 90% dei professionisti sbaglia. Facciamo un esempio concreto:
+È qui che sbagliano molti professionisti. Facciamo un esempio concreto:
 
 | Come ragiona il professionista | Come cerca il cliente su Google |
 |---|---|
@@ -98,20 +99,21 @@ Parti dai **problemi che risolvi** e risali al servizio. Per ogni servizio che o
 
 Una volta che hai la tua lista, devi metterle nei posti giusti. Non dappertutto — solo dove contano.
 
-*   **Titolo della pagina (H1)** — Il titolo principale che l'utente vede quando apre la pagina. È il fattore SEO più importante.
+*   **Title** — Il titolo che compare su Google come link blu. È uno dei punti più importanti: mettici il servizio e la zona.
+*   **Titolo principale della pagina (H1)** — Il titolo che l'utente vede quando apre la pagina. Può essere simile al title, ma scritto per le persone.
 *   **Meta description** — La frasetta che compare sotto il titolo nei risultati di Google. Deve invogliare al clic.
-*   **Primi 100 parole del testo** — Google dà più peso alle parole all'inizio.
+*   **Prime righe del testo** — Chi arriva deve capire subito di cosa parla la pagina, e anche Google.
 *   **Titoletti (H2, H3)** — Usali per strutturare il contenuto e inserire varianti delle parole chiave.
 *   **Nomi delle immagini** — Rinomina le foto prima di caricarle (come spiegato [in questo articolo](/blog/blog-e-trucchi-seo-semplici/)).
 *   **URL della pagina** — Breve, descrittivo, con la parola chiave. Es: `/servizi/nutrizionista-frascati/`.
 
-**Attenzione:** non ripetere la stessa parola chiave 50 volte. Google lo nota e ti penalizza. Scrivi in modo naturale, come parleresti a un cliente. Se la parola chiave compare 3-5 volte in un articolo di 600 parole, è perfetto.
+**Attenzione:** non ripetere la stessa parola chiave di continuo. Non esiste un numero giusto di ripetizioni: scrivi in modo naturale, come parleresti a un cliente, e usa anche sinonimi e varianti.
 
 ## L'errore da non fare mai: copiare i concorrenti
 
 Guardare cosa fanno gli altri è intelligente. Copiarli di sana pianta è un disastro.
 
-Google penalizza i contenuti duplicati. Se il tuo concorrente ha scritto un articolo sulle "diete per sportivi" e tu lo riscrivi cambiando due parole, Google se ne accorge e non ti posiziona.
+Se il tuo concorrente ha scritto un articolo sulle "diete per sportivi" e tu lo riscrivi cambiando due parole, Google se ne accorge: tra due pagine quasi uguali ne mostra una sola, di solito quella che c'era prima.
 
 La tua arma vincente è la **tua esperienza diretta**. Racconta casi reali (anonimi), dai consigli che solo tu puoi dare, usa il tuo tono di voce. Google premia i contenuti originali, autentici e utili — esattamente quelli che un professionista competente sa produrre.
 
@@ -123,7 +125,7 @@ La tua arma vincente è la **tua esperienza diretta**. Racconta casi reali (anon
 | Usare il completamento automatico di Google | Trovi parole chiave gratuite e verificate |
 | Puntare sulle parole a coda lunga | Meno concorrenza, clienti più pronti |
 | Aggiungere sempre la città/zona | Google ti mostra nelle ricerche locali |
-| Inserire le keyword nei punti giusti | Il sito sale nei risultati |
+| Inserire le keyword nei punti giusti | Google capisce di cosa parla la pagina |
 | Non copiare, essere originali | Google premia l'autenticità |
 
 ---

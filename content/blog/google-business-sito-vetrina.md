@@ -1,10 +1,11 @@
 ---
-title: "Google Business e Sito Vetrina: Accoppiata Vincente"
+title: "Google Business e sito vetrina: perché funzionano insieme"
 date: 2025-11-10T14:00:00+01:00
 description: "Pensi che Google Maps basti per farti trovare? Scopri perché abbinare una Scheda Google a un Sito Vetrina è il trucco per convertire contatti in clienti."
-image: "/images/blog_google_business_site.png"
+image: "/images/copertine/google-business-sito-vetrina.png"
 categories: ["SEO Locale"]
 tags: ["google my business", "presenza online", "SEO", "clienti locali"]
+lastmod: 2026-10-07T10:00:00+02:00
 draft: false
 ---
 
@@ -28,22 +29,22 @@ Un utente indeciso, che non è ancora pronto a chiamare, cliccherà quel pulsant
 
 ## 3. Il Sito Vetrina migliora il posizionamento su Maps (SEO Locale)
 
-Un segreto che molti ignorano: **Google legge il tuo sito web per decidere quanto in alto metterti sulla mappa**.
+Una cosa che molti ignorano: **per decidere chi mostrare sulla mappa Google guarda anche il sito collegato alla scheda**. Contano la pertinenza (fai davvero quello che l'utente cerca?), la distanza e la notorietà.
 
 Se il tuo sito è ben strutturato, contiene le parole chiave giuste ("Nutrizionista Castelli Romani", "Diete personalizzate"), ed è considerato veloce e affidabile da Google, queste metriche contribuiscono a rafforzare la tua presenza complessiva online. Google tende a premiare chi offre informazioni più complete e coerenti, e avere un sito collegato alla scheda può darti un vantaggio rispetto a chi usa solo la scheda senza sito.
 
 ## 4. Risparmi tempo (e l'utente anche)
 
-Sulla scheda Google gli utenti ti faranno mille domande nella sezione Q&A. Avere un sito con le faq, i dettagli dei tuoi servizi e fasce di prezzo scremerà in modo automatico chi cerca sconti e attirerà chi cerca un intervento specializzato. 
+Prima di chiamarti, le persone hanno sempre le stesse domande: quanto costa, quanto dura, dove sei, come si prenota. Un sito con le domande frequenti, i dettagli dei servizi e le fasce di prezzo risponde prima che te lo chiedano, e ti porta richieste più mirate.
 
 Il sito filtra i "curiosi" e lascia arrivare a te solo chi è in target.
 
 ---
 
-### Non lasciare la tua vetrina a metà
+## Non lasciare la tua vetrina a metà
 Aprire solo la mappa è come mettere un'insegna su una porta chiusa. 
 
-Quando realizzo un sito per un professionista, il collegamento e l'ottimizzazione della scheda Google Business fanno sempre parte del lavoro.
+Quando realizzo un sito, il collegamento con la scheda Google Business è compreso nel lavoro.
 
 [Ti va di parlarne? Scrivimi senza impegno](/#contacts).
 

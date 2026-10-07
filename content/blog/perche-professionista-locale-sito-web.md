@@ -1,16 +1,17 @@
 ---
-title: "Perché un Professionista ha Bisogno di un Sito Web"
+title: "Perché un professionista ha bisogno di un sito web (anche se ha Instagram)"
 date: 2026-02-18T10:00:00+01:00
 description: "Instagram e Facebook non bastano. Se sei un professionista locale, un sito web è il vero motore per trovare clienti in automatico tramite Google."
-image: "/images/blog_website_local_pro.png"
+image: "/images/copertine/perche-professionista-locale-sito-web.png"
 categories: ["Business Digitale"]
 tags: ["professionisti", "presenza online", "sito vetrina", "local SEO"]
+lastmod: 2026-10-07T10:00:00+02:00
 draft: false
 ---
 
 "Ho già Facebook e Instagram, a cosa mi serve un sito web?"
 
-Questa è la domanda che mi fanno spesso i professionisti (nutrizionisti, terapisti, consulenti) a Frascati e nei Castelli Romani. 
+È una domanda che si fanno molti professionisti (nutrizionisti, terapisti, consulenti), anche a Frascati e nei Castelli Romani.
 
 È una domanda legittima. I social sono gratuiti e ti fanno conoscere. Ma richiedono un **lavoro infinito**: post continui, storie, reel. Appena ti fermi, sparisci.
 
@@ -37,7 +38,7 @@ Un buon sito web fa da "filtro e segretario automatico". Puoi inserire:
 *   I prezzi o le fasce di costo dei tuoi percorsi.
 *   Il modulo per prenotare direttamente il primo appuntamento o lasciare i dati.
 
-In questo modo, chi ti contatta sa già come lavori. Ti ritroverai a gestire solo richieste di persone realmente interessate, risparmiando decine di ore ogni mese.
+In questo modo chi ti contatta sa già come lavori, e arrivano più richieste di persone davvero interessate.
 
 ## 4. Sei il padrone di casa (nessun algoritmo può spegnerti)
 

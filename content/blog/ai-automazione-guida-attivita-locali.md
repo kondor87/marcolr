@@ -1,10 +1,11 @@
 ---
 title: "AI e automazione per piccole attività: la guida onesta (senza fuffa)"
 date: 2026-05-12T10:00:00+02:00
-description: "Cos'è davvero l'intelligenza artificiale, cos'è automazione (e perché tutti le confondono), cosa può fare concretamente per la tua attività locale, e quando conviene investirci."
-image: "/images/blog_ai_guida.png"
+description: "AI e automazione non sono la stessa cosa. Cosa fanno davvero per un'attività locale, quanto costano e quando conviene investirci."
+image: "/images/copertine/ai-automazione-guida-attivita-locali.png"
 categories: ["AI e Automazione"]
 tags: ["intelligenza artificiale attività locali", "automazione piccole imprese", "AI per professionisti", "guida AI business"]
+lastmod: 2026-10-07T10:00:00+02:00
 draft: false
 ---
 
@@ -16,7 +17,7 @@ Spoiler: sì, ma non per tutto. E non tutto quello che ti vendono come "AI" lo �
 
 ## La prima cosa da sapere: AI e automazione NON sono la stessa cosa
 
-![AI vs Automazione — la differenza spiegata in modo semplice](/images/ai-vs-automazione.png)
+![AI vs Automazione — la differenza spiegata in modo semplice](/images/copertine/schema-ai-vs-automazione.png)
 
 Questo è il punto più importante di tutto l'articolo, e quasi nessuno te lo spiega chiaramente:
 
@@ -37,7 +38,7 @@ L'automazione segue **regole fisse**. "Se succede X, fai Y." Sempre uguale, senz
 L'AI fa qualcosa che l'automazione **non può fare**: *capisce il contesto* e *genera risposte diverse* ogni volta.
 
 **Esempi di AI vera:**
-*   Un chatbot che interpreta "Ho mal di schiena da tre settimane e lavoro in piedi" e risponde in modo pertinente → capisce il linguaggio naturale
+*   Un chatbot che interpreta "Vorrei un appuntamento martedì pomeriggio, è la prima volta" e risponde in modo pertinente → capisce il linguaggio naturale
 *   Uno strumento che legge una recensione e scrive una risposta personalizzata → genera testo
 *   Un'app che riconosce gli alimenti da una foto → analizza immagini
 *   Un sistema che analizza le tue vendite e dice "Il piatto X rende di più il weekend" → trova pattern nei dati
@@ -74,7 +75,7 @@ L'AI che riconosce alimenti da una foto (per un diario alimentare), analizza dat
 
 ### 🤖 4. Traduzione e adattamento
 
-Contenuti tradotti automaticamente in modo naturale (non come Google Translate) per clienti stranieri, turisti, o pazienti che parlano un'altra lingua.
+Contenuti tradotti per clienti stranieri, turisti o pazienti che parlano un'altra lingua. Anche Google Traduttore usa l'AI; con un assistente come ChatGPT puoi in più indicare tono e contesto ("rispondi come un'osteria romana, in modo cordiale").
 
 ## Cosa NON è AI (anche se te la vendono così)
 
@@ -98,9 +99,9 @@ Tutti questi strumenti sono **utili**. Ma chiamarli AI è scorretto. E se un for
 | Chatbot conversazionale AI | 🤖 AI | 20-60€ | Risponde in linguaggio naturale |
 | Risposte AI alle recensioni | 🤖 AI | 15-30€ | Genera risposte personalizzate |
 | Assistente AI per contenuti (ChatGPT) | 🤖 AI | ~20€ | Testi, post social, email |
-| **Totale "pacchetto completo"** | | **~80-150€/mese** | **Automazione + AI** |
+| **Totale, se usi tutto** | | **~80-150€/mese** | **Automazione + AI** |
 
-Per confronto: una segretaria part-time costa 600-900€/mese. Un social media manager freelance: 300-500€/mese.
+Per confronto, una segretaria part-time costa diverse centinaia di euro al mese. I prezzi degli strumenti sono indicativi (ottobre 2026) e cambiano spesso: controllali sul sito di ciascun servizio.
 
 ## Quando conviene (e quando no)
 
@@ -117,6 +118,10 @@ Per confronto: una segretaria part-time costa 600-900€/mese. Un social media m
 *   Hai meno di 5 clienti al mese — prima devi trovare i clienti, poi automatizzare
 *   Il tuo lavoro è interamente basato sulla relazione personale e non ha componenti ripetitive
 *   Non hai un sito web né una scheda Google — parti da lì
+
+{{< box title="Se lavori con dati sanitari" >}}
+Psicologi, nutrizionisti, osteopati e medici trattano dati sulla salute: prima di collegare un chatbot o un modulo online leggi [AI, chatbot e dati dei pazienti](/blog/ai-chatbot-dati-pazienti-gdpr/).
+{{< /box >}}
 
 ## Il percorso consigliato: 3 step
 
@@ -141,7 +146,7 @@ Se parti da zero, non provare a fare tutto insieme:
 
 Ogni step costruisce su quello precedente. I primi due step risolvono l'80% dei problemi con strumenti che non sono nemmeno AI — e vanno benissimo così.
 
-## La regola d'oro
+## In una frase
 
 **Non tutto deve essere AI.** La maggior parte dei tuoi problemi operativi si risolve con una buona automazione. L'AI aggiunge valore dove serve personalizzazione, comprensione del linguaggio naturale, o generazione di contenuti.
 

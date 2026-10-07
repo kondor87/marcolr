@@ -1,14 +1,15 @@
 ---
-title: "Perché Aggiornare i Plugin del Tuo Sito WordPress"
-date: 2025-10-15T10:00:00+01:00
+title: "Aggiornare i plugin di WordPress: perché farlo e come non rompere il sito"
+date: 2025-10-15T10:00:00+02:00
 description: "Ignorare le notifiche di WordPress è come ignorare la spia rossa sul cruscotto dell'auto: all'inizio non succede niente, ma prima o poi ti lascia a piedi."
-image: "/images/blog_tagliando_wp.png"
+image: "/images/copertine/perche-aggiornare-plugin-wordpress.png"
 categories: ["Manutenzione"]
 tags: ["sicurezza", "wordpress", "aggiornamenti", "prestazioni"]
+lastmod: 2026-10-07T10:00:00+02:00
 draft: false
 ---
 
-Se hai un'auto, sai benissimo che ogni tot chilometri devi fare il **tagliando**. Cambio dell'olio, filtri e controllo freni. Lo fai perché sai che, ignorando la manutenzione, rischi un guasto che ti costerà dieci volte di più in carrozziere.
+Se hai un'auto, sai benissimo che ogni tot chilometri devi fare il **tagliando**. Cambio dell'olio, filtri e controllo freni. Lo fai perché sai che, ignorando la manutenzione, rischi un guasto che ti costerà dieci volte di più dal meccanico.
 
 Con un sito web professionale — specialmente su WordPress — **funziona esattamente allo stesso modo.**
 
@@ -37,8 +38,17 @@ Per fare un aggiornamento in totale sicurezza, il "tagliando" va fatto seguendo 
 *   Aggiornare prima i moduli minori, e solo per ultimi i componenti vitali.
 *   **Testare il sito** ricaricando le pagine principali per assicurarsi che i moduli di contatto, dal telefono, funzionino ancora.
 
-### Non hai tempo (o voglia) di occupartene?
-Io dico sempre: tu sei un professionista e il tuo lavoro è fatturare nel tuo settore. Concentrati sui tuoi clienti. Non dovresti passare la domenica mattina col batticuore per paura di rompere il sito premendo il tasto "Aggiorna". 
+## La checklist, in breve
 
-Se hai bisogno di qualcuno che di tanto in tanto entri, faccia i backup di sicurezza, aggiorni i sistemi e si assicuri che il tuo motore giri fluido, [scrivimi pure](/#contacts). Lo facciamo come intervento singolo, quando serve, senza vincoli.
+1.  **Backup completo** (file e database) e verifica che si possa ripristinare.
+2.  **Aggiorna i plugin uno alla volta**, partendo da quelli meno importanti.
+3.  **Aggiorna il tema**, poi WordPress stesso.
+4.  **Controlla il sito dal telefono**: home, pagine principali, modulo contatti (manda un messaggio di prova).
+5.  **Elimina i plugin che non usi**: ogni plugin in meno è una porta in meno da tenere chiusa.
+
+Se il sito ha un hosting gestito, molti provider offrono backup automatici e aggiornamenti di sicurezza: vale la pena attivarli.
+
+## E se il sito è fermo da anni?
+
+Se gli aggiornamenti sono rimasti indietro da molto tempo, il rischio di rompere qualcosa aumenta. In quel caso conviene un intervento fatto con calma, magari su una copia del sito. Se ti serve una mano, [scrivimi](/#contacts): lo valutiamo come intervento singolo.
 

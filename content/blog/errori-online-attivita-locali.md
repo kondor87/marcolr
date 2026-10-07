@@ -1,14 +1,15 @@
 ---
-title: "5 Errori Online che Fanno Perdere Clienti"
+title: "5 errori online che fanno perdere clienti alle attività locali"
 date: 2026-04-01T10:00:00+02:00
 description: "Scheda Google incompleta, nessun sito web e social abbandonati: ecco i 5 errori digitali più comuni tra i professionisti locali e come risolverli."
-image: "/images/blog_website_local_pro.png"
+image: "/images/copertine/errori-online-attivita-locali.png"
 categories: ["Business Digitale"]
 tags: ["errori sito web", "attività locale online", "visibilità Google", "marketing locale"]
+lastmod: 2026-10-07T10:00:00+02:00
 draft: false
 ---
 
-I 5 errori più frequenti sul web, e come risolverli senza spendere un centesimo.
+Scheda Google trascurata, niente sito, social abbandonati: sono errori comuni tra i professionisti e le piccole attività. Ecco i 5 più frequenti e come risolverli, quasi sempre senza spendere nulla.
 
 ## 1. La Scheda Google incompleta (o non reclamata)
 
@@ -36,10 +37,10 @@ Un sito web è la tua **casa digitale**: nessuno te la può togliere, lavora per
 
 Questo è quasi peggio del non averlo. Situazioni che vedo troppo spesso:
 
-*   **Sito fatto nel 2017** e mai più aggiornato → Google lo ignora.
-*   **Non si vede bene da cellulare** → il 70% delle ricerche locali viene fatto da smartphone.
+*   **Sito fatto nel 2017** e mai più aggiornato → orari e servizi sbagliati, e un'impressione di abbandono.
+*   **Non si vede bene da cellulare** → e le ricerche locali si fanno soprattutto dal telefono.
 *   **Nessuna call-to-action** → il visitatore non sa cosa fare: chiamarti? Scriverti? Prenotare?
-*   **Velocità da tartaruga** → se il sito impiega più di 3 secondi a caricarsi, il 53% degli utenti se ne va.
+*   **Velocità da tartaruga** → più il sito è lento, più persone se ne vanno prima ancora di vederlo.
 
 **La regola:** un sito web è come un negozio fisico. Se la vetrina è sporca e la porta è chiusa, la gente passa oltre. Non importa quanto sei bravo nel tuo lavoro.
 
@@ -49,8 +50,8 @@ Le recensioni su Google sono il **passaparola digitale**. E funzionano esattamen
 
 **Cosa fare:**
 *   **Chiedi attivamente le recensioni** ai clienti soddisfatti. La maggior parte non ci pensa, ma se glielo chiedi gentilmente, lo fa volentieri.
-*   **Rispondi a tutte**, anche a quelle negative. Una risposta professionale e pacata a una critica vale più di 10 recensioni a 5 stelle.
-*   **Non comprare recensioni false.** Google le riconosce e ti penalizza.
+*   **Rispondi a tutte**, anche a quelle negative. Chi legge guarda come rispondi alle critiche quanto le stelle.
+*   **Non comprare recensioni false.** Sono vietate e Google può rimuoverle o limitare la scheda.
 
 ## 5. Essere ovunque (ma senza una strategia)
 

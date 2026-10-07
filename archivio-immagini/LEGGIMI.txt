@@ -1,0 +1,2 @@
+Immagini non più usate dal sito (vecchie copertine del blog e doppioni).
+Tenute qui per riferimento: fuori da static/ non vengono pubblicate.
