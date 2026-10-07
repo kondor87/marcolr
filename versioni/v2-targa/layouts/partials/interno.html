@@ -1,0 +1,14 @@
+{{- /* Un lavoro. .p = pagina, .n = numero, .h = livello titolo */ -}}
+{{- $p := .p }}
+<a class="interno" href="{{ $p.RelPermalink }}">
+  <div class="finestra">
+    {{ partial "shared/img.html" (dict "src" $p.Params.image "alt" (printf "Home page del sito %s" $p.Title) "width" 720 "ratio" "16/9" "anchor" "Top") }}
+  </div>
+  <div>
+    {{ if eq .h 2 }}<h2>{{ $p.Title }}</h2>{{ else }}<h3>{{ $p.Title }}</h3>{{ end }}
+    <p class="meta">{{ $p.Params.sector }} · {{ $p.Params.location }}</p>
+    <p class="desc">{{ $p.Description }}</p>
+    {{ if $p.Draft }}<p class="draft-note">Bozza: visibile solo in anteprima</p>{{ end }}
+    <span class="link-arrow">Com'è andata {{ partial "icon.html" "arrow" }}</span>
+  </div>
+</a>

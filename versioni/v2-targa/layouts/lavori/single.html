@@ -1,0 +1,12 @@
+{{ define "main" }}
+{{ $tech := "" }}{{ with .Params.tech }}{{ $tech = printf `<div class="tech">%s</div>` (delimit (apply . "printf" "<span>%s</span>" ".") "") }}{{ end }}
+{{ partial "page-head.html" (dict "title" .Title "lead" .Description "crumb" (dict "label" "← Tutti i lavori" "url" "/lavori/") "extra" (printf `<p class="page-meta"><span>%s</span><span>%s</span></p>%s` .Params.sector .Params.location $tech | safeHTML)) }}
+<div class="cover-frame stone"><div class="wrap"><div class="finestra stone stone--deep">{{ partial "shared/img.html" (dict "src" .Params.image "alt" (printf "Home page del sito %s" .Title) "width" 820 "priority" true) }}</div></div></div>
+<article class="reading">
+  <div class="wrap">
+    <div class="prose">{{ .Content }}</div>
+    {{ with .Params.clientUrl }}<p style="margin-top:2.5rem"><a class="btn btn--ink" href="{{ . }}" rel="noopener" target="_blank">Visita il sito {{ partial "icon.html" "out" }}</a></p>{{ end }}
+  </div>
+</article>
+{{ partial "contact.html" . }}
+{{ end }}

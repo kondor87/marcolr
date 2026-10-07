@@ -1,0 +1,14 @@
+{{- $newest := index (first 1 (where site.RegularPages "Section" "blog")) 0 }}
+<ol class="indice">
+  {{- range .pages }}
+  {{- $cat := "" }}{{ with .Params.categories }}{{ $cat = index . 0 }}{{ end }}
+  <li{{ if eq .RelPermalink $newest.RelPermalink }} class="first"{{ end }}>
+    <a href="{{ .RelPermalink }}">
+      <span class="sw sw--{{ $cat | urlize }}" aria-hidden="true"></span>
+      <span class="t">{{ .Title }}{{ if eq .RelPermalink $newest.RelPermalink }}<span class="new">Nuovo</span>{{ end }}</span>
+      <span class="c">{{ $cat }}</span>
+      <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date | time.Format "2 Jan 2006" }}</time>
+    </a>
+  </li>
+  {{- end }}
+</ol>

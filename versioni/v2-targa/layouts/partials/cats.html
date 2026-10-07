@@ -1,0 +1,7 @@
+{{- $cur := .cur }}
+<nav class="chips" aria-label="Categorie">
+  <a href="/blog/"{{ if not $cur }} aria-current="page"{{ end }}>Tutti</a>
+  {{ range site.Taxonomies.categories.ByCount }}
+  <a href="{{ .Page.RelPermalink }}"{{ if eq .Page.Title $cur }} aria-current="page"{{ end }}>{{ .Page.Title }}</a>
+  {{ end }}
+</nav>

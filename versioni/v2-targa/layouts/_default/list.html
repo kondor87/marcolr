@@ -1,0 +1,6 @@
+{{ define "main" }}
+{{ partial "page-head.html" (dict "title" .Title "lead" (printf "Articoli nella categoria %s." .Title) "crumb" (dict "label" "← Blog" "url" "/blog/") "extra" (partial "cats.html" (dict "cur" .Title))) }}
+<section class="sec stone stone--deep" style="padding-top:2rem">
+  <div class="wrap">{{ partial "bacheca.html" (dict "pages" .Pages) }}</div>
+</section>
+{{ end }}

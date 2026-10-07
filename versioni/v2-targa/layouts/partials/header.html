@@ -1,0 +1,14 @@
+{{- $page := . }}
+{{- $menu := partial "menu.html" . }}
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="/" aria-label="Marco La Rocca, torna alla home"><i aria-hidden="true"></i>Marco La Rocca <small>Siti web · Frascati</small></a>
+    <nav class="nav" aria-label="Menu principale">
+      {{- range $menu }}<a href="{{ .url }}"{{ if and (ne .url "/#contacts") (hasPrefix $page.RelPermalink .url) }} aria-current="page"{{ end }}>{{ .label }}</a>{{ end }}
+    </nav>
+    <details class="menu-m">
+      <summary>Menu</summary>
+      <ul>{{ range $menu }}<li><a href="{{ .url }}"{{ if and (ne .url "/#contacts") (hasPrefix $page.RelPermalink .url) }} aria-current="page"{{ end }}>{{ .label }}</a></li>{{ end }}</ul>
+    </details>
+  </div>
+</header>

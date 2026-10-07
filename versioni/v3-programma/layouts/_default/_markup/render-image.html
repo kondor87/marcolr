@@ -1,0 +1,6 @@
+{{- /* Immagini negli articoli Markdown: WebP ridimensionate, lazy, con width/height. */ -}}
+{{- if hasPrefix .Destination "/" -}}
+{{ partial "shared/img.html" (dict "src" .Destination "alt" .PlainText "width" 760 "sizes" "(min-width: 820px) 760px, 100vw") }}
+{{- else -}}
+<img src="{{ .Destination | safeURL }}" alt="{{ .PlainText }}" loading="lazy" decoding="async" />
+{{- end -}}

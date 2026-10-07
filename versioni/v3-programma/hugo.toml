@@ -1,0 +1,66 @@
+# Versione grafica alternativa. Usa gli STESSI contenuti, immagini e partial SEO
+# del sito principale (cartella ../../), montati qui sotto. Cambia solo la grafica.
+# Avvio: hugo server -s versioni/NOME -D   (oppure versioni/avvia-versioni.bat)
+baseURL = "https://laroccadigitale.it/"
+languageCode = "it"
+defaultContentLanguage = "it"
+titleCaseStyle = "none"
+title = "Marco La Rocca — Siti Web · Frascati"
+
+[params]
+  description = "Realizzo siti web per professionisti e attività locali a Frascati e nei Castelli Romani. Design curato, SEO locale, sito di tua proprietà. Scrivimi senza impegno."
+  author = "Marco La Rocca"
+  ogImage = "/images/og-default.png"
+  github = "https://github.com/kondor87"
+
+[taxonomies]
+  category = "categories"
+
+[markup]
+  [markup.goldmark.renderer]
+    unsafe = true
+  [markup.tableOfContents]
+    endLevel = 3
+    ordered = false
+    startLevel = 2
+
+[related]
+  includeNewer = true
+  threshold = 20
+  toLower = true
+  [[related.indices]]
+    name = "tags"
+    weight = 100
+  [[related.indices]]
+    name = "categories"
+    weight = 60
+
+[imaging]
+  quality = 80
+  resampleFilter = "Lanczos"
+
+[module]
+  [[module.mounts]]
+    source = "../../content"
+    target = "content"
+  [[module.mounts]]
+    source = "layouts"
+    target = "layouts"
+  [[module.mounts]]
+    source = "../../layouts/partials/shared"
+    target = "layouts/partials/shared"
+  [[module.mounts]]
+    source = "../../layouts/shortcodes"
+    target = "layouts/shortcodes"
+  [[module.mounts]]
+    source = "assets"
+    target = "assets"
+  [[module.mounts]]
+    source = "../../static/images"
+    target = "assets/images"
+  [[module.mounts]]
+    source = "../../static"
+    target = "static"
+  [[module.mounts]]
+    source = "static"
+    target = "static"

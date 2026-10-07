@@ -1,0 +1,12 @@
+{{- $p := .p }}
+<a class="tavola" href="{{ $p.RelPermalink }}">
+  <div class="shot">{{ partial "shared/img.html" (dict "src" $p.Params.image "alt" (printf "Home page del sito %s" $p.Title) "width" 760 "ratio" "16/10" "anchor" "Top") }}</div>
+  <div class="info">
+    <span class="num" aria-hidden="true">{{ printf "%02d" .n }}</span>
+    {{ if eq .h 2 }}<h2>{{ $p.Title }}</h2>{{ else }}<h3>{{ $p.Title }}</h3>{{ end }}
+    <p class="meta">{{ $p.Params.sector }} · {{ $p.Params.location }}</p>
+    <p class="desc">{{ $p.Description }}</p>
+    {{ if $p.Draft }}<span class="draft">Bozza: visibile solo in anteprima</span><br>{{ end }}
+    <span class="link">Com'è andata {{ partial "icon.html" "arrow" }}</span>
+  </div>
+</a>

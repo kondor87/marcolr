@@ -1,0 +1,20 @@
+{{ define "main" }}
+{{ $cat := "" }}{{ with .Params.categories }}{{ $cat = index . 0 }}{{ end }}
+{{ $meta := printf `<p class="page-meta">%s<time datetime="%s">%s</time>%s<span>%d min di lettura</span></p>`
+  (cond (ne $cat "") (printf `<a href="/categories/%s/">%s</a>` ($cat | urlize) $cat) "")
+  (.Date.Format "2006-01-02") (.Date | time.Format "2 January 2006")
+  (cond (gt (.Lastmod.Sub .Date).Hours 48.0) (printf `<span>aggiornato il %s</span>` (.Lastmod | time.Format "2 January 2006")) "")
+  .ReadingTime }}
+{{ partial "page-head.html" (dict "title" .Title "crumb" (dict "label" "← Blog" "url" "/blog/") "extra" ($meta | safeHTML) "mark" "blue") }}
+{{ with .Params.image }}<div class="cover"><div class="wrap"><div class="frame">{{ partial "shared/img.html" (dict "src" . "alt" "" "width" 860 "ratio" "16/9" "priority" true) }}</div></div></div>{{ end }}
+<article class="reading"><div class="wrap">
+  <div class="main">
+    <div class="prose">{{ .Content }}</div>
+    <aside class="author">{{ partial "shared/img.html" (dict "src" "/images/marco-avatar.png" "alt" "Marco La Rocca" "width" 72) }}<div><b>Marco La Rocca</b><p>Informatico di Frascati. Su richiesta realizzo siti web per professionisti e piccole attività dei Castelli Romani. <a href="/lavori/">Vedi i lavori</a>.</p></div></aside>
+  </div>
+  {{ if .TableOfContents }}<nav class="side toc" aria-label="Indice dell'articolo"><p>In questo articolo</p>{{ .TableOfContents }}</nav>{{ end }}
+</div></article>
+{{ with .Site.RegularPages.Related . | first 4 }}<section class="related"><div class="wrap"><h2>Potrebbe interessarti anche</h2>{{ partial "indice.html" (dict "pages" .) }}</div></section>{{ end }}
+{{ partial "contact.html" . }}
+<script>document.querySelectorAll('.prose table').forEach(function(t){var w=document.createElement('div');w.className='table-wrap';t.parentNode.insertBefore(w,t);w.appendChild(t);});</script>
+{{ end }}

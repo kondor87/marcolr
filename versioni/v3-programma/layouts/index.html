@@ -1,0 +1,87 @@
+{{ define "main" }}
+{{ $p := .Params }}
+<section class="hero" aria-labelledby="titolo">
+  <div class="wrap grid">
+    <div class="hero-text">
+      <h1 id="titolo">{{ replace $p.hero.title "a Frascati e nei Castelli Romani" "<em>a Frascati e nei Castelli Romani</em>" | safeHTML }}</h1>
+      <p class="lead">{{ $p.hero.lead }}</p>
+      <div class="actions">
+        <a class="btn btn--red" href="#contacts">{{ $p.hero.cta }} {{ partial "icon.html" "arrow" }}</a>
+        <a class="btn btn--line" href="/lavori/">{{ $p.hero.ctaSecondary }}</a>
+      </div>
+    </div>
+    <div class="hero-art" aria-hidden="true">
+      <div class="compo"><div class="t1"><span>M</span></div><div class="t2"></div><div class="t3"></div><div class="t4"></div><div class="t5"></div><div class="t6"><span>L</span></div><div class="t7"></div></div>
+      <p class="compo-cap"><span>Marco La Rocca</span><span>{{ $p.hero.kicker }}</span></p>
+    </div>
+  </div>
+</section>
+
+<section class="sec" style="padding-top:0" aria-labelledby="servizi">
+  <div class="wrap">
+    <div class="sec-title"><h2 id="servizi">Cosa posso fare per te</h2><p>Due cose, fatte con calma e su misura. Ogni collaborazione si concorda a parte.</p></div>
+    <div class="fields">
+      {{ range $i, $s := $p.servizi }}
+      <div class="field field--{{ if $i }}yellow{{ else }}blue{{ end }}">
+        <h3>{{ $s.title }}</h3><p>{{ $s.text }}</p>
+        <ul>{{ range $s.items }}<li>{{ . }}</li>{{ end }}</ul>
+      </div>
+      {{ end }}
+    </div>
+    <p class="fields-more"><a class="link" href="/siti-web-frascati-castelli-romani/">Come lavoro sui siti per attività locali {{ partial "icon.html" "arrow" }}</a></p>
+  </div>
+</section>
+
+{{ $lavori := where .Site.RegularPages "Section" "lavori" }}
+{{ if $lavori }}
+<section class="sec" style="background:var(--paper-2)" aria-labelledby="lavori">
+  <div class="wrap">
+    <div class="sec-title"><h2 id="lavori">Lavori realizzati</h2><p>Per ognuno: cosa serviva, cosa ho fatto, com'è andata.</p></div>
+    <div class="tavole">{{ range $i, $l := $lavori.ByWeight }}{{ partial "tavola.html" (dict "p" $l "n" (add $i 1) "h" 3) }}{{ end }}</div>
+    {{ with $p.testimonianza }}
+    <div class="voce"><div class="mark" aria-hidden="true"></div>
+      <figure><blockquote>«{{ .text }}»</blockquote><figcaption>{{ .author }}<span>{{ .role }}</span></figcaption></figure>
+    </div>
+    {{ end }}
+  </div>
+</section>
+{{ end }}
+
+<section class="sec" aria-labelledby="metodo">
+  <div class="wrap">
+    <div class="sec-title"><h2 id="metodo">Come funziona, in pratica</h2><p>Tre passaggi. Puoi fermarti in qualsiasi momento prima della consegna.</p></div>
+    <ol class="steps">{{ range $i, $s := $p.processo }}<li><span class="n" aria-hidden="true">{{ add $i 1 }}</span><h3>{{ $s.title }}</h3><p>{{ $s.text }}</p></li>{{ end }}</ol>
+    <div class="perchi"><strong>A chi è rivolto</strong>{{ range $p.perChi }}<span>{{ . }}</span>{{ end }}</div>
+  </div>
+</section>
+
+{{ $posts := where .Site.RegularPages "Section" "blog" }}
+<section class="sec" style="padding-top:0" aria-labelledby="blog">
+  <div class="wrap">
+    <div class="sec-title"><h2 id="blog">Dal blog</h2><p>Guide pratiche su siti, Google, AI e automazione, per chi ha uno studio o un locale.</p></div>
+    {{ partial "indice.html" (dict "pages" (first 6 $posts)) }}
+    <p style="margin-top:2rem"><a class="link" href="/blog/">Tutti gli articoli {{ partial "icon.html" "arrow" }}</a></p>
+  </div>
+</section>
+
+<section class="sec" style="background:var(--paper-2)" aria-labelledby="chi">
+  <div class="wrap about">
+    <div class="ph">{{ partial "shared/img.html" (dict "src" "/images/marco-avatar.png" "alt" "Marco La Rocca" "width" 400) }}</div>
+    <div class="txt">
+      <h2 id="chi">Chi sono</h2>
+      <div class="copy">{{ range $p.chiSono }}<p>{{ . }}</p>{{ end }}</div>
+      <div class="perche">{{ range $p.perche }}<div><h3>{{ .title }}</h3><p>{{ .text }}</p></div>{{ end }}</div>
+      <div class="tools" aria-label="Strumenti che uso">{{ range $p.strumenti }}<span>{{ . }}</span>{{ end }}</div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" aria-labelledby="faq">
+  <div class="wrap grid">
+    <div class="faq-title"><h2 id="faq">Domande frequenti</h2></div>
+    <div class="faq">{{ range $p.faq }}<details><summary>{{ .q }}</summary><p>{{ .a }}</p></details>{{ end }}</div>
+  </div>
+</section>
+
+{{ partial "contact.html" . }}
+{{ end }}

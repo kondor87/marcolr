@@ -1,0 +1,13 @@
+{{- /* Elenco articoli. .pages = articoli */ -}}
+{{- $newest := index (first 1 (where site.RegularPages "Section" "blog")) 0 }}
+<ol class="posts">
+  {{- range .pages }}
+  <li>
+    <a href="{{ .RelPermalink }}">
+      <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date | time.Format "2 Jan 2006" }}</time>
+      <span class="t">{{ .Title }}{{ if eq .RelPermalink $newest.RelPermalink }}<span class="new">Nuovo</span>{{ end }}</span>
+      <span class="c">{{ with .Params.categories }}{{ index . 0 }}{{ end }}</span>
+    </a>
+  </li>
+  {{- end }}
+</ol>

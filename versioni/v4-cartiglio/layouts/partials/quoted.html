@@ -1,0 +1,6 @@
+{{- /* Immagine con quote di misura. .src .alt .w (larghezza in px da scrivere sulla quota) .h .ratio .priority .width */ -}}
+<div class="quoted">
+  <span class="dim-h" aria-hidden="true"><span>{{ .w }}</span></span>
+  <span class="dim-v" aria-hidden="true"><span>{{ .h }}</span></span>
+  <span class="shot">{{ partial "shared/img.html" (dict "src" .src "alt" .alt "width" (.width | default 640) "ratio" (.ratio | default "16/10") "anchor" "Top" "priority" (.priority | default false)) }}</span>
+</div>

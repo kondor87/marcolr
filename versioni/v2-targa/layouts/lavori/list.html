@@ -1,0 +1,9 @@
+{{ define "main" }}
+{{ partial "page-head.html" (dict "title" "Lavori realizzati" "lead" .Description) }}
+<section class="sec stone" style="padding-top:1rem">
+  <div class="wrap interni">
+    {{ range $i, $l := .Pages.ByWeight }}{{ partial "interno.html" (dict "p" $l "n" (add $i 1) "h" 2) }}{{ end }}
+  </div>
+</section>
+{{ partial "contact.html" . }}
+{{ end }}

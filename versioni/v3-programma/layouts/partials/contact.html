@@ -1,0 +1,30 @@
+<section class="contact sec" id="contacts" aria-labelledby="contatti-titolo">
+  <div class="wrap grid">
+    <div class="c-text">
+      <h2 id="contatti-titolo">Raccontami cosa ti serve</h2>
+      <p class="intro">Due righe bastano: che attività hai, dove, e cosa vorresti dal sito. Ti rispondo io, di solito entro un paio di giorni. Senza impegno.</p>
+      <p class="mail">
+        <button type="button" class="btn btn--white" id="mailBtn">{{ partial "icon.html" "mail" }}<span id="mailLabel">Mostra l'indirizzo email</span></button>
+      </p>
+    </div>
+    <form class="form" name="contatto" method="POST" action="/grazie/" data-netlify="true" netlify-honeypot="bot-field">
+      <input type="hidden" name="form-name" value="contatto" />
+      <p hidden><label>Non compilare: <input name="bot-field" /></label></p>
+      <div><label for="nome">Nome</label><input type="text" id="nome" name="nome" required autocomplete="name" placeholder="Il tuo nome" /></div>
+      <div><label for="email">Email</label><input type="email" id="email" name="email" required autocomplete="email" placeholder="nome@esempio.it" /></div>
+      <div><label for="messaggio">Messaggio</label><textarea id="messaggio" name="messaggio" required placeholder="Ciao Marco, ho uno studio a Frascati e mi servirebbe…"></textarea></div>
+      <p class="privacy">Uso i tuoi dati solo per risponderti. Dettagli nella <a href="https://www.iubenda.com/privacy-policy/88789889" class="iubenda-noiframe iubenda-embed">privacy policy</a>.</p>
+      <button type="submit" class="btn btn--ink">Invia messaggio {{ partial "icon.html" "arrow" }}</button>
+    </form>
+  </div>
+</section>
+<script>
+  (function () {
+    var k = 'bWFyY29sYXJvY2NhLnBAZ21haWwuY29t', shown = false;
+    var b = document.getElementById('mailBtn'), l = document.getElementById('mailLabel');
+    if (b) b.addEventListener('click', function () {
+      var e = atob(k);
+      if (!shown) { shown = true; l.textContent = e; } else { location.href = 'mail' + 'to:' + e; }
+    });
+  })();
+</script>

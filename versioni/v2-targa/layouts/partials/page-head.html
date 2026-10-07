@@ -1,0 +1,9 @@
+{{- /* Testata delle pagine interne. .page, .title, .lead, .crumb (dict label url) */ -}}
+<section class="page-head stone">
+  <div class="wrap">
+    {{ with .crumb }}<p class="crumbs"><a href="{{ .url }}">{{ .label }}</a></p>{{ end }}
+    <h1>{{ .title }}</h1>
+    {{ with .lead }}<p class="lead">{{ . }}</p>{{ end }}
+    {{ with .extra }}{{ . }}{{ end }}
+  </div>
+</section>

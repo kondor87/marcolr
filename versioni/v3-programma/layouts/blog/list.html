@@ -1,0 +1,8 @@
+{{ define "main" }}
+{{ partial "page-head.html" (dict "title" "Blog" "lead" "Guide pratiche su siti web, Google, AI e automazione, per professionisti e attività locali." "extra" (partial "cats.html" (dict "cur" "")) "mark" "blue") }}
+<section class="sec" style="padding-top:2.5rem"><div class="wrap">
+  {{ partial "indice.html" (dict "pages" .Pages) }}
+  <p style="margin-top:2rem"><a class="link" href="/archivio/">Archivio per anno {{ partial "icon.html" "arrow" }}</a></p>
+</div></section>
+{{ partial "contact.html" . }}
+{{ end }}

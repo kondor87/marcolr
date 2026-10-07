@@ -1,0 +1,7 @@
+{{ define "main" }}
+{{ $posts := where .Site.RegularPages "Section" "blog" }}
+{{ partial "page-head.html" (dict "title" "Archivio" "lead" (printf "%d articoli su siti web, SEO, AI e automazione per attività locali." (len $posts)) "crumb" (dict "label" "← Blog" "url" "/blog/") "mark" "yellow") }}
+<section class="sec" style="padding-top:2.5rem"><div class="wrap archive">
+  {{ range $posts.GroupByDate "2006" }}<div><h2>{{ .Key }}</h2>{{ partial "indice.html" (dict "pages" .Pages) }}</div>{{ end }}
+</div></section>
+{{ end }}

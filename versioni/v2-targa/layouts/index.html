@@ -1,0 +1,112 @@
+{{ define "main" }}
+{{ $p := .Params }}
+{{ $lavori := where .Site.RegularPages "Section" "lavori" }}
+{{ $ultimo := index (first 1 $lavori.ByWeight) 0 }}
+
+<section class="hero stone" aria-labelledby="titolo">
+  <div class="wrap">
+    <div>
+      <h1 id="titolo">{{ replace $p.hero.title "a Frascati e nei Castelli Romani" "<em>a Frascati e nei Castelli Romani</em>" | safeHTML }}</h1>
+      <p class="lead">{{ $p.hero.lead }}</p>
+      <div class="actions">
+        <a class="btn btn--brass" href="#contacts">{{ $p.hero.cta }} {{ partial "icon.html" "arrow" }}</a>
+        <a class="btn btn--line" href="/lavori/">{{ $p.hero.ctaSecondary }}</a>
+      </div>
+      <p class="where">{{ $p.hero.kicker }}</p>
+    </div>
+    {{ with $ultimo }}
+    <a class="proof" href="{{ .RelPermalink }}">
+      <div class="frame"><div class="bar" aria-hidden="true"><i></i><i></i><i></i></div>
+        {{ partial "shared/img.html" (dict "src" .Params.image "alt" (printf "Home page del sito %s" .Title) "width" 640 "ratio" "16/10" "anchor" "Top" "priority" true) }}
+      </div>
+      <p class="cap"><span>Ultimo lavoro: <b>{{ .Title }}</b></span><span>Com'è andata →</span></p>
+    </a>
+    {{ end }}
+  </div>
+</section>
+
+<section class="sec" aria-labelledby="servizi">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2 id="servizi">Cosa posso fare per te</h2>
+      <p>Due cose, fatte con calma e su misura. Ogni collaborazione si concorda a parte.</p>
+    </div>
+    <div class="services">
+      {{ range $p.servizi }}
+      <div class="service">
+        <h3>{{ .title }}</h3>
+        <p>{{ .text }}</p>
+        <ul>{{ range .items }}<li>{{ . }}</li>{{ end }}</ul>
+      </div>
+      {{ end }}
+    </div>
+    <p class="services-more"><a class="link-arrow" href="/siti-web-frascati-castelli-romani/">Come lavoro sui siti per attività locali {{ partial "icon.html" "arrow" }}</a></p>
+  </div>
+</section>
+
+{{ if $lavori }}
+<section class="sec stone" aria-labelledby="lavori">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2 id="lavori">Lavori realizzati</h2>
+      <p>Per ognuno: cosa serviva, cosa ho fatto, com'è andata.</p>
+    </div>
+    <div class="interni">
+      {{ range $i, $l := $lavori.ByWeight }}{{ partial "interno.html" (dict "p" $l "n" (add $i 1) "h" 3) }}{{ end }}
+    </div>
+    {{ with $p.testimonianza }}
+    <figure class="quote">
+      <blockquote>«{{ .text }}»</blockquote>
+      <figcaption>{{ .author }} <span>{{ .role }}</span></figcaption>
+    </figure>
+    {{ end }}
+  </div>
+</section>
+{{ end }}
+
+<section class="sec" aria-labelledby="metodo">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2 id="metodo">Come funziona, in pratica</h2>
+      <p>Tre passaggi. Puoi fermarti in qualsiasi momento prima della consegna.</p>
+    </div>
+    <ol class="steps">
+      {{ range $i, $s := $p.processo }}<li><span class="n" aria-hidden="true">{{ add $i 1 }}</span><h3>{{ $s.title }}</h3><p>{{ $s.text }}</p></li>{{ end }}
+    </ol>
+    <div class="forwho"><strong>A chi è rivolto</strong>{{ range $p.perChi }}<span>{{ . }}</span>{{ end }}</div>
+  </div>
+</section>
+
+{{ $posts := where .Site.RegularPages "Section" "blog" }}
+<section class="sec stone stone--deep" aria-labelledby="blog">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2 id="blog">Dal blog</h2>
+      <p>Guide pratiche su siti, Google, AI e automazione, scritte per chi ha uno studio o un locale.</p>
+    </div>
+    {{ partial "bacheca.html" (dict "pages" (first 6 $posts)) }}
+    <p class="posts-foot"><a class="link-arrow" href="/blog/" style="color:#fff">Tutti gli articoli {{ partial "icon.html" "arrow" }}</a></p>
+  </div>
+</section>
+
+<section class="sec" aria-labelledby="chi">
+  <div class="wrap about">
+    <figure class="ritratto">{{ partial "shared/img.html" (dict "src" "/images/marco-avatar.png" "alt" "Marco La Rocca" "width" 320) }}</figure>
+    <div>
+      <h2 id="chi">Chi sono</h2>
+      <div class="copy">{{ range $p.chiSono }}<p>{{ . }}</p>{{ end }}</div>
+      <div class="perche">{{ range $p.perche }}<div><h3>{{ .title }}</h3><p>{{ .text }}</p></div>{{ end }}</div>
+      <div class="tools" aria-label="Strumenti che uso">{{ range $p.strumenti }}<span>{{ . }}</span>{{ end }}</div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" style="padding-top:0" aria-labelledby="faq">
+  <div class="wrap faq-grid">
+    <h2 id="faq">Domande frequenti</h2>
+    <div class="faq">{{ range $p.faq }}<details><summary>{{ .q }}</summary><p>{{ .a }}</p></details>{{ end }}</div>
+  </div>
+</section>
+
+{{ partial "contact.html" . }}
+{{ end }}

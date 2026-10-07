@@ -1,0 +1,11 @@
+{{ define "main" }}
+{{ partial "page-head.html" (dict "title" .Title "lead" .Description "mark" "red") }}
+<article class="reading"><div class="wrap"><div class="main">
+  <div class="prose">{{ .Content }}</div>
+  {{ with .Params.faq }}
+  <h2 class="faq-h">Domande frequenti</h2>
+  <div class="faq">{{ range . }}<details><summary>{{ .q }}</summary><p>{{ .a }}</p></details>{{ end }}</div>
+  {{ end }}
+</div></div></article>
+{{ if ne .RelPermalink "/grazie/" }}{{ partial "contact.html" . }}{{ end }}
+{{ end }}

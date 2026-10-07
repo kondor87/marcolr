@@ -1,0 +1,13 @@
+{{- $page := . }}{{ $menu := partial "menu.html" . }}
+<header class="site-head">
+  <div class="wrap">
+    {{ partial "brand.html" . }}
+    <nav class="nav" aria-label="Menu principale">
+      {{- range $menu }}<a href="{{ .url }}"{{ if and (ne .url "/#contacts") (hasPrefix $page.RelPermalink .url) }} aria-current="page"{{ end }}>{{ .label }}</a>{{ end }}
+    </nav>
+    <details class="menu-m">
+      <summary>Menu</summary>
+      <ul>{{ range $menu }}<li><a href="{{ .url }}">{{ .label }}</a></li>{{ end }}</ul>
+    </details>
+  </div>
+</header>

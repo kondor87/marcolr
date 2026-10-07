@@ -1,0 +1,8 @@
+{{ with .Site.RegularPages.Related . | first 4 }}
+<section class="related stone stone--deep" aria-labelledby="correlati">
+  <div class="wrap">
+    <h2 id="correlati">Potrebbe interessarti anche</h2>
+    {{ partial "bacheca.html" (dict "pages" .) }}
+  </div>
+</section>
+{{ end }}
