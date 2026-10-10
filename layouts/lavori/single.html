@@ -13,6 +13,19 @@
                 {{ with .Params.tech }}{{ range . }}<span class="pill" style="margin:0 0.4rem 0.4rem 0;">{{ . }}</span>{{ end }}{{ end }}
             </p>
         </header>
+        {{ with .Params.screens }}
+        <section class="case-screens" aria-label="Il sito visto dal telefono">
+            <h2 class="section-label">// dal telefono</h2>
+            <div class="case-screens-grid">
+                {{ range . }}
+                <figure class="case-screen">
+                    {{ partial "shared/img.html" (dict "src" .src "alt" .alt "width" 390 "class" "case-screen-img") }}
+                    {{ with .caption }}<figcaption>{{ . }}</figcaption>{{ end }}
+                </figure>
+                {{ end }}
+            </div>
+        </section>
+        {{ end }}
         <div class="blog-content">{{ .Content }}</div>
         {{ with .Params.clientUrl }}
         <p style="margin-top:2rem;"><a class="btn-secondary" href="{{ . }}" rel="noopener" target="_blank" style="display:inline-flex;">Visita il sito ↗</a></p>

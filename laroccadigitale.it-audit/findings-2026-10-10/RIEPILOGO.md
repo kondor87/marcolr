@@ -28,7 +28,7 @@ Strumenti: skill `seo` (agenti tecnico, contenuti, schema, prestazioni, Google, 
 2. **Search Console**: chiedere l'indicizzazione di /siti-web-frascati-castelli-romani/, /lavori/, /lavori/martina-iannotti-nutrizionista/ e /blog/ (per Google sono "URL sconosciuti"). Ricontrollare i dati dopo il 17 ottobre.
 3. **Banner iubenda** (pannello iubenda): versione compatta in basso, colori del sito. Oggi copre metà schermo su telefono.
 4. ~~Decisioni sulla home~~ fatte il 10/10 con il sì di Marco: terminale in italiano ("disponibile su richiesta") e visibile da telefono, campo telefono facoltativo nel modulo, FAQ sulla ritenuta corretta per i forfettari (da far confermare al commercialista).
-5. **Caso Martina** più ricco (dati veri, screenshot da telefono): è la pagina che Google premierebbe per "sito web per nutrizionista".
+5. ~~Caso Martina~~ riscritto il 10/10 (534 parole, online dal 1° gennaio 2026, 5 sezioni, 3 screenshot dal telefono). Sul sito di Martina: il link "chiama" e un link WhatsApp vanno a un numero diverso da quello scritto, un WhatsApp nel footer è senza prefisso 39, un link email punta a info@martinaiannotti.it invece di info@martinaiannottinutrizione.it. Da sistemare su WordPress.
 6. ~~GTM + GA4~~ tolti il 10/10 (GA4 non raccoglieva dati con iubenda gratuito). ID per rimetterli nel commento di `layouts/partials/shared/head.html`. Clarity resta, bloccato da iubenda fino al consenso.
 
 Dettagli: `technical.md`, `content.md`, `schema.md`, `performance.md`, `google.md`, `sxo.md` in questa cartella.

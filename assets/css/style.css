@@ -1635,3 +1635,17 @@ section[id], [id="contacts"] { scroll-margin-top: 84px; }
   .hero-terminal { font-size: 11.5px; padding: 0.6rem 0.75rem; }
   .terminal-line { white-space: normal; }
 }
+
+/* Caso studio: schermate dal telefono */
+.case-screens { margin: 2rem 0 2.5rem; }
+.case-screens-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.25rem; }
+.case-screen { margin: 0; }
+.case-screen-img { display: block; width: 100%; height: auto; border-radius: 18px; border: 1px solid var(--border); box-shadow: 0 6px 18px rgba(0,0,0,0.12); background: #fff; }
+.case-screen figcaption { margin-top: 0.6rem; font-size: 14px; line-height: 1.5; color: var(--text-secondary); }
+@media (max-width: 640px) {
+  .case-screens-grid { grid-template-columns: none; grid-auto-flow: column; grid-auto-columns: 72%; overflow-x: auto; scroll-snap-type: x mandatory; padding-bottom: 0.5rem; }
+  .case-screen { scroll-snap-align: start; }
+}
+
+/* Le etichette non si spezzano a metà */
+.pill { display: inline-block; white-space: nowrap; }
