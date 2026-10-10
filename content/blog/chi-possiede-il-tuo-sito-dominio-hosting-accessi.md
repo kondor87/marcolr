@@ -45,7 +45,7 @@ La scheda su Google Maps deve avere te come **proprietario principale**. Chi ti 
 
 ### 6. Search Console e Analytics?
 
-Sono gli strumenti che dicono come va il sito su Google. Anche qui devi essere **proprietario**, non solo un utente invitato. La [Search Console](https://search.google.com/search-console) è gratuita e vale la pena attivarla comunque.
+Sono gli strumenti che dicono come va il sito su Google. Anche qui devi essere **proprietario**, non solo un utente invitato. La [Search Console](https://search.google.com/search-console/about) è gratuita e vale la pena attivarla comunque.
 
 ### 7. Gli altri servizi collegati?
 
@@ -80,10 +80,10 @@ Mettilo per iscritto, prima di cominciare:
 
 Se una di queste risposte non è un sì chiaro (o un "nessun canone" chiaro), fermati e chiedi spiegazioni. Ne parlo anche nella guida su [quanto costa un sito web](/blog/quanto-costa-sito-web/).
 
-Quando realizzo un sito, dominio e accessi sono intestati al cliente dal primo giorno e alla consegna lascio tutto: codice, credenziali e istruzioni. Se vuoi un controllo di come stanno le cose sul tuo sito, [scrivimi](/#contacts).
+Se realizzo io il tuo sito, dominio e accessi sono intestati a te dal primo giorno e alla consegna lascio tutto: codice, credenziali e istruzioni. Se stai per rifare il sito e vuoi capire da dove partire, [scrivimi](/#contacts).
 
 ## Fonti e approfondimenti
 
 - [Registro .it, il registro dei domini italiani](https://www.nic.it/)
 - [Google Business Profile, Richiedi la proprietà di un profilo](https://support.google.com/business/answer/4566671?hl=it)
-- [Google Search Console](https://search.google.com/search-console)
+- [Google Search Console](https://search.google.com/search-console/about)

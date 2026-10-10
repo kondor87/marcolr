@@ -15,17 +15,17 @@ E se ci fosse qualcuno che gestisce l'agenda al posto tuo? Senza stipendio, feri
 
 ## AI o automazione? In breve
 
-**Automazione** vuol dire regole fisse ("se succede X, fai Y"): booking online, promemoria, moduli. **AI** vuol dire strumenti che capiscono una richiesta scritta in modo libero e producono una risposta diversa ogni volta. Nel seguito segno con ⚙️ l'automazione e con 🤖 l'AI. Se vuoi la spiegazione completa c'è la [guida onesta su AI e automazione](/blog/ai-automazione-guida-attivita-locali/).
+**Automazione** vuol dire regole fisse ("se succede X, fai Y"): booking online, promemoria, moduli. **AI** vuol dire strumenti che capiscono una richiesta scritta in modo libero e producono una risposta diversa ogni volta. Nei titoli qui sotto trovi scritto se si tratta di automazione o di AI. Se vuoi la spiegazione completa c'è la [guida su AI e automazione](/blog/ai-automazione-guida-attivita-locali/).
 
 {{< box title="Prima di tutto: dati sanitari, privacy e AI" >}}
-Le informazioni sulla salute dei pazienti sono **dati particolari** per il GDPR (art. 9): servono una base giuridica chiara, un'informativa, fornitori con un contratto per il trattamento dei dati (DPA) e attenzione ai server fuori dall'UE. Dal 2 agosto 2026 l'AI Act obbliga a far capire subito a chi scrive che sta parlando con un sistema di AI, e la legge italiana 132/2025 chiede ai professionisti di informare i clienti quando usano l'AI nel proprio lavoro. Ne parlo nella guida [AI, chatbot e dati dei pazienti](/blog/ai-chatbot-dati-pazienti-gdpr/). Questo articolo non è una consulenza legale: per i casi concreti senti il tuo DPO o un legale.
+Le informazioni sulla salute dei pazienti sono **dati particolari** per il GDPR (art. 9): servono una base giuridica chiara, un'informativa, fornitori con un contratto per il trattamento dei dati (DPA) e attenzione ai server fuori dall'UE. Dal 2 agosto 2026 l'AI Act chiede che chi scrive a un chatbot capisca subito che sta parlando con un sistema di AI, e la legge italiana 132/2025 chiede ai professionisti di informare i clienti quando usano l'AI nel proprio lavoro. Ne parlo nella guida [AI, chatbot e dati dei pazienti](/blog/ai-chatbot-dati-pazienti-gdpr/). Questo articolo non è una consulenza legale: per i casi concreti senti il tuo DPO o un legale.
 {{< /box >}}
 
 ## Il confronto: segretaria part-time vs. automazione + AI
 
 | | Segretaria part-time | Automazione + AI |
 |---|---|---|
-| Costo mensile | 600-900€ (lordo) | 40-80€ |
+| Costo mensile | diverse centinaia di euro | 40-80€ |
 | Disponibilità | 4-5 ore/giorno | 24 ore, 7 giorni su 7 |
 | Ferie e malattia | Sì | No |
 | Errori | Possibili | Pochi, se configurato bene |
@@ -34,7 +34,7 @@ Le informazioni sulla salute dei pazienti sono **dati particolari** per il GDPR 
 
 Non sto dicendo che una segretaria non serva: per molti studi è insostituibile. Ma se sei all'inizio, o lavori da solo, automazione e AI coprono gran parte del lavoro ripetitivo a una frazione del costo.
 
-## ⚙️ Prenotazioni online (automazione)
+## Prenotazioni online (automazione)
 
 Il booking online **non è AI** — è automazione, e questo non è un difetto. Funziona benissimo così com'è:
 
@@ -45,7 +45,7 @@ Il booking online **non è AI** — è automazione, e questo non è un difetto. 
 
 Se già usi un sistema di booking (Calendly, Cal.com, o il booking integrato nel gestionale), **sei a posto**. Se non lo usi ancora, è la prima cosa da fare — il risparmio di tempo è immediato.
 
-## ⚙️ Promemoria automatici (automazione, ma riduce i buchi in agenda)
+## Promemoria automatici (automazione, ma riduce i buchi in agenda)
 
 I "buchi" in agenda sono il nemico numero uno dello studio che lavora da solo. Un paziente che non si presenta e non avvisa sono 50-80€ persi, più lo slot che potevi dare a qualcun altro.
 
@@ -57,7 +57,7 @@ Il promemoria automatico (automazione, non AI) funziona così:
 
 Sono regole fisse, non intelligenza artificiale. Ma il risultato si vede: meno appuntamenti saltati senza avviso.
 
-## 🤖 Chatbot intelligente per il primo contatto (questa è AI)
+## Chatbot intelligente per il primo contatto (questa è AI)
 
 Ecco dove l'AI fa la differenza rispetto a un semplice form.
 
@@ -65,14 +65,14 @@ Un form di contatto chiede sempre le stesse cose: nome, email, messaggio. Il paz
 
 Un chatbot AI sul tuo sito è diverso:
 
-*   Il paziente scrive in modo naturale: *"Ho un dolore cervicale che non passa da un mese, ho già fatto fisioterapia senza risultati"*
+*   Il paziente scrive in modo naturale: *"Vorrei una prima visita, possibilmente il martedì dopo le 18"*
 *   Il chatbot **capisce** la richiesta e risponde sugli aspetti pratici: *"Posso fissarti una prima visita: preferisci mattino o pomeriggio? La prima seduta dura circa 50 minuti, e la situazione verrà valutata in studio."*
 *   Non dà pareri clinici e non dice se un trattamento è indicato: quello resta compito tuo, in visita.
-*   Raccoglie tutte le informazioni e te le manda **già organizzate**
+*   Raccoglie solo nome, recapito e preferenza di orario e te li manda **già organizzati**. Dei sintomi parlerete in visita.
 
 Non è un menu con bottoni. È una conversazione — e la differenza è che il paziente si sente ascoltato prima ancora di entrare in studio.
 
-## 🤖 Gestione intelligente delle ricorrenze (AI + automazione)
+## Gestione intelligente delle ricorrenze (AI + automazione)
 
 L'osteopatia spesso richiede cicli di trattamento: un paziente viene ogni 2 settimane, un altro una volta al mese.
 
@@ -80,9 +80,9 @@ La parte **automazione**: un promemoria fisso ogni X settimane ("Sono passate 3 
 
 La parte **AI**: un messaggio personalizzato che si adatta alla situazione del paziente. Non "Sono passati 21 giorni" ma *"Ciao Marco, l'ultima volta avevamo parlato di rivederci dopo 3 settimane per verificare come procede la cervicale. Vuoi fissare il prossimo appuntamento?"*
 
-La differenza è sottile ma importante: un messaggio personalizzato ha un tasso di risposta molto più alto di un promemoria generico.
+La differenza è sottile ma importante: un messaggio personalizzato di solito ottiene più risposte di un promemoria generico.
 
-## ⚙️ Schede paziente pre-compilate (automazione)
+## Schede paziente pre-compilate (automazione)
 
 Questo è automazione pura — un form online che il paziente compila prima della prima visita:
 
@@ -92,15 +92,15 @@ Questo è automazione pura — un form online che il paziente compila prima dell
 
 Non c'è AI qui, solo un buon form digitale. Ma il risparmio di tempo è di 15-20 minuti per paziente.
 
-## 🤖 Richiesta intelligente di recensioni (AI)
+## Richiesta intelligente di recensioni (AI)
 
 Dopo ogni visita, puoi inviare una richiesta automatica di recensione — questa è automazione. Ma se il messaggio è sempre uguale ("Lascia una recensione su Google"), diventa rumore.
 
 Con l'AI, il messaggio si adatta:
 
-*   *"Ciao Maria, spero che la schiena stia già meglio. Se ti va, una tua recensione su Google mi aiuterebbe molto — ecco il link."*
+*   *"Ciao Maria, grazie per la visita di oggi. Se ti va, una recensione su Google mi aiuta: ecco il link."*
 
-Ogni messaggio sembra scritto da te, non da un robot. E le recensioni arrivano con più frequenza.
+Ogni messaggio segue il tuo tono e lo rileggi prima che parta. Nei messaggi non citare mai il motivo della visita: la recensione è pubblica.
 
 ## Quanto si risparmia, in un esempio
 
@@ -120,7 +120,7 @@ Il tempo risparmiato si può dedicare ai pazienti o, semplicemente, a staccare.
 
 Non devi. Il tuo lavoro è trattare le persone, non configurare software. Esattamente come non installi da solo l'impianto elettrico dello studio: chiami qualcuno che lo fa.
 
-L'AI e l'automazione si configurano una volta e poi funzionano da sole. Tu continui a fare quello che sai fare — solo con meno stress.
+Si configurano una volta, poi basta controllarli ogni tanto: per un chatbot, vuol dire rileggere un campione di conversazioni. Tu continui a fare il tuo lavoro, con meno telefonate da gestire.
 
 ---
 

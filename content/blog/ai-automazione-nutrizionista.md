@@ -13,17 +13,17 @@ Se sei una nutrizionista (o un nutrizionista), conosci bene questa scena: finisc
 
 Quella parte del lavoro che **nessuno vede e nessuno ti paga**, ma che porta via ore ogni settimana.
 
-Ma prima di promettere miracoli, facciamo una cosa che in pochi fanno: **essere onesti su cosa è AI e cosa no**.
+Prima però chiariamo **cosa è AI e cosa no**.
 
 ## AI o automazione? In breve
 
-**Automazione** vuol dire regole fisse ("se succede X, fai Y"): booking online, promemoria, moduli. **AI** vuol dire strumenti che capiscono una richiesta scritta in modo libero e producono una risposta diversa ogni volta. Nel seguito segno con ⚙️ l'automazione e con 🤖 l'AI. Se vuoi la spiegazione completa c'è la [guida onesta su AI e automazione](/blog/ai-automazione-guida-attivita-locali/).
+**Automazione** vuol dire regole fisse ("se succede X, fai Y"): booking online, promemoria, moduli. **AI** vuol dire strumenti che capiscono una richiesta scritta in modo libero e producono una risposta diversa ogni volta. Nei titoli qui sotto trovi scritto se si tratta di automazione o di AI. Se vuoi la spiegazione completa c'è la [guida su AI e automazione](/blog/ai-automazione-guida-attivita-locali/).
 
 {{< box title="Prima di tutto: dati sanitari, privacy e AI" >}}
-Le informazioni sulla salute dei pazienti sono **dati particolari** per il GDPR (art. 9): servono una base giuridica chiara, un'informativa, fornitori con un contratto per il trattamento dei dati (DPA) e attenzione ai server fuori dall'UE. Dal 2 agosto 2026 l'AI Act obbliga a far capire subito a chi scrive che sta parlando con un sistema di AI, e la legge italiana 132/2025 chiede ai professionisti di informare i clienti quando usano l'AI nel proprio lavoro. Ne parlo nella guida [AI, chatbot e dati dei pazienti](/blog/ai-chatbot-dati-pazienti-gdpr/). Questo articolo non è una consulenza legale: per i casi concreti senti il tuo DPO o un legale.
+Le informazioni sulla salute dei pazienti sono **dati particolari** per il GDPR (art. 9): servono una base giuridica chiara, un'informativa, fornitori con un contratto per il trattamento dei dati (DPA) e attenzione ai server fuori dall'UE. Dal 2 agosto 2026 l'AI Act chiede che chi scrive a un chatbot capisca subito che sta parlando con un sistema di AI, e la legge italiana 132/2025 chiede ai professionisti di informare i clienti quando usano l'AI nel proprio lavoro. Ne parlo nella guida [AI, chatbot e dati dei pazienti](/blog/ai-chatbot-dati-pazienti-gdpr/). Questo articolo non è una consulenza legale: per i casi concreti senti il tuo DPO o un legale.
 {{< /box >}}
 
-## ⚙️ Raccolta dati pre-visita (automazione)
+## Raccolta dati pre-visita (automazione)
 
 Prima di ogni prima visita, probabilmente chiedi al paziente di compilare un questionario: abitudini alimentari, patologie, obiettivi, allergie, stile di vita.
 
@@ -35,11 +35,11 @@ La soluzione è un **form digitale** — e non è AI, è automazione:
 *   Lo compila da casa, con calma, senza la pressione del "compila qui in sala d'attesa"
 *   Tu lo ritrovi già organizzato prima della visita
 
-**Risparmio:** 15-20 minuti per paziente. Su 15 nuovi pazienti al mese = **oltre 4 ore risparmiate**.
+**Risparmio:** 15-20 minuti per paziente. Con 6-8 nuovi pazienti al mese sono **2-3 ore risparmiate** (stima).
 
 Non serve AI per questo. Serve un buon form.
 
-## ⚙️ Promemoria e gestione appuntamenti (automazione)
+## Promemoria e gestione appuntamenti (automazione)
 
 I pazienti nutrizionali hanno spesso un ritmo: prima visita → controllo a 3 settimane → controllo mensile → controllo trimestrale.
 
@@ -51,7 +51,7 @@ Un sistema di booking + promemoria automatici (Calendly, Cal.com, o strumenti in
 
 Questo è automazione classica — e funziona perfettamente. Se già lo usi, sei a buon punto.
 
-## 🤖 Follow-up personalizzato con AI (questa è AI vera)
+## Follow-up personalizzato con AI (questa è AI vera)
 
 Ecco dove la differenza tra automazione e AI diventa evidente.
 
@@ -63,13 +63,13 @@ Ecco dove la differenza tra automazione e AI diventa evidente.
 *   Dopo un controllo dove il paziente ha fatto fatica: *"Ciao Marco, so che questa settimana non è andata come speravi. È normale: il percorso non è lineare. Concentrati su un obiettivo alla volta."*
 *   Messaggio di follow-up dopo inattività: *"Ciao Laura, sono passate 6 settimane dall'ultimo controllo. Come sta andando? Se vuoi, possiamo fare un check veloce."*
 
-Ogni volta un testo diverso, nel tuo tono, con i riferimenti giusti. L'AI genera, tu rivedi e invii (o lasci inviare in automatico se ti fidi).
+Ogni volta un testo diverso, nel tuo tono, con i riferimenti giusti. L'AI propone una bozza, tu la rivedi e la invii.
 
-## 🤖 Diario alimentare fotografico (questa è AI)
+## Diario alimentare fotografico (questa è AI)
 
 Questa è una delle applicazioni più interessanti di AI in ambito nutrizionale.
 
-Molti nutrizionisti chiedono ai pazienti di tenere un diario alimentare. Il problema? La maggior parte lo abbandona dopo 3 giorni perché è noioso scrivere tutto.
+Molti nutrizionisti chiedono ai pazienti di tenere un diario alimentare. Il problema? Molti lo abbandonano dopo pochi giorni perché è noioso scrivere tutto.
 
 Con strumenti che usano **riconoscimento immagini AI**:
 
@@ -82,14 +82,13 @@ Non è perfetta: l'AI può sbagliare un alimento o una porzione, e i dati vanno 
 
 Più dati = visite di controllo più efficaci = pazienti più soddisfatti = più passaparola.
 
-## 🤖 Chatbot per domande frequenti tra una visita e l'altra (AI)
+## Chatbot per domande frequenti tra una visita e l'altra (AI)
 
 "Posso mangiare il sushi stasera?" — "E la frutta a fine pasto va bene?" — "Quanta acqua dovrei bere?"
 
 Queste domande arrivano via WhatsApp a ogni ora del giorno. Un chatbot AI sul tuo sito, addestrato sulle tue linee guida generali, può rispondere alle domande più comuni:
 
 *   Indicazioni generali già scritte e approvate da te (non prescrive diete e non dà consigli personalizzati: quello lo fai tu)
-*   Chiarimenti sulle indicazioni del piano alimentare
 *   Link a risorse utili che hai preparato
 
 Il paziente si sente seguito, tu non rispondi a 20 messaggi al giorno.

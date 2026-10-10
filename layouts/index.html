@@ -1,6 +1,6 @@
 {{ define "main" }}
 {{ $p := .Params }}
-{{ $mail := `<svg viewBox="0 0 24 24" aria-hidden="true" style="width:15px;height:15px;stroke:#fff;fill:none;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round"><rect x="2" y="4" width="20" height="16" rx="2" /><polyline points="2,4 12,13 22,4" /></svg>` | safeHTML }}
+{{ $mail := `<svg viewBox="0 0 24 24" aria-hidden="true" style="width:15px;height:15px;stroke:currentColor;fill:none;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round"><rect x="2" y="4" width="20" height="16" rx="2" /><polyline points="2,4 12,13 22,4" /></svg>` | safeHTML }}
 
     <!-- HERO -->
     <div class="hero fade-in">
@@ -93,7 +93,7 @@
     <section class="section reveal">
         <h2 class="section-label">// chi sono</h2>
         <div class="why-card" style="grid-template-columns:1fr;">
-            <div class="why-text" style="font-size:14px;line-height:1.75;">
+            <div class="why-text">
                 {{ range $i, $t := $p.chiSono }}<p{{ if $i }} style="margin-top:1rem;"{{ end }}>{{ $t }}</p>{{ end }}
             </div>
         </div>
@@ -160,16 +160,6 @@
     <!-- FAQ -->
     <section class="section reveal">
         <h2 class="section-label">// domande frequenti</h2>
-        <style>
-            .faq-list { max-width: 700px; margin: 0 auto; }
-            .faq-item { border: 1px solid var(--border); border-radius: 12px; margin-bottom: 0.75rem; overflow: hidden; transition: border-color 0.3s; }
-            .faq-item:hover { border-color: var(--green); }
-            .faq-item summary { list-style: none; padding: 1.25rem 1.5rem; font-size: 15px; font-weight: 500; color: var(--text); cursor: pointer; display: flex; justify-content: space-between; align-items: center; }
-            .faq-item summary::-webkit-details-marker { display: none; }
-            .faq-item summary::after { content: '+'; font-size: 20px; color: var(--green); font-weight: 300; margin-left: 1rem; }
-            .faq-item[open] summary::after { content: '−'; }
-            .faq-answer-inner { padding: 0 1.5rem 1.25rem; font-size: 14px; line-height: 1.7; color: var(--text-secondary); }
-        </style>
         <div class="faq-list">
             {{ range $p.faq }}
             <details class="faq-item">

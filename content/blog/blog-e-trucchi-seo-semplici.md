@@ -1,7 +1,7 @@
 ---
 title: "Perché avere un blog: 4 consigli SEO pratici"
 date: 2026-01-20T15:00:00+01:00
-description: "Pensi che il blog sia morto? Sbagliato. È l'arma più potente per farti trovare su Google. Ecco come scriverlo senza impazzire con la SEO tecnica."
+description: "Pensi che il blog sia morto? Sbagliato. Un blog fatto bene ti aiuta a farti trovare su Google. Ecco come scriverlo senza impazzire con la SEO tecnica."
 ogImage: "/images/og/blog-e-trucchi-seo-semplici.png"
 categories: ["SEO Locale"]
 tags: ["blog", "scrittura SEO", "posizionamento", "clienti locali"]
@@ -25,7 +25,7 @@ Le persone cercano soluzioni ai loro problemi. Usa titoli che ricalcano le loro 
 
 ## 2. Rinomina le foto prima di caricarle
 
-Questo è un trucco SEO potentissimo che richiede letteralmente due secondi. 
+È un'abitudine che richiede due secondi. 
 Quando scatti una foto con il telefono o la scarichi dal web, il file si chiama spesso in modi assurdi come `IMG_8492.JPG` oppure `WhatsApp-Image-2026-03.jpg`.
 
 Google analizza anche le immagini, ma il nome del file e il testo alternativo (l'"alt") lo aiutano molto a capire cosa mostrano, e servono a chi usa un lettore di schermo. Prima di inserire l'immagine nel tuo articolo, **rinominala sul tuo computer dicendo esattamente cosa contiene**, possibilmente separando le parole col trattino.

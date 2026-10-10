@@ -13,17 +13,17 @@ Se sei uno psicologo o un terapeuta, passi troppa parte della giornata a fare co
 
 Questo tempo "amministrativo" potresti dedicarlo ai tuoi pazienti o a te stesso.
 
-Prima di parlare di soluzioni, facciamo una cosa che quasi nessuno fa: **siamo onesti su cosa è AI e cosa no**.
+Prima di parlare di soluzioni, chiariamo **cosa è AI e cosa no**.
 
 ## AI o automazione? In breve
 
-**Automazione** vuol dire regole fisse ("se succede X, fai Y"): booking online, promemoria, moduli. **AI** vuol dire strumenti che capiscono una richiesta scritta in modo libero e producono una risposta diversa ogni volta. Nel seguito segno con ⚙️ l'automazione e con 🤖 l'AI. Se vuoi la spiegazione completa c'è la [guida onesta su AI e automazione](/blog/ai-automazione-guida-attivita-locali/).
+**Automazione** vuol dire regole fisse ("se succede X, fai Y"): booking online, promemoria, moduli. **AI** vuol dire strumenti che capiscono una richiesta scritta in modo libero e producono una risposta diversa ogni volta. Nei titoli qui sotto trovi scritto se si tratta di automazione o di AI. Se vuoi la spiegazione completa c'è la [guida su AI e automazione](/blog/ai-automazione-guida-attivita-locali/).
 
 {{< box title="Prima di tutto: dati sanitari, privacy e AI" >}}
-Le informazioni sulla salute dei pazienti sono **dati particolari** per il GDPR (art. 9): servono una base giuridica chiara, un'informativa, fornitori con un contratto per il trattamento dei dati (DPA) e attenzione ai server fuori dall'UE. Dal 2 agosto 2026 l'AI Act obbliga a far capire subito a chi scrive che sta parlando con un sistema di AI, e la legge italiana 132/2025 chiede ai professionisti di informare i clienti quando usano l'AI nel proprio lavoro. Ne parlo nella guida [AI, chatbot e dati dei pazienti](/blog/ai-chatbot-dati-pazienti-gdpr/). Questo articolo non è una consulenza legale: per i casi concreti senti il tuo DPO o un legale.
+Le informazioni sulla salute dei pazienti sono **dati particolari** per il GDPR (art. 9): servono una base giuridica chiara, un'informativa, fornitori con un contratto per il trattamento dei dati (DPA) e attenzione ai server fuori dall'UE. Dal 2 agosto 2026 l'AI Act chiede che chi scrive a un chatbot capisca subito che sta parlando con un sistema di AI, e la legge italiana 132/2025 chiede ai professionisti di informare i clienti quando usano l'AI nel proprio lavoro. Ne parlo nella guida [AI, chatbot e dati dei pazienti](/blog/ai-chatbot-dati-pazienti-gdpr/). Questo articolo non è una consulenza legale: per i casi concreti senti il tuo DPO o un legale.
 {{< /box >}}
 
-## ⚙️ Scheduling automatico (questo è automazione, non AI)
+## Scheduling automatico (questo è automazione, non AI)
 
 Strumenti come Calendly o Cal.com **non sono AI** — sono software di booking. E va benissimo così: fanno un lavoro eccellente senza bisogno di intelligenza artificiale.
 
@@ -33,9 +33,9 @@ Strumenti come Calendly o Cal.com **non sono AI** — sono software di booking. 
 
 Se già usi Calendly o un sistema simile, **hai già fatto la scelta giusta**. Se non lo usi ancora, è il primo passo — e non costa nulla (Calendly ha un piano gratuito, Cal.com è open source).
 
-**Dove entra l'AI:** quando colleghi il booking a un chatbot che capisce richieste complesse ("Ho bisogno di un appuntamento urgente, è per mio figlio di 14 anni, preferibilmente al mattino") e propone lo slot giusto. Lì il booking rimane lo stesso, ma l'interfaccia diventa intelligente.
+**Dove entra l'AI:** quando colleghi il booking a un assistente che capisce una richiesta scritta in modo libero ("Vorrei un primo colloquio, anche online, preferibilmente al mattino") e propone gli orari liberi. Se il messaggio parla di urgenza o riguarda un minore, l'assistente non fissa nulla: raccoglie solo il contatto e ti avvisa.
 
-## ⚙️ Promemoria automatici (automazione — ma vale oro)
+## Promemoria automatici (automazione, ma è la più utile)
 
 Quanti appuntamenti saltano senza preavviso ogni mese? Anche solo 3-4 sedute saltate al mese, a 60-80€ l'una, valgono **fino a 320€ di mancato incasso**.
 
@@ -49,7 +49,7 @@ Anche questo **non è AI**: è automazione pura. Ma è uno dei modi più semplic
 
 Non servono strumenti costosi — la maggior parte dei sistemi di booking (incluso Calendly) include già i promemoria.
 
-## ⚙️ Gestione lista d'attesa (automazione)
+## Gestione lista d'attesa (automazione)
 
 Hai lo studio pieno e non prendi nuovi pazienti? Ma quelli che ti contattano dove finiscono? Nella maggior parte dei casi: nel nulla.
 
@@ -61,7 +61,7 @@ Un sistema automatizzato (non AI, ma efficace) può:
 
 È un flusso di regole, non intelligenza artificiale. Ma evita che tu perda potenziali pazienti per disorganizzazione.
 
-## 🤖 Primo contatto: un assistente per le domande pratiche (AI, con limiti chiari)
+## Primo contatto: un assistente per le domande pratiche (AI, con limiti chiari)
 
 Il primo messaggio di un nuovo paziente spesso contiene domande pratiche: *"Tratta anche disturbi d'ansia? Quanto costa una seduta? Fa anche online?"*
 
@@ -77,19 +77,18 @@ Quello che **non deve fare** è uno "screening" clinico. In psicologia il confin
 
 Usato così, il chatbot non sostituisce il primo colloquio: ti evita solo di rispondere dieci volte al giorno alle stesse domande pratiche.
 
-## 🤖 Follow-up personalizzato intelligente (AI + automazione)
+## Follow-up personalizzato intelligente (AI + automazione)
 
 Molti terapeuti inviano esercizi, materiali o messaggi di follow-up dopo le sedute. Farlo manualmente ogni volta porta via tempo.
 
 La versione **automazione** è un template fisso che si invia sempre uguale. Funziona, ma è impersonale.
 
-La versione **AI** è diversa: l'AI può generare messaggi personalizzati in base al tipo di seduta, adattando il tono e i contenuti. Ad esempio:
+La versione **AI** può aiutarti a scrivere messaggi meno rigidi, ma con un limite netto: **non inserire nell'AI nulla di quello che emerge in seduta**. Quello che può fare senza dati clinici:
 
-*   Dopo una prima seduta: un messaggio di benvenuto personalizzato
-*   Dopo una seduta intensa: un messaggio più empatico con esercizi di rilassamento
-*   Dopo una seduta di routine: un semplice promemoria per il prossimo incontro
+*   Dopo il primo colloquio: un messaggio di benvenuto con le informazioni pratiche (orari, come disdire, come pagare)
+*   Prima del prossimo incontro: un promemoria con un materiale che hai scelto tu
 
-Tu definisci le linee guida, l'AI genera il testo. Ogni messaggio sembra scritto da te — perché segue le tue indicazioni.
+Tu definisci le linee guida e rileggi ogni messaggio prima di inviarlo. Ogni messaggio segue il tuo tono, e i pazienti sanno che usi uno strumento di supporto perché lo hai scritto nell'informativa.
 
 ## Quanto si risparmia, in un esempio
 
@@ -122,4 +121,4 @@ Io mi occupo di siti web. Se vuoi un sito con la **prenotazione online collegata
 - [Garante per la protezione dei dati personali](https://www.garanteprivacy.it/)
 - [Regolamento (UE) 2024/1689, AI Act (art. 50: obblighi di trasparenza)](https://eur-lex.europa.eu/eli/reg/2024/1689/oj)
 - [Legge 23 settembre 2025, n. 132, sull'intelligenza artificiale (art. 13)](https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2025-09-23;132)
-- [Codice deontologico degli psicologi italiani](https://www.psy.it/codice-deontologico-degli-psicologi-italiani/)
+- [Codice deontologico degli psicologi italiani](https://www.psy.it/la-professione-psicologica/codice-deontologico-degli-psicologi-italiani/)

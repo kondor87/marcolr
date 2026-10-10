@@ -11,9 +11,9 @@ draft: false
 
 "Ma quanto costa fare un sito?"
 
-È la domanda più frequente e difficile a cui rispondere. Spesso ti senti dire "dipende", ma non ti aiuta a capire. Proviamo a fare chiarezza una volta per tutte, con numeri veri.
+È la domanda più frequente e difficile a cui rispondere. Spesso ti senti dire "dipende", ma non ti aiuta a capire. Proviamo a fare chiarezza, con numeri indicativi (ottobre 2026).
 
-## Le 3 voci di costo che nessuno ti spiega
+## Le 3 voci di costo
 
 Un sito web ha dei costi fissi che paghi ogni anno, indipendentemente da chi te lo realizza. Sono pochi e chiari:
 
@@ -32,7 +32,7 @@ L'hosting è lo "spazio" dove il sito vive fisicamente. Per un sito vetrina di u
 
 ### 3. La Realizzazione (il costo variabile)
 
-Qui è dove le cose si complicano. Il prezzo varia enormemente in base a **chi** lo fa e **come** lo fa:
+Qui le cose si complicano. Il prezzo varia enormemente in base a **chi** lo fa e **come** lo fa:
 
 | Soluzione | Costo indicativo | Pro | Contro |
 |-----------|------------------|-----|--------|
@@ -63,7 +63,7 @@ In questo esempio un sito da 500€ si ripaga in meno di sei mesi. I numeri camb
 
 Prima di rivolgerti a qualcuno, fai queste domande:
 
-*   **"Il sito è mio alla fine?"** — Se la risposta non è un sì chiaro e immediato, scappa. Il sito, il dominio e i contenuti devono essere di tua proprietà.
+*   **"Il sito è mio alla fine?"** — Se la risposta non è un sì chiaro e immediato, scappa. Il sito, il dominio e i contenuti devono essere di tua proprietà (ecco [la checklist per verificarlo](/blog/chi-possiede-il-tuo-sito-dominio-hosting-accessi/)).
 *   **"C'è un canone mensile obbligatorio?"** — Alcuni propongono il sito "gratis" ma con un canone di 50-100€/mese. In 2 anni hai speso più che comprarlo.
 *   **"Posso aggiornarlo da solo?"** — Se per cambiare un orario devi chiamare qualcuno, il sito diventa una prigione.
 
@@ -75,9 +75,9 @@ Prima di rivolgerti a qualcuno, fai queste domande:
 | Hosting | 0-80€/anno |
 | Realizzazione | Dai 300€ ai 2.500€ (una tantum) |
 | **Totale primo anno** | **Da ~350€ a ~2.600€** |
-| **Anni successivi** | **~30-100€/anno** (solo dominio + hosting) |
+| **Anni successivi** | **~15-100€/anno** (solo dominio + hosting) |
 
-Non è un costo enorme. È un investimento che, se fatto bene, si ripaga da solo.
+Se il sito ti porta anche solo qualche contatto in più all'anno, di solito si ripaga.
 
 ---
 
@@ -94,5 +94,5 @@ Se hai un'attività locale e vuoi capire qual è la soluzione giusta per te, scr
 - [Registro .it, il registro dei domini italiani](https://www.nic.it/)
 - [Netlify, piani e prezzi](https://www.netlify.com/pricing/)
 - [Vercel, Fair Use Guidelines: il piano Hobby è solo per uso personale non commerciale](https://vercel.com/docs/limits/fair-use-guidelines)
-- [Cloudflare Pages](https://pages.cloudflare.com/)
+- [Cloudflare Pages](https://www.cloudflare.com/products/pages/)
 - [Google Search Central, Core Web Vitals e risultati di ricerca](https://developers.google.com/search/docs/appearance/core-web-vitals)

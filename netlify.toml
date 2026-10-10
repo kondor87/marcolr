@@ -36,6 +36,11 @@
 
 # La landing locale è passata dal blog a una pagina dedicata.
 [[redirects]]
+  from = "/favicon.ico"
+  to = "/favicon.png"
+  status = 301
+
+[[redirects]]
   from = "/blog/siti-web-castelli-romani/"
   to = "/siti-web-frascati-castelli-romani/"
   status = 301

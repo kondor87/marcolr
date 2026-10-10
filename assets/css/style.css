@@ -1566,3 +1566,51 @@ html:not(.js) .reveal { opacity: 1; transform: none; }
 @media (max-width: 640px) { .nav-brand-name { display: none; } }
 @media (max-width: 520px) { .nav-links { gap: .25rem; } .nav-item { padding: 0 9px; } }
 @media (max-width: 360px) { .nav-links { gap: 0; } .nav-item { font-size: 12px; padding: 0 6px; border-color: transparent; } .nav-item.active { border-color: var(--green-border); } }
+
+/* =========================================================
+   Re-check impeccable (10 ottobre 2026): contrasto e tocchi
+   ========================================================= */
+
+/* Il verde scuro su sfondo scuro non arriva a 4.5:1: per il testo si usa --label */
+.service-badge, .portfolio-tag, .blog-filter-pill.active,
+.forwho-item.featured, .pill:hover, .pill.accent { color: var(--label); }
+
+/* Numeri dei passi: leggibili anche nel tema chiaro (prima 2.1:1) */
+.process-num { opacity: 1; color: var(--text-tertiary); }
+
+/* Segnaposto del modulo con il colore del tema, non quello del browser */
+.contact-form ::placeholder { color: var(--text-tertiary); opacity: 1; }
+
+/* Filtri del blog, domande frequenti e indice: comodi col pollice */
+.blog-filter-pill { min-height: 44px; display: inline-flex; align-items: center; padding: 0 16px; }
+.blog-toc a { padding: 0.55rem 0; }
+
+/* Note legali in fondo: righe meno lunghe */
+.footer-legal { max-width: 70ch; }
+
+/* Selezione del testo con i colori del sito */
+::selection { background: var(--green-light); color: var(--text); }
+
+/* Domande frequenti: un solo componente per home e pagina servizio */
+.faq-item { border: 1px solid var(--border); border-radius: 12px; margin-bottom: 0.75rem; overflow: hidden; transition: border-color 0.2s; }
+.faq-item:hover { border-color: var(--green-border); }
+.faq-item summary { list-style: none; padding: 1.1rem 1.4rem; min-height: 44px; font-size: 16px; font-weight: 500; color: var(--text); cursor: pointer; display: flex; justify-content: space-between; align-items: center; gap: 1rem; }
+.faq-item summary::-webkit-details-marker { display: none; }
+.faq-item summary::after { content: '+'; font-size: 22px; line-height: 1; color: var(--label); font-weight: 300; flex-shrink: 0; }
+.faq-item[open] summary::after { content: '2'; }
+.faq-answer-inner { padding: 0 1.4rem 1.2rem; font-size: 15.5px; line-height: 1.7; color: var(--text-secondary); max-width: 68ch; }
+
+/* Testi della home leggibili dal telefono (erano 12-13px) */
+.service-desc, .whyme-text, .forwho-item, .blog-card-excerpt, .contact-intro { font-size: 15.5px; line-height: 1.6; }
+.service-includes li, .process-desc, .portfolio-desc { font-size: 14.5px; line-height: 1.6; }
+.why-text { font-size: 16px; line-height: 1.75; }
+
+/* La testimonianza è la prova più forte: tipografia da citazione */
+.testimonial-text { font-size: 18px; line-height: 1.6; font-style: normal; color: var(--text); text-wrap: pretty; }
+.testimonial-author, .testimonial-role { font-size: 13px; }
+
+/* "Perché lavorare con me" su una colonna dal telefono */
+@media (max-width: 520px) { .whyme-grid { grid-template-columns: 1fr; } }
+
+/* Il menu fisso non copre i titoli quando si salta a una sezione */
+section[id], [id="contacts"] { scroll-margin-top: 84px; }

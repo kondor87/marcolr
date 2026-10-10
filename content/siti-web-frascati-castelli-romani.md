@@ -24,14 +24,14 @@ Molte attività della zona in quelle ricerche non compaiono, o compaiono con un 
 
 Realizzo **siti vetrina su misura** per professionisti e piccole attività. Sono di Frascati e li faccio su richiesta, come collaborazione occasionale: parli sempre con me, dalla prima telefonata alla consegna.
 
-Ogni sito che consegno ha:
+Un sito fatto da me ha:
 
 - **una grafica pensata prima per il telefono**, con il pulsante per chiamare o scrivere sempre a portata di dito;
 - **testi e titoli scritti per le ricerche locali**: il tuo servizio e i comuni dove lavori, inseriti in modo naturale;
 - **dati strutturati** che dicono a Google chi sei, cosa fai e dove;
 - **collegamento con la [scheda Google Business](/blog/google-business-sito-vetrina/)**, perché mappa e sito lavorano insieme;
 - **velocità**: pagine leggere, immagini ottimizzate, niente plugin inutili;
-- **dominio e accessi intestati a te**. Il sito è tuo, senza canoni.
+- **dominio e accessi intestati a te**. Il sito è tuo, senza canoni ([come verificarlo](/blog/chi-possiede-il-tuo-sito-dominio-hosting-accessi/)).
 
 ## Come si fa a comparire nelle ricerche della tua zona
 

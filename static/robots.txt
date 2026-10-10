@@ -3,7 +3,6 @@
 # farsi trovare e citare (Google, Bing, ChatGPT, Perplexity, Claude, Gemini).
 User-agent: *
 Allow: /
-Disallow: /grazie/
 
 # Crawler aggressivo, senza benefici per un sito italiano locale.
 User-agent: Bytespider

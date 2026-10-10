@@ -15,18 +15,18 @@ draft: false
 
 ## AI o automazione? In breve
 
-**Automazione** vuol dire regole fisse ("se succede X, fai Y"): booking online, promemoria, moduli. **AI** vuol dire strumenti che capiscono una richiesta scritta in modo libero e producono una risposta diversa ogni volta. Nel seguito segno con ⚙️ l'automazione e con 🤖 l'AI. Se vuoi la spiegazione completa c'è la [guida onesta su AI e automazione](/blog/ai-automazione-guida-attivita-locali/).
+**Automazione** vuol dire regole fisse ("se succede X, fai Y"): booking online, promemoria, moduli. **AI** vuol dire strumenti che capiscono una richiesta scritta in modo libero e producono una risposta diversa ogni volta. Nei titoli qui sotto trovi scritto se si tratta di automazione o di AI. Se vuoi la spiegazione completa c'è la [guida su AI e automazione](/blog/ai-automazione-guida-attivita-locali/).
 
 ## "Ma io uso già TheFork / ho già un sistema di prenotazioni"
 
-Perfetto, se usi TheFork o un sistema simile per le prenotazioni online, hai già fatto un passo avanti. Ma ci sono due cose che TheFork **non fa**:
+Perfetto, se usi TheFork o un sistema simile per le prenotazioni online, hai già fatto un passo avanti (sul sito, poi, conviene metterlo in evidenza: ne parlo in [cosa deve avere il sito di un ristorante](/blog/sito-web-ristorante-cosa-deve-avere/)). Ma ci sono due cose che TheFork **non fa**:
 
 1.  **TheFork prende una commissione** sulle prenotazioni. Un canale tuo (sito o WhatsApp) non ha commissioni per coperto; WhatsApp Business ha però costi per i messaggi automatici, da mettere nel conto.
 2.  **TheFork non risponde alle domande** del cliente. Se qualcuno scrive "Avete un tavolo in giardino per una festa di compleanno?", TheFork non sa rispondergli. Un chatbot AI sì.
 
 L'AI non sostituisce TheFork — si aggiunge a quello che hai già, e copre tutto ciò che i sistemi tradizionali non fanno.
 
-## 1. 🤖 Chatbot WhatsApp intelligente (questa è AI)
+## 1. Chatbot WhatsApp intelligente (questa è AI)
 
 La differenza tra un chatbot AI e un semplice form di prenotazione è enorme:
 
@@ -40,9 +40,9 @@ Non è un menu con bottoni da cliccare. È un assistente che **conversa**, e que
 
 **Costo reale:** dai 25 ai 60€/mese per le soluzioni più accessibili.
 
-**Tempo risparmiato:** circa 1-2 ore al giorno di telefonate e messaggi.
+**Tempo risparmiato (stima):** fino a 1-2 ore al giorno di telefonate e messaggi nei periodi pieni.
 
-## 2. 🤖 Risposte intelligenti alle recensioni Google (questa è AI)
+## 2. Risposte intelligenti alle recensioni Google (questa è AI)
 
 Le recensioni su Google sono fondamentali, lo sappiamo. Ma rispondere a tutte richiede tempo. E spesso finisce che non si risponde a nessuna.
 
@@ -54,7 +54,7 @@ Qui l'AI fa qualcosa che un sistema automatico tradizionale **non potrebbe mai f
 
 Un'automazione classica manderebbe la stessa risposta a tutti. L'AI scrive come se rispondessi tu, ogni volta in modo diverso.
 
-## 3. 🤖 Contenuti social generati dall'AI (questa è AI)
+## 3. Contenuti social generati dall'AI (questa è AI)
 
 Post su Instagram, storie, didascalie... quanti ristoratori conosci che hanno smesso di pubblicare dopo 2 settimane?
 
@@ -66,7 +66,7 @@ L'AI può aiutarti a:
 
 Questo è AI perché ogni testo è *generato* e non copiato da un template. La programmazione dei post? Quella è automazione — e va benissimo combinarle.
 
-## 4. ⚙️ Menu digitale aggiornabile in tempo reale (questa è automazione)
+## 4. Menu digitale aggiornabile in tempo reale (questa è automazione)
 
 Qui parliamo di automazione più che di AI, ed è giusto dirlo. Un menu digitale con QR code può:
 
@@ -76,7 +76,7 @@ Qui parliamo di automazione più che di AI, ed è giusto dirlo. Un menu digitale
 
 Non è AI, è uno strumento digitale ben fatto. Ma è utilissimo e costa poco (15-30€/mese). L'AI ci si può aggiungere sopra — ad esempio, un chatbot che risponde "Cos'è la cacio e pepe?" a un turista americano.
 
-## 5. 🤖 Analisi intelligente dei dati di vendita (questa è AI)
+## 5. Analisi intelligente dei dati di vendita (questa è AI)
 
 Quali piatti vendono di più il venerdì sera? Qual è il periodo dell'anno in cui fai più coperti? Con quali portate guadagni di più?
 
@@ -116,6 +116,6 @@ Io mi occupo di siti web. Se vuoi un sito con il **menu leggibile dal telefono**
 
 ## Fonti e approfondimenti
 
-- [WhatsApp Business Platform, prezzi dei messaggi](https://developers.facebook.com/docs/whatsapp/pricing/)
+- [WhatsApp Business Platform, prezzi dei messaggi](https://developers.facebook.com/documentation/business-messaging/whatsapp/pricing)
 - [Regolamento (UE) 1169/2011 sulle informazioni alimentari ai consumatori (allergeni)](https://eur-lex.europa.eu/eli/reg/2011/1169/oj)
 - [Regolamento (UE) 2024/1689, AI Act (art. 50: obblighi di trasparenza)](https://eur-lex.europa.eu/eli/reg/2024/1689/oj)

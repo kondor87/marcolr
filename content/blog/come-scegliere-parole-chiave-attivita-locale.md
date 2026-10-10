@@ -1,5 +1,6 @@
 ---
-title: "Come Scegliere le Parole Chiave Giuste per la Tua Attività Locale"
+title: "Come scegliere le parole chiave giuste per la tua attività locale"
+seoTitle: "Parole chiave per attività locali: come sceglierle"
 date: 2026-07-27T10:00:00+02:00
 description: "Le parole chiave sono il ponte tra te e i tuoi prossimi clienti su Google. Ecco come trovarle, sceglierle e usarle nel tuo sito — anche se non sai nulla di SEO."
 ogImage: "/images/og/come-scegliere-parole-chiave-attivita-locale.png"
@@ -34,7 +35,7 @@ Non quelle che piacciono a te. Quelle che usano loro.
 
 Vedi la differenza? Il linguaggio tecnico è perfetto per parlare con i colleghi, ma i clienti cercano con **parole semplici, dirette, spesso colloquiali**.
 
-La regola d'oro: **scrivi come parla il tuo cliente, non come parleresti a un convegno.**
+La regola: **scrivi come parla il tuo cliente, non come parleresti a un convegno.**
 
 ## Come trovare le parole chiave giuste (gratis)
 
@@ -49,7 +50,7 @@ Se scrivi *"nutrizionista Frascati"*, Google potrebbe suggerirti:
 *   "nutrizionista sportivo Frascati"
 *   "miglior nutrizionista Frascati"
 
-Queste sono **ricerche reali** fatte da persone reali. Sono oro puro. Annotale tutte.
+Queste sono **ricerche reali** fatte da persone reali. Sono preziose: annotale tutte.
 
 ### 2. La sezione "Le persone hanno chiesto anche"
 
@@ -81,11 +82,10 @@ Le parole chiave lunghe e specifiche si chiamano *"a coda lunga"* (long tail). H
 | "psicologo" | Generica | Altissima | Bassissima |
 | "psicologo Roma" | Media | Alta | Bassa |
 | "psicologo ansia Frascati" | Coda lunga | Bassa | **Alta** |
-| "psicologo ansia adolescenti Frascati recensioni" | Ultra specifica | Bassissima | **Altissima** |
 
 ### Aggiungi sempre la tua città (o zona)
 
-Se lavori a Frascati, Monte Porzio Catone o Grottaferrata, ogni parola chiave deve contenere il riferimento geografico. Google è diventato bravissimo a capire l'intento locale, ma solo se glielo dici chiaramente.
+Se lavori a Frascati, Monte Porzio Catone o Grottaferrata, nelle pagine dei servizi metti sempre la zona. Google è diventato bravissimo a capire l'intento locale, ma solo se glielo dici chiaramente.
 
 Non limitarti al nome del tuo comune: prova anche con *"Castelli Romani"*, *"zona Tuscolana"*, *"Roma sud"*, o qualsiasi modo in cui i tuoi clienti descrivono la tua area.
 
@@ -113,7 +113,7 @@ Una volta che hai la tua lista, devi metterle nei posti giusti. Non dappertutto 
 
 Guardare cosa fanno gli altri è intelligente. Copiarli di sana pianta è un disastro.
 
-Se il tuo concorrente ha scritto un articolo sulle "diete per sportivi" e tu lo riscrivi cambiando due parole, Google se ne accorge: tra due pagine quasi uguali ne mostra una sola, di solito quella che c'era prima.
+Se il tuo concorrente ha scritto un articolo sulle "diete per sportivi" e tu lo riscrivi cambiando due parole, Google se ne accorge: tra due pagine quasi uguali ne mostra una sola, e non è detto che sia la tua.
 
 La tua arma vincente è la **tua esperienza diretta**. Racconta casi reali (anonimi), dai consigli che solo tu puoi dare, usa il tuo tono di voce. Google premia i contenuti originali, autentici e utili — esattamente quelli che un professionista competente sa produrre.
 
@@ -132,16 +132,10 @@ La tua arma vincente è la **tua esperienza diretta**. Racconta casi reali (anon
 
 Le parole chiave sono il primo passo per farsi trovare. Ma sceglierle bene e inserirle nel modo giusto fa la differenza tra un sito che lavora per te e uno che nessuno trova.
 
-Se hai un'attività locale e vuoi capire quali parole chiave puntare nel tuo caso specifico, scrivimi. Facciamo una chiacchierata gratuita e ti dico su cosa concentrarti per primi.
+Se stai pensando a un sito nuovo per la tua attività, [scrivimi](/#contacts): delle parole chiave ne parliamo mentre lo progettiamo.
 
 [Scrivimi, senza impegno](/#contacts).
 
----
-
-**Articoli correlati:**
-- [Perché Avere un Blog: 4 Trucchi SEO Pratici](/blog/blog-e-trucchi-seo-semplici/)
-- [5 Errori Online che Fanno Perdere Clienti](/blog/errori-online-attivita-locali/)
-- [Google Business e Sito Vetrina: Accoppiata Vincente](/blog/google-business-sito-vetrina/)
 
 ## Fonti e approfondimenti
 

@@ -35,7 +35,7 @@ Cosa vuol dire in pratica, quando aggiungi uno strumento digitale:
 
 ## 2. AI Act: il chatbot deve dire che è un chatbot
 
-Il [Regolamento europeo sull'intelligenza artificiale](https://eur-lex.europa.eu/eli/reg/2024/1689/oj) (AI Act) prevede, all'articolo 50, obblighi di **trasparenza** che si applicano dal **2 agosto 2026**. Il rinvio deciso nel 2026 riguarda soprattutto i sistemi "ad alto rischio", non questo obbligo.
+Il [Regolamento europeo sull'intelligenza artificiale](https://eur-lex.europa.eu/eli/reg/2024/1689/oj) (AI Act) prevede, all'articolo 50, obblighi di **trasparenza** che si applicano dal **2 agosto 2026**. L'obbligo ricade prima di tutto su chi **fornisce** il chatbot, ma a te conviene verificarlo e scriverlo comunque nel messaggio di apertura.
 
 Per uno studio la conseguenza più concreta è semplice: **se metti un chatbot sul sito o su WhatsApp, chi scrive deve capire fin dall'inizio che sta parlando con un sistema automatico**, non con te o con la tua segretaria.
 
@@ -50,7 +50,7 @@ La [legge 23 settembre 2025, n. 132](https://www.normattiva.it/uri-res/N2Ls?urn:
 *   l'AI può essere usata solo come **supporto**: il lavoro intellettuale del professionista deve restare prevalente;
 *   il professionista deve **informare il cliente**, in modo chiaro, sugli strumenti di AI che usa.
 
-Per chi lavora in sanità la legge contiene anche regole specifiche: l'AI supporta, ma le decisioni restano del professionista, e il paziente ha diritto di sapere quando viene usata.
+Per chi lavora in sanità la legge contiene anche regole specifiche (art. 7): l'AI supporta, ma le decisioni restano del professionista, e il paziente ha diritto di sapere quando viene usata.
 
 In pratica: se usi l'AI per scrivere i follow-up, analizzare i diari alimentari o rispondere ai messaggi, **dillo ai pazienti**. Una riga nel consenso informato o nell'informativa, scritta in modo semplice, è un buon punto di partenza. Controlla anche se il tuo Ordine ha pubblicato indicazioni.
 
@@ -90,4 +90,4 @@ Se ti serve un sito con prenotazione online o moduli scelti con attenzione alla 
 - [Regolamento (UE) 2024/1689, AI Act (art. 50: obblighi di trasparenza)](https://eur-lex.europa.eu/eli/reg/2024/1689/oj)
 - [Legge 23 settembre 2025, n. 132, sull'intelligenza artificiale (art. 13)](https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2025-09-23;132)
 - [Garante per la protezione dei dati personali](https://www.garanteprivacy.it/)
-- [Codice deontologico degli psicologi italiani](https://www.psy.it/codice-deontologico-degli-psicologi-italiani/)
+- [Codice deontologico degli psicologi italiani](https://www.psy.it/la-professione-psicologica/codice-deontologico-degli-psicologi-italiani/)

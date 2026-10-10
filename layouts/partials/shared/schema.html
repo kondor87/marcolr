@@ -19,7 +19,7 @@
       "@id": "{{ $website }}",
       "url": "{{ $base }}",
       "name": "Marco La Rocca — Siti web a Frascati",
-      "description": {{ .Site.Params.description | jsonify }},
+      "description": {{ .Site.Params.description | jsonify | safeJS }},
       "inLanguage": "it-IT",
       "publisher": {"@id": "{{ $person }}"}
     },
@@ -33,7 +33,7 @@
       "homeLocation": {"@type": "City", "name": "Frascati"},
       "knowsAbout": ["Siti web", "Siti vetrina", "SEO locale", "WordPress", "Hugo", "Performance web", "Google Business Profile"],
       "knowsLanguage": "it",
-      "sameAs": [{{ .Site.Params.github | jsonify }}],
+      "sameAs": [{{ .Site.Params.github | jsonify | safeJS }}],
       "makesOffer": [
         {"@type": "Offer", "itemOffered": {"@id": "{{ $base }}#servizio-siti-web"}},
         {"@type": "Offer", "itemOffered": {"@id": "{{ $base }}#servizio-prenotazioni"}}
@@ -76,8 +76,8 @@
       "@type": "BlogPosting",
       "@id": "{{ .Permalink }}#articolo",
       "mainEntityOfPage": {"@type": "WebPage", "@id": "{{ .Permalink }}"},
-      "headline": {{ .Title | jsonify }},
-      "description": {{ (.Description | default .Site.Params.description) | jsonify }},
+      "headline": {{ .Title | jsonify | safeJS }},
+      "description": {{ (.Description | default .Site.Params.description) | jsonify | safeJS }},
       "datePublished": "{{ .Date.Format "2006-01-02T15:04:05-07:00" }}",
       "dateModified": "{{ .Lastmod.Format "2006-01-02T15:04:05-07:00" }}",
       "inLanguage": "it-IT",
@@ -86,8 +86,8 @@
       "publisher": {"@id": "{{ $person }}"},
       "isPartOf": {"@id": "{{ $website }}"},
       "wordCount": {{ .WordCount }}{{ with .Params.categories }},
-      "articleSection": {{ index . 0 | jsonify }}{{ end }}{{ with .Params.tags }},
-      "keywords": {{ delimit . ", " | jsonify }}{{ end }}
+      "articleSection": {{ index . 0 | jsonify | safeJS }}{{ end }}{{ with .Params.tags }},
+      "keywords": {{ delimit . ", " | jsonify | safeJS }}{{ end }}
     },
     {
       "@type": "Person",
@@ -95,14 +95,14 @@
       "name": "Marco La Rocca",
       "url": "{{ $base }}",
       "image": "{{ $avatar }}",
-      "sameAs": [{{ .Site.Params.github | jsonify }}]
+      "sameAs": [{{ .Site.Params.github | jsonify | safeJS }}]
     },
     {
       "@type": "BreadcrumbList",
       "itemListElement": [
         {"@type": "ListItem", "position": 1, "name": "Home", "item": "{{ $base }}"},
         {"@type": "ListItem", "position": 2, "name": "Blog", "item": "{{ "blog/" | absURL }}"},
-        {"@type": "ListItem", "position": 3, "name": {{ .Title | jsonify }}, "item": "{{ .Permalink }}"}
+        {"@type": "ListItem", "position": 3, "name": {{ .Title | jsonify | safeJS }}, "item": "{{ .Permalink }}"}
       ]
     }
   ]
@@ -118,8 +118,8 @@
       "@type": ["CreativeWork", "WebPage"],
       "@id": "{{ .Permalink }}#lavoro",
       "url": "{{ .Permalink }}",
-      "name": {{ .Title | jsonify }},
-      "description": {{ .Description | jsonify }},
+      "name": {{ .Title | jsonify | safeJS }},
+      "description": {{ .Description | jsonify | safeJS }},
       "inLanguage": "it-IT",
       "genre": "Case study",
       "datePublished": "{{ .Date.Format "2006-01-02" }}",
@@ -127,14 +127,49 @@
       "creator": {"@id": "{{ $person }}"},
       "isPartOf": {"@id": "{{ $website }}"},
       "image": "{{ (.Params.ogImage | default (.Params.image | default .Site.Params.ogImage)) | absURL }}"{{ with .Params.client }},
-      "about": {"@type": "Organization", "name": {{ . | jsonify }}{{ with $.Params.clientUrl }}, "url": {{ . | jsonify }}{{ end }}}{{ end }}
+      "about": {"@type": {{ $.Params.clientType | default "Person" }}, "name": {{ . | jsonify | safeJS }}{{ with $.Params.clientUrl }}, "url": {{ . | jsonify | safeJS }}{{ end }}}{{ end }}
     },
     {
       "@type": "BreadcrumbList",
       "itemListElement": [
         {"@type": "ListItem", "position": 1, "name": "Home", "item": "{{ $base }}"},
         {"@type": "ListItem", "position": 2, "name": "Lavori", "item": "{{ "lavori/" | absURL }}"},
-        {"@type": "ListItem", "position": 3, "name": {{ .Title | jsonify }}, "item": "{{ .Permalink }}"}
+        {"@type": "ListItem", "position": 3, "name": {{ .Title | jsonify | safeJS }}, "item": "{{ .Permalink }}"}
+      ]
+    }
+  ]
+}
+</script>
+
+{{- else if and (eq .Kind "section") (in (slice "blog" "lavori") .Section) }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": {{ if eq .Section "blog" }}"Blog"{{ else }}"CollectionPage"{{ end }},
+      "@id": "{{ .Permalink }}#elenco",
+      "url": "{{ .Permalink }}",
+      "name": {{ .Title | jsonify | safeJS }},
+      "description": {{ (.Description | default .Site.Params.description) | jsonify | safeJS }},
+      "inLanguage": "it-IT",
+      "isPartOf": {"@id": "{{ $website }}"},
+      "author": {"@id": "{{ $person }}"},
+      "{{ if eq .Section "blog" }}blogPost{{ else }}hasPart{{ end }}": [{{ range $i, $p := .Pages }}{{ if $i }},{{ end }}
+        {"@id": "{{ $p.Permalink }}#{{ if eq $.Section "blog" }}articolo{{ else }}lavoro{{ end }}", "url": "{{ $p.Permalink }}", "name": {{ $p.Title | jsonify | safeJS }}}{{ end }}
+      ]
+    },
+    {
+      "@type": "Person",
+      "@id": "{{ $person }}",
+      "name": "Marco La Rocca",
+      "url": "{{ $base }}"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Home", "item": "{{ $base }}"},
+        {"@type": "ListItem", "position": 2, "name": {{ .Title | jsonify | safeJS }}, "item": "{{ .Permalink }}"}
       ]
     }
   ]
@@ -145,10 +180,30 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    {"@type": "ListItem", "position": 1, "name": "Home", "item": "{{ $base }}"},
-    {"@type": "ListItem", "position": 2, "name": {{ .Title | jsonify }}, "item": "{{ .Permalink }}"}
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "{{ .Permalink }}",
+      "url": "{{ .Permalink }}",
+      "name": {{ .Title | jsonify | safeJS }},
+      "inLanguage": "it-IT",
+      "isPartOf": {"@type": "WebSite", "@id": "{{ $website }}", "url": "{{ $base }}"}{{ if eq .RelPermalink "/siti-web-frascati-castelli-romani/" }},
+      "mainEntity": {
+        "@type": "Service",
+        "@id": "{{ $base }}#servizio-siti-web",
+        "name": "Realizzazione siti web per professionisti e attività locali",
+        "serviceType": "Realizzazione siti web",
+        "provider": {"@type": "Person", "@id": "{{ $person }}", "name": "Marco La Rocca", "url": "{{ $base }}"},
+        "areaServed": {"@type": "AdministrativeArea", "name": "Castelli Romani"}
+      }{{ end }}
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Home", "item": "{{ $base }}"},
+        {"@type": "ListItem", "position": 2, "name": {{ .Title | jsonify | safeJS }}, "item": "{{ .Permalink }}"}
+      ]
+    }
   ]
 }
 </script>
@@ -160,7 +215,7 @@
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [{{ range $i, $f := . }}{{ if $i }},{{ end }}
-    {"@type": "Question", "name": {{ $f.q | jsonify }}, "acceptedAnswer": {"@type": "Answer", "text": {{ $f.a | jsonify }}}}{{ end }}
+    {"@type": "Question", "name": {{ $f.q | jsonify | safeJS }}, "acceptedAnswer": {"@type": "Answer", "text": {{ $f.a | jsonify | safeJS }}}}{{ end }}
   ]
 }
 </script>

@@ -1,5 +1,6 @@
 ---
 title: "5 errori online che fanno perdere clienti alle attività locali"
+seoTitle: "5 errori online che fanno perdere clienti"
 date: 2026-04-01T10:00:00+02:00
 description: "Scheda Google incompleta, nessun sito web e social abbandonati: ecco i 5 errori digitali più comuni tra i professionisti locali e come risolverli."
 ogImage: "/images/og/errori-online-attivita-locali.png"
@@ -21,7 +22,7 @@ Quando qualcuno cerca *"fisioterapista Frascati"* o *"pizzeria Grottaferrata"*, 
 *   Nessuna risposta alle recensioni — né a quelle positive né a quelle negative.
 *   Descrizione mancante o generica.
 
-**Come risolverlo:** Reclama la tua scheda su [Google Business Profile](https://business.google.com/), compila **ogni singolo campo**, carica almeno 5-10 foto recenti e rispondi a tutte le recensioni. Bastano 30 minuti una tantum. Leggi anche: [Google Business e Sito Vetrina: perché funzionano insieme](/blog/google-business-sito-vetrina/).
+**Come risolverlo:** Reclama la tua scheda su [Google Business Profile](https://business.google.com/), compila **ogni singolo campo**, carica almeno 5-10 foto recenti e rispondi a tutte le recensioni. Per sistemarla bastano 30 minuti, poi qualche minuto a settimana per le recensioni. Leggi anche: [Google Business e Sito Vetrina: perché funzionano insieme](/blog/google-business-sito-vetrina/).
 
 ## 2. Non avere un sito web (e affidarsi solo ai social)
 
@@ -38,7 +39,7 @@ Un sito web è la tua **casa digitale**: nessuno te la può togliere, lavora per
 Questo è quasi peggio del non averlo. Situazioni che vedo troppo spesso:
 
 *   **Sito fatto nel 2017** e mai più aggiornato → orari e servizi sbagliati, e un'impressione di abbandono.
-*   **Non si vede bene da cellulare** → e le ricerche locali si fanno soprattutto dal telefono.
+*   **Non si vede bene da cellulare** → e le ricerche locali si fanno soprattutto dal telefono (per un ristorante, ecco [cosa deve avere il sito](/blog/sito-web-ristorante-cosa-deve-avere/)).
 *   **Nessuna call-to-action** → il visitatore non sa cosa fare: chiamarti? Scriverti? Prenotare?
 *   **Velocità da tartaruga** → più il sito è lento, più persone se ne vanno prima ancora di vederlo.
 
@@ -71,7 +72,7 @@ Tutto il resto è rumore.
 |--------|-------------|-----------|
 | Scheda Google vuota | Invisibile su Maps | Compila tutto + foto + recensioni |
 | Solo social, no sito | Dipendi da algoritmi altrui | Crea un sito vetrina tuo |
-| Sito vecchio/lento | Google ti ignora | Aggiorna o rifai da zero |
+| Sito vecchio/lento | Meno contatti, e Google preferisce chi è più utile | Aggiorna o rifai da zero |
 | Zero recensioni | Meno fiducia dei clienti | Chiedi + rispondi sempre |
 | Troppi canali mal gestiti | Confusione e abbandono | Fai bene 2 cose, non 6 |
 
@@ -81,11 +82,6 @@ Se hai un'attività locale e ti sei riconosciuto in uno (o più) di questi error
 
 [Scrivimi, senza impegno](/#contacts).
 
----
-
-**Articoli correlati:**
-- [Perché un Professionista ha Bisogno di un Sito Web](/blog/perche-professionista-locale-sito-web/)
-- [Google Business e Sito Vetrina: Accoppiata Vincente](/blog/google-business-sito-vetrina/)
 
 ## Fonti e approfondimenti
 

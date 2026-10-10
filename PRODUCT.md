@@ -12,7 +12,7 @@ Liberi professionisti e piccole attività di Frascati e dei Castelli Romani (nut
 
 ## Product Purpose
 
-Sito personale di Marco La Rocca, informatico di Frascati, che realizza siti vetrina e piccole automazioni su richiesta. Serve a far trovare Marco su Google, a mostrare i lavori fatti e a ricevere richieste di contatto. Successo: poche richieste l'anno, ma buone.
+Sito personale di Marco La Rocca, informatico di Frascati, che realizza siti vetrina su richiesta, anche con prenotazioni online e moduli. L'AI e l'automazione non sono un servizio offerto (gli articoli del blog sul tema restano come guide). Serve a far trovare Marco su Google, a mostrare i lavori fatti e a ricevere richieste di contatto. Successo: poche richieste l'anno, ma buone.
 
 ## Positioning
 
@@ -41,7 +41,7 @@ Una persona, non un'agenzia: parli con chi scrive il codice, dalla prima chiamat
 - Lavoro pubblicato: sito di Martina Iannotti, biologa nutrizionista (Pescara), WordPress, con testimonianza scritta (`static/images/martina.jpeg`).
 - Lavoro in corso: Osteria Gemelli (Roma), da mostrare solo come bozza nascosta finché il cliente non dà il consenso e il sito non è online.
 - Foto di Marco: `static/images/marco-avatar.png`.
-- 14 articoli del blog (più quelli nuovi).
+- 16 articoli del blog, ognuno con la sezione "Fonti e approfondimenti".
 - Non esistono: altre recensioni, numeri di clienti, statistiche proprie, loghi di clienti. Non vanno inventati.
 
 ## Product Principles

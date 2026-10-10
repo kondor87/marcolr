@@ -1,5 +1,6 @@
 ---
 title: "Aggiornare i plugin di WordPress: perché farlo e come non rompere il sito"
+seoTitle: "Aggiornare i plugin WordPress senza rompere il sito"
 date: 2025-10-15T10:00:00+02:00
 description: "Ignorare le notifiche di WordPress è come ignorare la spia rossa sul cruscotto dell'auto: all'inizio non succede niente, ma prima o poi ti lascia a piedi."
 ogImage: "/images/og/perche-aggiornare-plugin-wordpress.png"
@@ -15,7 +16,7 @@ Con un sito web professionale — specialmente su WordPress — **funziona esatt
 
 Quando entri nel tuo sito vedi spesso il badge rosso *"Aggiornamenti disponibili"*. La tentazione è ignorarlo. *"Tanto il sito si vede benissimo, chi me lo fa fare di toccarlo?"*
 
-Questa è la trappola in cui cadono quasi tutti i professionisti.
+È un errore comune, e si capisce: finché tutto funziona, nessuno ha voglia di toccarlo.
 
 ## 1. Sicurezza: la serratura della tua vetrina
 
@@ -25,7 +26,7 @@ I **plugin** e i **temi** di WordPress sono creati da programmatori umani, e a v
 
 ## 2. Incompatibilità: quando i pezzi non comunicano più
 
-Le tecnologie del web evolvono continuamente. Se il tuo smartphone si aggiorna, le vecchie app smettono di funzionare. Se il "motore" base di WordPress viene aggiornato ma i tuoi plugin restano alla versione di 3 anni fa, cominceranno a verificarsi dei conflitti.
+Le tecnologie del web evolvono continuamente. Quando il telefono si aggiorna, alcune app vecchie possono smettere di funzionare. Se il "motore" base di WordPress viene aggiornato ma i tuoi plugin restano alla versione di 3 anni fa, cominceranno a verificarsi dei conflitti.
 All'improvviso una foto non si carica, un pulsante si sposta, o peggio, **il modulo in cui il paziente prenota la visita smette di inviarti le mail**. E magari te ne accorgi dopo un mese, perdendo decine di contatti.
 
 ## 3. Rischiare di rompere tutto cliccando "Aggiorna"
@@ -34,8 +35,8 @@ All'improvviso una foto non si carica, un pulsante si sposta, o peggio, **il mod
 Purtroppo no, ed è questo che spaventa molti. A volte un aggiornamento fatto "al volo" manda in blocco l'intero sito. Come quando si cambia l'olio ma si stringe male un filtro. 
 
 Per fare un aggiornamento in totale sicurezza, il "tagliando" va fatto seguendo delle regole:
-*   Fare sempre un **backup completo** prima di toccare qualsiasi cosa (così se qualcosa si rompe, torni indietro in 3 minuti).
-*   Aggiornare prima i moduli minori, e solo per ultimi i componenti vitali.
+*   Fare sempre un **backup completo** prima di toccare qualsiasi cosa (così se qualcosa si rompe, torni indietro).
+*   Controllare nella pagina di ogni plugin con quale versione di WordPress è testato e, se puoi, provare prima su una copia del sito (staging).
 *   **Testare il sito** ricaricando le pagine principali per assicurarsi che i moduli di contatto, dal telefono, funzionino ancora.
 
 ## La checklist, in breve
@@ -50,10 +51,10 @@ Se il sito ha un hosting gestito, molti provider offrono backup automatici e agg
 
 ## E se il sito è fermo da anni?
 
-Se gli aggiornamenti sono rimasti indietro da molto tempo, il rischio di rompere qualcosa aumenta. In quel caso conviene un intervento fatto con calma, magari su una copia del sito. Se ti serve una mano, [scrivimi](/#contacts): lo valutiamo come intervento singolo.
+Se gli aggiornamenti sono rimasti indietro da molto tempo, il rischio di rompere qualcosa aumenta. In quel caso conviene un intervento fatto con calma, magari su una copia del sito. Prima di tutto verifica di avere davvero gli accessi da amministratore e il controllo dell'hosting: c'è [una checklist apposta](/blog/chi-possiede-il-tuo-sito-dominio-hosting-accessi/). Se ti serve una mano, [scrivimi](/#contacts): lo valutiamo come intervento singolo.
 
 ## Fonti e approfondimenti
 
 - [WordPress.org, Aggiornare WordPress](https://wordpress.org/documentation/article/updating-wordpress/)
-- [WordPress.org, Backup di WordPress](https://wordpress.org/documentation/article/wordpress-backups/)
+- [WordPress.org, Backup di WordPress](https://developer.wordpress.org/advanced-administration/security/backup/)
 - [WordPress.org, Rafforzare la sicurezza di WordPress](https://developer.wordpress.org/advanced-administration/security/hardening/)

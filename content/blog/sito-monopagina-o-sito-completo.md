@@ -11,11 +11,11 @@ draft: false
 
 Quando un professionista decide di aprire il proprio sito web, la domanda non è *"se"* farlo, ma *"come"*.
 
-Esistono centinaia di soluzioni. Nel 90% dei casi ci si ritrova a scegliere tra tre categorie: il sito **Monopagina (One-Page)**, il **Sito Standard (4 o 5 pagine)**, o un **Sito con Automazioni** (es. prenotazioni online degli appuntamenti).
+Esistono centinaia di soluzioni, ma di solito la scelta è tra tre tipi di sito: il sito **monopagina** (one-page), il **sito di 4 o 5 pagine** o un **sito con prenotazioni e moduli** (per esempio per fissare gli appuntamenti online).
 
 Capire le differenze è vitale per non sprecare budget o creare uno strumento inutile. Vediamo quale fa per te.
 
-## 1. Il Sito Monopagina: il "Biglietto da Visita" perfetto
+## 1. Il sito monopagina: un biglietto da visita
 
 Un sito monopagina (o *One-Page*) ha tutte le informazioni disposte in verticale su un'unica lunga pagina a scorrimento. L'utente entra e parte dall'inizio (chi sei), scorre sui servizi, legge qualche recensione e in fondo trova il form dei contatti. 
 
@@ -26,7 +26,7 @@ Un sito monopagina (o *One-Page*) ha tutte le informazioni disposte in verticale
 
 **Lo svantaggio:** A livello di SEO (per apparire su Google), una singola pagina fatica a posizionarsi per tante ricerche diverse, perché mescola troppi concetti in un solo posto.
 
-## 2. Il Sito Multipagina (Il "Sito Vetrina Classico")
+## 2. Il sito di più pagine (il sito vetrina classico)
 
 È il formato più diffuso e solido. Di solito è composto dalle classiche 4 o 5 pagine separate: *Home*, *Chi Sono*, *Servizi*, magari una sezione *Metodologia/Prezzi* e infine i *Contatti*.
 
@@ -37,7 +37,7 @@ Un sito monopagina (o *One-Page*) ha tutte le informazioni disposte in verticale
 
 **Lo svantaggio:** Richiede più lavoro di progettazione iniziale (e di scrittura dei testi, aspetto in cui molti si bloccano). Ma il ritorno d'immagine e di SEO compensa lo sforzo.
 
-## 3. Il Sito "Segretario" (Prenotazioni, Calendly, Automazioni)
+## 3. Il sito con prenotazioni e moduli
 
 Qui si fa un passo in più. Non si tratta solo di mostrare chi sei, ma di far **lavorare il sito al posto tuo**. È l'integrazione di strumenti avanzati, solitamente plugin o servizi esterni come *Calendly* (per gestire appuntamenti) o moduli di contatto avanzati con questionari preliminari (es. *Typeform*).
 
@@ -48,7 +48,7 @@ Qui si fa un passo in più. Non si tratta solo di mostrare chi sei, ma di far **
 
 ## In sintesi: quale scegliere?
 
-Se stai muovendo i **primissimi passi**, un **Monopagina veloce ed elegante** è infinitamente meglio di non avere un sito o di affidarsi solo a Instagram. Ma ti starà stretto se vuoi una strategia a lungo termine.
+Se stai muovendo i **primissimi passi**, un **Monopagina veloce ed elegante** è infinitamente meglio di non avere un sito o di affidarsi solo a Instagram. Ma ti starà stretto se vuoi una strategia a lungo termine. Per farti un'idea dei costi delle tre soluzioni c'è la guida [quanto costa un sito web](/blog/quanto-costa-sito-web/).
 
 Se vuoi costruire **autorevolezza e posizionamento** nel tuo comune e attirare traffico dai motori di ricerca, il **Sito a 5 pagine** è la scelta più sensata per la maggior parte dei professionisti.
 
