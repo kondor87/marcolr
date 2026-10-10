@@ -1629,3 +1629,9 @@ section[id], [id="contacts"] { scroll-margin-top: 84px; }
 
 /* Campo facoltativo nel modulo */
 .form-optional { text-transform: none; letter-spacing: 0; font-family: 'DM Sans', sans-serif; color: var(--text-tertiary); }
+
+/* Schermi molto stretti: il terminale va a capo invece di sbordare */
+@media (max-width: 360px) {
+  .hero-terminal { font-size: 11.5px; padding: 0.6rem 0.75rem; }
+  .terminal-line { white-space: normal; }
+}
