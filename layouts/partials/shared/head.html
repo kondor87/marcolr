@@ -21,14 +21,10 @@
 </script>
 <script src="https://embeds.iubenda.com/widgets/e9b3d75a-33f9-41ef-9594-69d5554dc6c0.js"></script>
 
-{{- /* 2. Analytics. GA4 passa solo da qui: non aggiungere un tag GA4 anche in GTM. */}}
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-5TD66VKJ');</script>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-XH543Y70CJ"></script>
-<script>gtag('js', new Date()); gtag('config', 'G-XH543Y70CJ');</script>
+{{- /* 2. Analytics. GTM e GA4 tolti il 2026-10-10: con il piano gratuito di iubenda
+       GA4 non riceve il consenso "Misurazione" e non raccoglie dati, mentre gli script
+       rallentavano il telefono. Per rimetterli: GTM-5TD66VKJ / G-XH543Y70CJ (vedi git log).
+       Clarity resta: iubenda lo blocca finché il visitatore non accetta. */}}
 <script>
   (function(c,l,a,r,i,t,y){
     c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};

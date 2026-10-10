@@ -27,8 +27,8 @@ Strumenti: skill `seo` (agenti tecnico, contenuti, schema, prestazioni, Google, 
 1. **Pubblicare** il deploy su Netlify.
 2. **Search Console**: chiedere l'indicizzazione di /siti-web-frascati-castelli-romani/, /lavori/, /lavori/martina-iannotti-nutrizionista/ e /blog/ (per Google sono "URL sconosciuti"). Ricontrollare i dati dopo il 17 ottobre.
 3. **Banner iubenda** (pannello iubenda): versione compatta in basso, colori del sito. Oggi copre metà schermo su telefono.
-4. **Decisioni sulla home** (testi, servono il tuo sì): vedi le domande nel messaggio di oggi.
+4. ~~Decisioni sulla home~~ fatte il 10/10 con il sì di Marco: terminale in italiano ("disponibile su richiesta") e visibile da telefono, campo telefono facoltativo nel modulo, FAQ sulla ritenuta corretta per i forfettari (da far confermare al commercialista).
 5. **Caso Martina** più ricco (dati veri, screenshot da telefono): è la pagina che Google premierebbe per "sito web per nutrizionista".
-6. **GTM + gtag**: entrambi caricati, ma GA4 non raccoglie dati (piano iubenda gratuito). Decidere se tenerli: pesano circa 1,5-2 secondi di blocco su telefono.
+6. ~~GTM + GA4~~ tolti il 10/10 (GA4 non raccoglieva dati con iubenda gratuito). ID per rimetterli nel commento di `layouts/partials/shared/head.html`. Clarity resta, bloccato da iubenda fino al consenso.
 
 Dettagli: `technical.md`, `content.md`, `schema.md`, `performance.md`, `google.md`, `sxo.md` in questa cartella.

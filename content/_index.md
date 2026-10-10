@@ -65,7 +65,7 @@ faq:
   - q: "Quanto tempo ci vuole?"
     a: "Per un sito vetrina servono di solito due o tre settimane, in base ai testi e alle foto disponibili. Prima vedi una bozza, poi si procede."
   - q: "Come funziona il pagamento?"
-    a: "Lavoro senza partita IVA, come prestazione occasionale: a fine lavoro ricevi una ricevuta. Se sei un'impresa o un professionista con partita IVA, trattieni la ritenuta d'acconto del 20% e la versi tu. Sopra i 77,47 euro sulla ricevuta va la marca da bollo da 2 euro."
+    a: "Lavoro senza partita IVA, come prestazione occasionale: a fine lavoro ricevi una ricevuta. Se sei un sostituto d'imposta (un'impresa, o un professionista in regime ordinario), trattieni la ritenuta d'acconto del 20% e la versi tu; se sei in regime forfettario, no. Sopra i 77,47 euro sulla ricevuta va la marca da bollo da 2 euro."
   - q: "E se dopo servono modifiche?"
     a: "Le valutiamo di volta in volta: ogni modifica è un intervento a sé, con il suo prezzo concordato prima. Nessun abbonamento."
 
