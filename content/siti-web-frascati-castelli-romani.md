@@ -6,6 +6,7 @@ lastmod: 2026-10-07T10:00:00+02:00
 description: "Realizzo siti web per professionisti e attività di Frascati, Grottaferrata, Marino e dei Castelli Romani: veloci, pensati per il telefono e per le ricerche locali. Il sito è tuo."
 url: "/siti-web-frascati-castelli-romani/"
 ogImage: "/images/og/siti-web-frascati-castelli-romani.png"
+landing: true
 kicker: "Frascati · Grottaferrata · Marino · Albano · Velletri"
 faq:
   - q: "Lavori solo a Frascati?"

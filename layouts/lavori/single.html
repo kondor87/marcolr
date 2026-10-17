@@ -7,7 +7,7 @@
         <header class="blog-header">
             <p class="blog-header-date">{{ .Params.sector }} · {{ .Params.location }}</p>
             <h1 class="blog-header-title">{{ .Title }}</h1>
-            <p class="tagline" style="max-width:none;">{{ .Description }}</p>
+            <p class="tagline case-lead">{{ .Description }}</p>
             {{ partial "shared/img.html" (dict "src" .Params.image "alt" (printf "Home page del sito %s" .Title) "width" 720 "priority" true "class" "blog-cover") }}
             <p style="margin-top:1rem;font-size:13px;">
                 {{ with .Params.tech }}{{ range . }}<span class="pill" style="margin:0 0.4rem 0.4rem 0;">{{ . }}</span>{{ end }}{{ end }}

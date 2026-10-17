@@ -3,7 +3,22 @@
         <header class="blog-header">
             {{ with .Params.kicker }}<p class="blog-header-date">{{ . }}</p>{{ end }}
             <h1 class="blog-header-title">{{ .Title }}</h1>
+            {{ if .Params.landing }}
+            <p class="landing-lead">{{ .Description }}</p>
+            <div class="landing-actions">
+                <a class="btn-primary" href="/#contacts">Raccontami cosa ti serve</a>
+                <a class="btn-secondary" href="/lavori/">Guarda i lavori</a>
+            </div>
+            {{ end }}
         </header>
+        {{ if .Params.landing }}
+        {{ with first 1 (where .Site.RegularPages "Section" "lavori").ByWeight }}
+        <section class="landing-proof" aria-label="Un lavoro realizzato">
+            <h2 class="section-label">// un lavoro realizzato</h2>
+            {{ range . }}{{ partial "lavoro-card.html" . }}{{ with .Params.quote }}<p class="landing-quote">“{{ . }}”</p>{{ end }}{{ end }}
+        </section>
+        {{ end }}
+        {{ end }}
         <div class="blog-content">
             {{ .Content }}
         </div>

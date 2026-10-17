@@ -1516,7 +1516,6 @@ body {
   margin: 2rem 0;
   padding: 1.25rem 1.5rem;
   border: 1px solid var(--green-border);
-  border-left: 4px solid var(--green);
   border-radius: var(--radius-md);
   background: var(--green-light);
   font-size: 14.5px;
@@ -1649,3 +1648,35 @@ section[id], [id="contacts"] { scroll-margin-top: 84px; }
 
 /* Le etichette non si spezzano a metà */
 .pill { display: inline-block; white-space: nowrap; }
+
+/* =========================================================
+   Re-check 17 ottobre 2026
+   ========================================================= */
+
+/* Pagina servizio: subito un'azione e una prova, non solo testo */
+.landing-lead { font-size: 17px; line-height: 1.6; color: var(--text-secondary); max-width: 62ch; margin: 0.9rem 0 1.3rem; }
+.landing-actions { display: flex; flex-wrap: wrap; gap: 0.6rem; }
+.landing-proof { margin: 2rem 0 2.5rem; }
+.landing-quote { font-size: 17px; line-height: 1.6; color: var(--text); margin: 0.25rem 0 0; max-width: 62ch; }
+
+/* Titoli negli articoli: righe compatte, a capo bilanciato */
+.blog-content h2, .blog-content h3 { line-height: 1.25; text-wrap: balance; }
+
+/* Caso studio: sottotitolo meno pesante */
+.case-lead { max-width: 62ch; font-size: 17px; font-weight: 400; color: var(--text-secondary); }
+
+/* Foto nel menu e link dell'indice: almeno 44px */
+.nav-brand { min-width: 44px; justify-content: center; }
+.blog-toc a { min-height: 44px; display: flex; align-items: center; }
+
+/* Il menu fisso su telefono è più alto: più margine quando si salta a una sezione */
+@media (max-width: 640px) { section[id], [id="contacts"] { scroll-margin-top: 104px; } }
+@media (max-width: 360px) {
+  .site-top-nav { gap: 4px; }
+  .nav-item { padding: 0 4px; min-width: 44px; justify-content: center; }
+}
+
+/* Anteprima del lavoro: si vede dall'alto (logo compreso), senza tagli al centro */
+.portfolio-preview { height: auto; display: block; }
+.portfolio-img { height: auto; aspect-ratio: 21 / 9; object-position: top center; }
+@media (max-width: 520px) { .portfolio-img { aspect-ratio: 16 / 10; } }

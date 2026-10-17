@@ -63,17 +63,7 @@
     <section class="section reveal">
         <h2 class="section-label">// lavori realizzati</h2>
         {{ range $lavori.ByWeight }}
-        <a class="portfolio-card" href="{{ .RelPermalink }}" style="margin-bottom:1rem;">
-            <div class="portfolio-preview" style="padding:0;overflow:hidden;">
-                {{ partial "shared/img.html" (dict "src" .Params.image "alt" (printf "Sito web %s" .Title) "width" 720 "ratio" "16/9" "anchor" "Top" "class" "portfolio-img") }}
-            </div>
-            <div class="portfolio-body">
-                <span class="portfolio-tag">{{ .Params.sector }} · {{ .Params.location }}</span>
-                <h3 class="portfolio-title">{{ .Title }}</h3>
-                <p class="portfolio-desc">{{ .Description }}</p>
-                <span class="portfolio-link">Leggi com'è andata →</span>
-            </div>
-        </a>
+        {{ partial "lavoro-card.html" . }}
         {{ end }}
 
         {{ with $p.testimonianza }}
