@@ -1,43 +1,24 @@
 {{- /*
   Head condiviso tra il sito attuale e le versioni in versioni/*.
-  Contiene: consenso (Google Consent Mode v2 + iubenda), analytics, meta SEO,
+  Contiene: nota su cookie e analytics (tolti), meta SEO,
   Open Graph, JSON-LD. Lo stile resta nel baseof di ogni versione.
 */ -}}
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-{{- /* 1. Consenso: tutto negato finché iubenda non riceve la scelta dell'utente.
-       Su iubenda deve essere attiva l'opzione "Google Consent Mode",
-       altrimenti GA4 resta in modalità "negato" anche dopo l'accettazione. */}}
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('consent', 'default', {
-    ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied',
-    analytics_storage: 'denied', functionality_storage: 'granted', security_storage: 'granted',
-    wait_for_update: 500
-  });
-  gtag('set', 'ads_data_redaction', true);
-</script>
-<script src="https://embeds.iubenda.com/widgets/e9b3d75a-33f9-41ef-9594-69d5554dc6c0.js"></script>
-
-{{- /* 2. Analytics. GTM e GA4 tolti il 2026-10-10: con il piano gratuito di iubenda
-       GA4 non riceve il consenso "Misurazione" e non raccoglie dati, mentre gli script
-       rallentavano il telefono. Per rimetterli: GTM-5TD66VKJ / G-XH543Y70CJ (vedi git log).
-       Clarity resta: iubenda lo blocca finché il visitatore non accetta. */}}
-<script>
-  (function(c,l,a,r,i,t,y){
-    c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-    t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-    y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-  })(window,document,"clarity","script","xt34tbj6ym");
-</script>
+{{- /* 1. Niente cookie di profilazione né statistiche (dal 2026-10-17).
+       GTM e GA4 tolti il 10/10, Clarity e il banner iubenda il 17/10: con il piano
+       gratuito di iubenda non raccoglievano dati e rallentavano il telefono di ~2 s.
+       Il sito usa solo risorse proprie, quindi il banner dei cookie non serve.
+       Per rimettere qualcosa: GTM-5TD66VKJ, G-XH543Y70CJ, Clarity xt34tbj6ym,
+       widget iubenda e9b3d75a-33f9-41ef-9594-69d5554dc6c0 (vedi git log), e va
+       rimesso anche il banner con il blocco preventivo. */}}
 
 <meta name="google-site-verification" content="QNUV9vpkabwgZRjU0Mug2AmKsFapTFcE0yOvKpjWusA" />
 
 {{- /* 3. Meta SEO */}}
 {{- $title := .Title }}
-{{- if .IsHome }}{{ $title = "Siti web a Frascati e Castelli Romani — Marco La Rocca" }}
+{{- if .IsHome }}{{ $title = "Marco La Rocca, siti web per professionisti — Frascati" }}
 {{- else if .Params.seoTitle }}{{ $title = .Params.seoTitle }}
 {{- else }}{{ $title = printf "%s — Marco La Rocca" .Title }}{{ end }}
 {{- $desc := .Site.Params.description }}
