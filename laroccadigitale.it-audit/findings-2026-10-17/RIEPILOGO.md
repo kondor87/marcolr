@@ -40,7 +40,9 @@ Il collo di bottiglia della velocità ora è solo **iubenda**: circa 2,3 s di la
 - Tocchi da 44px su foto nel menu e indice degli articoli; nessuno scorrimento orizzontale da 320px in su.
 - Salto a #contacts su telefono: il titolo non finisce più sotto il menu.
 
-## Da decidere (Marco)
+## Decisioni prese il 17/10 (con il sì di Marco)
 
-1. Titolo della home (cannibalizzazione con la pagina servizio).
-2. Clarity e banner cookie: Clarity non raccoglie dati (piano iubenda gratuito). Senza Clarity il sito non usa cookie non tecnici, il banner non è obbligatorio e il telefono guadagna circa 2 secondi.
+1. Titolo della home: "Marco La Rocca, siti web per professionisti — Frascati". La ricerca geografica resta alla pagina servizio.
+2. Via Clarity, banner e script iubenda. Il sito carica solo risorse proprie: nessun dominio esterno, nessun cookie (verificato sull'anteprima). CSP ristretta a 'self'. Restano i link a privacy e cookie policy di iubenda.
+   - Lighthouse mobile sull'anteprima: home 99 (LCP 1,7 s, TBT 60 ms, 203 KiB), pagina servizio 97. SEO 69 solo perché Netlify mette noindex alle anteprime.
+   - Da fare su iubenda: togliere Clarity, Google Analytics e Tag Manager dai servizi elencati nella privacy e cookie policy.
